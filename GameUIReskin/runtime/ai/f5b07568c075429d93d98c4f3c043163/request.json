@@ -1,0 +1,43 @@
+{
+  "prompt": "Reskin this source to match the APPROVED STYLE and style-reference images. Keep source composition, exact symbols/text and nine-slice borders; no new text. For atlas textures preserve all cells and their coordinates. Use the assigned role to maintain contrast; preserve functional status/rarity/currency colors. Do not replicate the reference object or invent extra elements. STYLE: {\"name\": \"Hải Đăng Ngọc Lam\", \"palette\": [\"#102F46\", \"#176778\", \"#39C6BC\", \"#F4C568\", \"#FFF2D5\"], \"material\": \"Men gốm bóng nhẹ, đồng vàng đánh bóng và kính biển; đổ sáng mềm theo độ nổi sẵn có của từng sprite.\", \"rules\": [\"Chỉ đổi diện mạo raster; giữ nguyên kích thước, bố cục, silhouette, vùng trong suốt và vị trí chi tiết.\", \"Giữ chính xác mọi chữ đã ghép vào ảnh, biểu tượng, đường viền nine-slice và vùng kéo giãn.\", \"Giữ nguyên số lượng, vị trí, kích thước và khoảng cách các ô atlas; không vẽ chi tiết nối qua ô.\", \"Dùng xanh biển sâu cho nền, men ngọc lam cho khung và nút, đồng vàng cho điểm nhấn cao cấp.\", \"Giữ màu đỏ của nút đóng, màu xanh của trạng thái tích cực, sắc vàng của tiền và khóa; giữ màu biểu thị độ hiếm khi có.\", \"Giữ tương phản giữa nhánh miễn phí và cao cấp, giữa nút chính và nút phụ; không bổ sung họa tiết gây nhầm thành biểu tượng chức năng.\", \"Các tài sản keep_original giữ nguyên toàn bộ hình ảnh vì có hình nhận diện đặc thù hoặc chưa đủ bằng chứng xác định chức năng.\"]} ROLE: {\"assetId\": \"fa0606bfc03a8170084ff9b8\", \"role\": \"background\", \"note\": \"Đổi nền tím thành xanh biển sâu với quầng sáng ngọc lam ở đúng vị trí hiện có.\"}",
+  "mode": "redesign",
+  "colors": [
+    "#102F46",
+    "#176778",
+    "#39C6BC",
+    "#F4C568",
+    "#FFF2D5"
+  ],
+  "keep": [
+    "shape",
+    "border",
+    "symbol",
+    "text"
+  ],
+  "count": 1,
+  "width": 2448,
+  "height": 1774,
+  "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_bg1.png",
+  "recipes": [
+    {
+      "assetId": "fa0606bfc03a8170084ff9b8",
+      "width": 2436,
+      "height": 2661,
+      "crop": null,
+      "border": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 0
+      },
+      "tint": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      }
+    }
+  ],
+  "preserveAlpha": true,
+  "transparent": false
+}

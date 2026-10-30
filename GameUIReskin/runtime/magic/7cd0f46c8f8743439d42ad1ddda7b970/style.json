@@ -1,0 +1,158 @@
+{
+  "name": "Hải Đăng Ngọc Lam",
+  "summary": "Giao diện lễ hội hàng hải với nền xanh biển sâu, khung đồng vàng và bề mặt men ngọc lam, giữ nguyên bố cục và khả năng nhận diện vật phẩm.",
+  "material": "Men gốm bóng nhẹ, đồng vàng đánh bóng và kính biển; đổ sáng mềm theo độ nổi sẵn có của từng sprite.",
+  "palette": ["#102F46", "#176778", "#39C6BC", "#F4C568", "#FFF2D5"],
+  "rules": [
+    "Chỉ đổi diện mạo raster; giữ nguyên kích thước, bố cục, silhouette, vùng trong suốt và vị trí chi tiết.",
+    "Giữ chính xác mọi chữ đã ghép vào ảnh, biểu tượng, đường viền nine-slice và vùng kéo giãn.",
+    "Giữ nguyên số lượng, vị trí, kích thước và khoảng cách các ô atlas; không vẽ chi tiết nối qua ô.",
+    "Dùng xanh biển sâu cho nền, men ngọc lam cho khung và nút, đồng vàng cho điểm nhấn cao cấp.",
+    "Giữ màu đỏ của nút đóng, màu xanh của trạng thái tích cực, sắc vàng của tiền và khóa; giữ màu biểu thị độ hiếm khi có.",
+    "Giữ tương phản giữa nhánh miễn phí và cao cấp, giữa nút chính và nút phụ; không bổ sung họa tiết gây nhầm thành biểu tượng chức năng.",
+    "Các tài sản keep_original giữ nguyên toàn bộ hình ảnh vì có hình nhận diện đặc thù hoặc chưa đủ bằng chứng xác định chức năng."
+  ],
+  "roles": [
+    {
+      "assetId": "fa0606bfc03a8170084ff9b8",
+      "role": "background",
+      "note": "Đổi nền tím thành xanh biển sâu với quầng sáng ngọc lam ở đúng vị trí hiện có."
+    },
+    {
+      "assetId": "104f075c236c6e4c4d3d4847",
+      "role": "keep_original",
+      "note": "Giữ nguyên tranh lễ hội nhiều vật thể để bảo toàn nội dung và hình nhận diện."
+    },
+    {
+      "assetId": "908ce480d64183f16a84540b",
+      "role": "panel",
+      "note": "Thân men xanh biển, nẹp trên đồng vàng; giữ đường phân cách và viền kéo giãn."
+    },
+    {
+      "assetId": "3cc811f71d6b62c0d427f007",
+      "role": "decoration",
+      "note": "Đổi dải đỡ tiêu đề sang đồng vàng bóng nhẹ, giữ nguyên hình cong mỏng."
+    },
+    {
+      "assetId": "5f7ab2e02baa1b12a25909ac",
+      "role": "panel",
+      "note": "Khung tiêu đề men ngọc lam viền đồng; giữ chính xác chữ Crown Pass."
+    },
+    {
+      "assetId": "4538df530ff259d39ecd2425",
+      "role": "panel",
+      "note": "Mặt kem sáng với viền xanh biển dịu, bảo toàn độ bo và bóng đáy."
+    },
+    {
+      "assetId": "897fbdaa5431986a8acb7e58",
+      "role": "icon",
+      "note": "Đồng hồ viền đồng vàng, mặt kem; giữ nguyên kim và đường nét biểu tượng."
+    },
+    {
+      "assetId": "a15ad3145e0a18a1675daca8",
+      "role": "panel",
+      "note": "Lòng xanh biển sâu, viền đồng vàng; giữ khung con nhộng và khoảng trống bên trong."
+    },
+    {
+      "assetId": "0fcfff3b6a4f0c9a306aa275",
+      "role": "secondary_button",
+      "note": "Mặt men ngọc lam và viền đồng, giữ hình thoi bo tròn cùng độ nổi."
+    },
+    {
+      "assetId": "7e7208e46d771932f3dff20d",
+      "role": "reward",
+      "note": "Giữ vương miện vàng và mọi đường nét; chỉ đổi nền huy hiệu sang men xanh biển."
+    },
+    {
+      "assetId": "e184f0d94b3d5fb69cb7b4a5",
+      "role": "primary_button",
+      "note": "Mặt ngọc lam sáng, viền đồng vàng; giữ nguyên khung ngoài và diện tích bấm."
+    },
+    {
+      "assetId": "faf197a4414d2732256f4c74",
+      "role": "secondary_button",
+      "note": "Giữ đỏ chức năng và dấu X trắng; chỉ đồng bộ độ bóng, viền và bóng đổ."
+    },
+    {
+      "assetId": "ec04574f3578521bda7fef04",
+      "role": "icon",
+      "note": "Nền men xanh biển viền ngọc lam; giữ nguyên ký hiệu i trắng."
+    },
+    {
+      "assetId": "791835f31e3d9ceffb7aeaf2",
+      "role": "panel",
+      "note": "Đổi các dải tím thành xanh biển và ngọc lam, bảo toàn cấu trúc viền và khả năng ghép."
+    },
+    {
+      "assetId": "f9a4ac141436cfcc6cc64b47",
+      "role": "keep_original",
+      "note": "Giữ dải xanh lá vì chưa xác định an toàn đây là phần tô trạng thái hay thành phần khác."
+    },
+    {
+      "assetId": "2df05b2d625ceccfe2180557",
+      "role": "panel",
+      "note": "Cờ miễn phí dùng men kem và xanh xám, giữ nguyên chữ FREE PASS cùng thanh treo."
+    },
+    {
+      "assetId": "6b8df543005626b641faf60a",
+      "role": "panel",
+      "note": "Cờ cao cấp dùng đồng vàng sáng, giữ nguyên chữ CROWN PASS và hình dáng."
+    },
+    {
+      "assetId": "dfd5de56a73aa4eab38cde5b",
+      "role": "decoration",
+      "note": "Đường phân cách ngọc lam sẫm, giữ độ dày và chiều dài gốc."
+    },
+    {
+      "assetId": "a0bd81c9a2a4edebee540064",
+      "role": "panel",
+      "note": "Ô kem sáng viền đồng nhạt; giữ phần tai bên phải và khoảng trống chứa nội dung."
+    },
+    {
+      "assetId": "8ccdade97a72fd61cb2a8668",
+      "role": "reward",
+      "note": "Giữ sắc vàng tiền tệ, hình ngôi sao và số đồng xu; đồng bộ ánh kim nhẹ."
+    },
+    {
+      "assetId": "09dd56a8e3091dac6769ebe1",
+      "role": "panel",
+      "note": "Ô kem viền đồng vàng đậm hơn nhánh miễn phí; giữ tai bên trái và hình khung."
+    },
+    {
+      "assetId": "6ad8a5defd518ffc2de9f966",
+      "role": "keep_original",
+      "note": "Giữ nguyên bộ ba bóng và bảng màu để bảo toàn nhận diện booster."
+    },
+    {
+      "assetId": "4aab00e0e3620e65cb680ba3",
+      "role": "icon",
+      "note": "Giữ khóa vàng, lỗ khóa tối và silhouette; chỉ tinh chỉnh chất liệu đồng bóng."
+    },
+    {
+      "assetId": "25e3ce82fa4d6474e947e829",
+      "role": "decoration",
+      "note": "Thanh đồng vàng với ánh kem, giữ hai đầu bo tròn và độ dày hiện có."
+    },
+    {
+      "assetId": "13156babda9cc3d3599c0fce",
+      "role": "keep_original",
+      "note": "Giữ nguyên bóng điện, tia điện và màu sắc nhận diện booster."
+    },
+    {
+      "assetId": "0bd54a62c3c407101ffd7b32",
+      "role": "semantic_status",
+      "note": "Giữ các trạng thái khóa vàng; đồng bộ ánh đồng mà không dịch chuyển hay thay đổi bất kỳ ô atlas nào."
+    },
+    {
+      "assetId": "90b0d1217993e8c6ab927325",
+      "role": "background",
+      "note": "Đổi dải họa tiết tím thành xanh biển và ngọc lam dịu, giữ mật độ và nhịp họa tiết."
+    }
+  ],
+  "pilotAssetIds": [
+    "fa0606bfc03a8170084ff9b8",
+    "908ce480d64183f16a84540b",
+    "e184f0d94b3d5fb69cb7b4a5",
+    "ec04574f3578521bda7fef04"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "sessionId": "f1833ae7f4a0492f859abe9df2fd1e32",
+  "projectId": "2bfda827e9e47ed2",
+  "projectRoot": "C:\\Personal\\Rocket Game Studio\\hole-blast",
+  "state": "restored",
+  "files": [
+    {
+      "assetId": "e184f0d94b3d5fb69cb7b4a5",
+      "path": "Assets/SmashFest/Development/Art/Battle Pass/BP_button active.png",
+      "width": 701,
+      "height": 347,
+      "beforeHash": "9086698be7cfc6593442b72abb8e8d1fefce99b7df14dda44e4021299706b28c",
+      "afterHash": "8438f6cec36179342b94600dd69273cfd4f2212ff8e1ec0a3c8396f9d0bb051d",
+      "metaHash": "57fd5c9016999c72d3e5c6428135bcf76cfe5abd15bf0b1ad275220753ce7a5f"
+    }
+  ],
+  "skipped": []
+}

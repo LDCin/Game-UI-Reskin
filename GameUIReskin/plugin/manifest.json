@@ -1,0 +1,19 @@
+{
+  "name": "Game UI Reskin",
+  "id": "1697499917603580564",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": [
+    "figma"
+  ],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ],
+    "devAllowedDomains": [
+      "http://localhost:43127"
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "name": "Hồng kẹo và vàng nắng",
+  "summary": "Chỉ đổi màu sang hồng tươi, xanh sáng và vàng nắng; giữ nguyên phong cách hoạt hình, chất liệu, định dạng và cấu trúc từng sprite.",
+  "material": "Giữ nguyên chất liệu raster gốc: vùng phẳng vẫn phẳng; gradient, độ bóng, viền nổi, bóng đổ và họa tiết chỉ được đổi màu theo cấu trúc hiện có.",
+  "palette": ["#FF4DB8", "#AD35EF", "#32ADFF", "#FFD52A", "#FFF4DC"],
+  "rules": [
+    "Chỉ thay đổi màu; giữ nguyên kích thước ảnh, định dạng, alpha, bố cục, silhouette và vị trí chi tiết.",
+    "Không thêm gradient vào vùng màu phẳng. Riêng BP_panel w line.png phải giữ các vùng phẳng, không thêm chuyển sắc.",
+    "Gradient có sẵn phải giữ nguyên tâm, hướng, bán kính, điểm chuyển và độ tương phản sáng tối; chỉ thay sắc màu. Quầng sáng nền giữ đúng phạm vi pixel gốc, không tự quy đổi 3 cm.",
+    "Giữ nguyên độ bóng, texture, bóng đổ, độ dày viền và mức độ nổi khối; không thêm hiệu ứng hay vật liệu.",
+    "Giữ nguyên chính xác chữ có sẵn, biểu tượng, ô atlas, khoảng cách giữa các ô và biên nine-slice.",
+    "Dùng màu tươi sáng; không dùng các màu xanh trầm hoặc xỉn như #50C8DF, #087F9C và #073F58.",
+    "Giữ màu đỏ của nút đóng, xanh lá của trạng thái tích cực, vàng của tiền và khóa; bảo toàn phân biệt hạng miễn phí và cao cấp.",
+    "Palette là màu định hướng; được giữ các sắc độ gốc cần thiết cho gradient và ý nghĩa chức năng."
+  ],
+  "roles": [
+    {
+      "assetId": "fa0606bfc03a8170084ff9b8",
+      "role": "background",
+      "note": "Đổi nền tím sang họ hồng tím tươi; giữ chính xác tâm, bán kính và độ lan của quầng sáng hiện có."
+    },
+    {
+      "assetId": "104f075c236c6e4c4d3d4847",
+      "role": "keep_original",
+      "note": "Giữ nguyên tranh trang trí nhiều chi tiết để bảo toàn nhận diện và màu sắc các vật thể."
+    },
+    {
+      "assetId": "908ce480d64183f16a84540b",
+      "role": "panel",
+      "note": "Đổi vùng tím sang hồng tươi, giữ dải vàng; vùng phẳng giữ phẳng tuyệt đối, không thêm gradient."
+    },
+    {
+      "assetId": "3cc811f71d6b62c0d427f007",
+      "role": "decoration",
+      "note": "Đổi phần đỏ sang hồng; giữ viền vàng, hình dáng mảnh và sắc độ gốc."
+    },
+    {
+      "assetId": "5f7ab2e02baa1b12a25909ac",
+      "role": "panel",
+      "note": "Đổi nền tím sang hồng tím tươi; giữ nguyên chữ Crown Pass, viền vàng và hiệu ứng gốc."
+    },
+    {
+      "assetId": "4538df530ff259d39ecd2425",
+      "role": "panel",
+      "note": "Đổi phần kem sang kem sáng trong palette; giữ bóng dưới và biên bo góc."
+    },
+    {
+      "assetId": "897fbdaa5431986a8acb7e58",
+      "role": "icon",
+      "note": "Giữ mặt đồng hồ sáng, kim tối và vành vàng; chỉ điều chỉnh sắc vàng nhẹ."
+    },
+    {
+      "assetId": "a15ad3145e0a18a1675daca8",
+      "role": "panel",
+      "note": "Đổi lòng tím sang hồng tím; giữ nguyên viền vàng và chuyển sắc sẵn có."
+    },
+    {
+      "assetId": "0fcfff3b6a4f0c9a306aa275",
+      "role": "secondary_button",
+      "note": "Đổi lòng nút sang hồng kẹo; giữ khung vàng, độ bóng và hình thoi bo góc."
+    },
+    {
+      "assetId": "7e7208e46d771932f3dff20d",
+      "role": "reward",
+      "note": "Đổi nền huy hiệu sang hồng tím; giữ vương miện vàng cùng toàn bộ đường nét."
+    },
+    {
+      "assetId": "e184f0d94b3d5fb69cb7b4a5",
+      "role": "primary_button",
+      "note": "Làm tươi phần xanh theo #32ADFF, đổi viền đỏ sang hồng; giữ nguyên gradient và độ nổi."
+    },
+    {
+      "assetId": "faf197a4414d2732256f4c74",
+      "role": "semantic_status",
+      "note": "Giữ đỏ chức năng và dấu X trắng; bảo toàn độ bóng cùng tương phản."
+    },
+    {
+      "assetId": "ec04574f3578521bda7fef04",
+      "role": "icon",
+      "note": "Đổi nền tím sang hồng tím tươi; giữ nguyên ký hiệu i trắng và khối nổi."
+    },
+    {
+      "assetId": "791835f31e3d9ceffb7aeaf2",
+      "role": "panel",
+      "note": "Đổi dải tím sang họ hồng tím; giữ chính xác phân bố dải sáng tối và mép trong suốt."
+    },
+    {
+      "assetId": "f9a4ac141436cfcc6cc64b47",
+      "role": "semantic_status",
+      "note": "Giữ xanh lá để bảo toàn khả năng nhận biết trạng thái; giữ gradient và biên nine-slice gốc."
+    },
+    {
+      "assetId": "2df05b2d625ceccfe2180557",
+      "role": "panel",
+      "note": "Giữ hạng miễn phí màu bạc và chữ FREE PASS; chỉ làm sắc bạc sáng nhẹ, giữ thanh treo."
+    },
+    {
+      "assetId": "6b8df543005626b641faf60a",
+      "role": "panel",
+      "note": "Giữ hạng cao cấp vàng tươi và chữ CROWN PASS; không đổi cấu trúc chuyển sắc hay thanh treo."
+    },
+    {
+      "assetId": "dfd5de56a73aa4eab38cde5b",
+      "role": "decoration",
+      "note": "Đổi đường tím sang hồng tím; giữ nguyên độ dày và các dải màu sẵn có."
+    },
+    {
+      "assetId": "a0bd81c9a2a4edebee540064",
+      "role": "panel",
+      "note": "Giữ nền kem sáng và khung ấm của ô miễn phí; chỉ đổi sắc nhẹ, giữ bóng và mấu bên."
+    },
+    {
+      "assetId": "8ccdade97a72fd61cb2a8668",
+      "role": "keep_original",
+      "note": "Giữ nguyên đồng tiền vàng, ngôi sao và độ bóng để bảo toàn nhận diện tiền tệ."
+    },
+    {
+      "assetId": "09dd56a8e3091dac6769ebe1",
+      "role": "panel",
+      "note": "Giữ khung vàng cao cấp, làm nền kem sáng hơn bằng đổi màu; giữ nguyên gradient và mấu bên."
+    },
+    {
+      "assetId": "6ad8a5defd518ffc2de9f966",
+      "role": "keep_original",
+      "note": "Giữ nguyên ba bóng booster, màu nhận diện và các ký hiệu."
+    },
+    {
+      "assetId": "4aab00e0e3620e65cb680ba3",
+      "role": "icon",
+      "note": "Giữ khóa vàng và lỗ khóa tối; chỉ chỉnh sắc vàng tươi trong phạm vi chất liệu gốc."
+    },
+    {
+      "assetId": "25e3ce82fa4d6474e947e829",
+      "role": "decoration",
+      "note": "Giữ thanh vàng sáng, hai đầu tròn và dải sáng gốc; không suy diễn thành thanh tiến trình."
+    },
+    {
+      "assetId": "13156babda9cc3d3599c0fce",
+      "role": "keep_original",
+      "note": "Giữ nguyên bóng điện, màu nhận diện và hiệu ứng điện bao quanh."
+    },
+    {
+      "assetId": "0bd54a62c3c407101ffd7b32",
+      "role": "keep_original",
+      "note": "Giữ nguyên atlas các bộ phận khóa, vị trí từng ô, alpha và màu vàng để bảo toàn hoạt ảnh."
+    },
+    {
+      "assetId": "90b0d1217993e8c6ab927325",
+      "role": "background",
+      "note": "Đổi sắc tím sang hồng tím sáng; giữ nguyên họa tiết, độ tương phản và vùng trong suốt."
+    }
+  ],
+  "pilotAssetIds": [
+    "fa0606bfc03a8170084ff9b8",
+    "908ce480d64183f16a84540b",
+    "e184f0d94b3d5fb69cb7b4a5",
+    "ec04574f3578521bda7fef04"
+  ]
+}

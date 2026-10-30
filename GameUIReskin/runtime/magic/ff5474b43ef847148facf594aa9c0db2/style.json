@@ -1,0 +1,159 @@
+{
+  "name": "Dạ Hội Nhung Đỏ",
+  "summary": "Giao diện lễ hội sân khấu với nhung đỏ rượu, nền mận tối và viền vàng champagne, giữ nguyên hình dáng và khả năng nhận diện của từng sprite.",
+  "material": "Nhung mịn có chuyển sắc nhẹ, kim loại vàng champagne đánh bóng và men ngà; ánh sáng mềm, giữ độ nổi và bóng đổ hiện có.",
+  "palette": ["#281529", "#721F3D", "#B83B55", "#E8BD68", "#FFF0D5"],
+  "rules": [
+    "Chỉ thay diện mạo raster; giữ nguyên kích thước, bố cục, silhouette, vùng trong suốt và vị trí chi tiết.",
+    "Giữ nguyên chính xác chữ được vẽ sẵn, ký hiệu, số lượng ô atlas và thứ tự các khung hình.",
+    "Bảo toàn biên nine-slice, vùng kéo giãn và tính liền mạch của mọi dải hoặc đường viền; không thêm họa tiết vào vùng kéo giãn.",
+    "Dùng mận tối cho nền, nhung đỏ rượu cho bề mặt chính, vàng champagne cho viền và ngà cho bề mặt sáng.",
+    "Giữ đỏ của nút đóng, xanh lá của trạng thái tích cực, vàng của tiền và khóa; giữ màu phân hạng khi có chức năng nhận diện.",
+    "Giữ tương phản chữ và ký hiệu; phân biệt rõ phần miễn phí, phần cao cấp và trạng thái tương tác.",
+    "Chỉ dùng vân nhung rất nhẹ trên diện tích lớn; không thêm chi tiết làm nhiễu các sprite nhỏ.",
+    "Giữ nguyên tranh và vật phẩm mang tính nhận diện khi việc đổi màu có thể làm thay đổi ý nghĩa."
+  ],
+  "roles": [
+    {
+      "assetId": "fa0606bfc03a8170084ff9b8",
+      "role": "background",
+      "note": "Đổi nền tím thành mận tối với vùng sáng đỏ rượu mềm, giữ nguyên phân bố chuyển sắc."
+    },
+    {
+      "assetId": "104f075c236c6e4c4d3d4847",
+      "role": "keep_original",
+      "note": "Giữ nguyên tranh lễ hội nhiều chi tiết vì chứa nội dung nhận diện; không suy diễn lại nhân vật hoặc đạo cụ."
+    },
+    {
+      "assetId": "908ce480d64183f16a84540b",
+      "role": "panel",
+      "note": "Bề mặt nhung đỏ rượu, nẹp trên vàng champagne; giữ mép dưới và toàn bộ vùng kéo giãn."
+    },
+    {
+      "assetId": "3cc811f71d6b62c0d427f007",
+      "role": "decoration",
+      "note": "Đổi phần trang trí cong sang đỏ rượu viền vàng, giữ nguyên tiết diện mỏng và độ cong."
+    },
+    {
+      "assetId": "5f7ab2e02baa1b12a25909ac",
+      "role": "panel",
+      "note": "Khung tiêu đề nhung đỏ viền vàng; giữ chính xác chữ Crown Pass và hình dáng biểu ngữ."
+    },
+    {
+      "assetId": "4538df530ff259d39ecd2425",
+      "role": "panel",
+      "note": "Men ngà với mép đỏ rượu nhạt và bóng mềm; giữ góc bo cùng biên co giãn."
+    },
+    {
+      "assetId": "897fbdaa5431986a8acb7e58",
+      "role": "icon",
+      "note": "Mặt đồng hồ ngà, vành vàng champagne; giữ nguyên kim, tâm và ký hiệu thời gian."
+    },
+    {
+      "assetId": "a15ad3145e0a18a1675daca8",
+      "role": "panel",
+      "note": "Lòng mận tối viền vàng champagne; giữ nguyên độ dày viền và hai đầu bo."
+    },
+    {
+      "assetId": "0fcfff3b6a4f0c9a306aa275",
+      "role": "secondary_button",
+      "note": "Mặt men đỏ hồng với viền vàng; giữ hình thoi bo tròn và điểm sáng hiện có."
+    },
+    {
+      "assetId": "7e7208e46d771932f3dff20d",
+      "role": "reward",
+      "note": "Giữ vương miện vàng và nền tím nhận diện phần thưởng; chỉ điều chỉnh ánh kim cho đồng bộ."
+    },
+    {
+      "assetId": "e184f0d94b3d5fb69cb7b4a5",
+      "role": "primary_button",
+      "note": "Mặt đỏ hồng sáng, lòng viền mận và nẹp vàng; giữ hình chữ nhật bo góc cùng các lớp nổi."
+    },
+    {
+      "assetId": "faf197a4414d2732256f4c74",
+      "role": "secondary_button",
+      "note": "Giữ nền đỏ chức năng và dấu X trắng; chỉ tinh chỉnh độ bóng cùng sắc viền."
+    },
+    {
+      "assetId": "ec04574f3578521bda7fef04",
+      "role": "icon",
+      "note": "Nền mận đỏ, biểu tượng i màu ngà; giữ nguyên nét chữ, vị trí và góc bo."
+    },
+    {
+      "assetId": "791835f31e3d9ceffb7aeaf2",
+      "role": "panel",
+      "note": "Chuyển dải tím sang mận và đỏ rượu; giữ cấu trúc đối xứng cùng khả năng nối hoặc kéo giãn."
+    },
+    {
+      "assetId": "f9a4ac141436cfcc6cc64b47",
+      "role": "semantic_status",
+      "note": "Giữ xanh lá nhận diện trạng thái; chỉ làm mềm chuyển sắc và bảo toàn biên nine-slice."
+    },
+    {
+      "assetId": "2df05b2d625ceccfe2180557",
+      "role": "panel",
+      "note": "Giữ sắc bạc xám phân biệt hạng miễn phí và chính xác chữ FREE PASS; thanh treo đồng bộ vàng trầm."
+    },
+    {
+      "assetId": "6b8df543005626b641faf60a",
+      "role": "panel",
+      "note": "Giữ sắc vàng cao cấp và chính xác chữ CROWN PASS; điều chỉnh ánh kim sang champagne."
+    },
+    {
+      "assetId": "dfd5de56a73aa4eab38cde5b",
+      "role": "decoration",
+      "note": "Đường phân cách đỏ rượu sáng trên nền mận; giữ nguyên độ dày và mép thẳng."
+    },
+    {
+      "assetId": "a0bd81c9a2a4edebee540064",
+      "role": "panel",
+      "note": "Mặt ngà, viền champagne nhạt; giữ phần nhô bên phải và phân biệt rõ với khung cao cấp."
+    },
+    {
+      "assetId": "8ccdade97a72fd61cb2a8668",
+      "role": "keep_original",
+      "note": "Giữ nguyên chồng tiền vàng, ngôi sao và sắc tiền tệ để bảo toàn nhận diện."
+    },
+    {
+      "assetId": "09dd56a8e3091dac6769ebe1",
+      "role": "panel",
+      "note": "Mặt ngà ấm với viền vàng rực hơn khung miễn phí; giữ phần nhô bên trái và hình dáng gốc."
+    },
+    {
+      "assetId": "6ad8a5defd518ffc2de9f966",
+      "role": "keep_original",
+      "note": "Giữ nguyên ba quả bóng, màu đặc trưng và ký hiệu để không thay đổi nhận diện vật phẩm."
+    },
+    {
+      "assetId": "4aab00e0e3620e65cb680ba3",
+      "role": "icon",
+      "note": "Giữ khóa vàng cùng lỗ khóa tối; chỉ đồng bộ ánh kim champagne, không thay biểu tượng."
+    },
+    {
+      "assetId": "25e3ce82fa4d6474e947e829",
+      "role": "decoration",
+      "note": "Thanh vàng champagne với điểm sáng ngà; giữ hai đầu tròn và khả năng kéo giãn."
+    },
+    {
+      "assetId": "13156babda9cc3d3599c0fce",
+      "role": "keep_original",
+      "note": "Giữ nguyên quả bóng, màu nhận diện và hào quang điện xanh."
+    },
+    {
+      "assetId": "0bd54a62c3c407101ffd7b32",
+      "role": "icon",
+      "note": "Đồng bộ ánh vàng của khóa; giữ nguyên mọi ô atlas, vị trí bộ phận, vùng trong suốt và trạng thái đóng mở."
+    },
+    {
+      "assetId": "90b0d1217993e8c6ab927325",
+      "role": "background",
+      "note": "Nền đỏ rượu trầm với họa tiết mận tương phản thấp; giữ kích thước và mật độ họa tiết hiện có."
+    }
+  ],
+  "pilotAssetIds": [
+    "fa0606bfc03a8170084ff9b8",
+    "908ce480d64183f16a84540b",
+    "e184f0d94b3d5fb69cb7b4a5",
+    "897fbdaa5431986a8acb7e58"
+  ]
+}

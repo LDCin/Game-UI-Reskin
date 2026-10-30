@@ -1,0 +1,3005 @@
+{
+  "targetFileKey": "gpF3X0Gm6JfgJp79AI8wVp",
+  "width": 1080,
+  "height": 2448,
+  "font": {
+    "family": "Lilita One",
+    "style": "Regular"
+  },
+  "state": {
+    "hasCrownPass": false,
+    "level": 1,
+    "progress": "0/1",
+    "timeSample": "6d 23h 59m",
+    "scrollPosition": 0
+  },
+  "bakedTextExceptions": [
+    "BP_tittle frame.png",
+    "BP_flag free pass.png",
+    "BP_flag crown pass.png"
+  ],
+  "root": {
+    "name": "BattlePassModal",
+    "key": "1265956057267994184",
+    "path": "/BattlePassModal",
+    "sourcePrefab": "BattlePassModal.prefab",
+    "fileID": "1265956057267994184",
+    "x": 0.0,
+    "y": 0.0,
+    "w": 1080,
+    "h": 2448,
+    "children": [
+      {
+        "name": "MainPanel",
+        "key": "8890763361460402512",
+        "path": "/BattlePassModal/MainPanel",
+        "sourcePrefab": "BattlePassModal.prefab",
+        "fileID": "8890763361460402512",
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1080,
+        "h": 2448,
+        "children": [
+          {
+            "name": "BG",
+            "key": "5450770586005565685",
+            "path": "/BattlePassModal/MainPanel/BG",
+            "sourcePrefab": "BattlePassModal.prefab",
+            "fileID": "5450770586005565685",
+            "x": -678.0,
+            "y": -106.5,
+            "w": 2436.0,
+            "h": 2661.0,
+            "children": [
+              {
+                "name": "BG / Sprite",
+                "key": "5450770586005565685/image",
+                "x": 0,
+                "y": 0,
+                "w": 2436.0,
+                "h": 2661.0,
+                "type": "IMAGE",
+                "opacity": 1,
+                "imageKey": "68d642376ec0a337c063",
+                "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_bg1.png",
+                "spriteGuid": "6e35af4b35e6c2e479b85a57a5af62fa",
+                "spriteFileID": 21300000
+              }
+            ],
+            "clip": false
+          },
+          {
+            "name": "TopPanel",
+            "key": "5419394762035789569",
+            "path": "/BattlePassModal/MainPanel/TopPanel",
+            "sourcePrefab": "BattlePassModal.prefab",
+            "fileID": "5419394762035789569",
+            "x": 0.0,
+            "y": 0.0,
+            "w": 1080,
+            "h": 1078,
+            "children": [
+              {
+                "name": "BackgroundImage",
+                "key": "4893883335899881686",
+                "path": "/BattlePassModal/MainPanel/TopPanel/BackgroundImage",
+                "sourcePrefab": "BattlePassModal.prefab",
+                "fileID": "4893883335899881686",
+                "x": -579.6,
+                "y": -33.17675000000003,
+                "w": 2172.0,
+                "h": 724.3535,
+                "children": [
+                  {
+                    "name": "BackgroundImage / Sprite",
+                    "key": "4893883335899881686/image",
+                    "x": 0,
+                    "y": 0,
+                    "w": 2172.0,
+                    "h": 724.3535,
+                    "type": "IMAGE",
+                    "opacity": 1,
+                    "imageKey": "3e343c3947389fa5a549",
+                    "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_bg2.png",
+                    "spriteGuid": "5222c3d3c8e570e44bcd9a28ccb6cd90",
+                    "spriteFileID": 21300000
+                  }
+                ],
+                "clip": false
+              },
+              {
+                "name": "EdgeImage",
+                "key": "6536394570399977961",
+                "path": "/BattlePassModal/MainPanel/TopPanel/EdgeImage",
+                "sourcePrefab": "BattlePassModal.prefab",
+                "fileID": "6536394570399977961",
+                "x": 0.0,
+                "y": 568.19996,
+                "w": 1080,
+                "h": 339.7618,
+                "children": [
+                  {
+                    "name": "EdgeImage / Sprite",
+                    "key": "6536394570399977961/image",
+                    "x": 0,
+                    "y": 0,
+                    "w": 1080,
+                    "h": 339.7618,
+                    "type": "IMAGE",
+                    "opacity": 1,
+                    "imageKey": "1d384c615994714aff66",
+                    "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_panel w line.png",
+                    "spriteGuid": "72c69c880c3f88244864348713980acc",
+                    "spriteFileID": 21300000
+                  },
+                  {
+                    "name": "SubTitleFrameImage",
+                    "key": "7943721392477853540",
+                    "path": "/BattlePassModal/MainPanel/TopPanel/EdgeImage/SubTitleFrameImage",
+                    "sourcePrefab": "BattlePassModal.prefab",
+                    "fileID": "7943721392477853540",
+                    "x": -59.0,
+                    "y": -80.0,
+                    "w": 1198.0,
+                    "h": 82.0,
+                    "children": [
+                      {
+                        "name": "SubTitleFrameImage / Sprite",
+                        "key": "7943721392477853540/image",
+                        "x": 0,
+                        "y": 0,
+                        "w": 1198.0,
+                        "h": 82.0,
+                        "type": "IMAGE",
+                        "opacity": 1,
+                        "imageKey": "46f9e3c995c48affe59d",
+                        "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_back of tittle.png",
+                        "spriteGuid": "e223fb316ba718f43bddac13c49dbd96",
+                        "spriteFileID": 21300000
+                      }
+                    ],
+                    "clip": false
+                  },
+                  {
+                    "name": "TitleFrameImage",
+                    "key": "8346554287967624038",
+                    "path": "/BattlePassModal/MainPanel/TopPanel/EdgeImage/TitleFrameImage",
+                    "sourcePrefab": "BattlePassModal.prefab",
+                    "fileID": "8346554287967624038",
+                    "x": 157.0,
+                    "y": -61.2,
+                    "w": 766.0,
+                    "h": 210.0,
+                    "children": [
+                      {
+                        "name": "TitleFrameImage / Sprite",
+                        "key": "8346554287967624038/image",
+                        "x": 0,
+                        "y": 0,
+                        "w": 766.0,
+                        "h": 210.0,
+                        "type": "IMAGE",
+                        "opacity": 1,
+                        "imageKey": "fb6b8c93622d65cfbc94",
+                        "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_tittle frame.png",
+                        "spriteGuid": "d69bad69b2df06e468c0a05ad789a0f1",
+                        "spriteFileID": 21300000
+                      }
+                    ],
+                    "clip": false
+                  }
+                ],
+                "clip": false
+              },
+              {
+                "name": "Time",
+                "key": "5044614806470920619",
+                "path": "/BattlePassModal/MainPanel/TopPanel/Time",
+                "sourcePrefab": "BattlePassModal.prefab",
+                "fileID": "5044614806470920619",
+                "x": 392.08000000000004,
+                "y": 643.32893,
+                "w": 311.84,
+                "h": 66.5753,
+                "children": [
+                  {
+                    "name": "Time / Sprite",
+                    "key": "5044614806470920619/image",
+                    "x": 0,
+                    "y": 0,
+                    "w": 311.84,
+                    "h": 66.5753,
+                    "type": "IMAGE",
+                    "opacity": 1,
+                    "imageKey": "60f7880f068c66dcd152",
+                    "spritePath": "Assets/SmashFest/Development/Art/Leaderboard/LB_khung time.png",
+                    "spriteGuid": "20f5b0d04156d3241ba3fba62b291358",
+                    "spriteFileID": 21300000
+                  },
+                  {
+                    "name": "Clock",
+                    "key": "1342514605224691045",
+                    "path": "/BattlePassModal/MainPanel/TopPanel/Time/Clock",
+                    "sourcePrefab": "BattlePassModal.prefab",
+                    "fileID": "1342514605224691045",
+                    "x": -0.6687499999999957,
+                    "y": -8.245900000000002,
+                    "w": 74.5375,
+                    "h": 76.6671,
+                    "children": [
+                      {
+                        "name": "Clock / Sprite",
+                        "key": "1342514605224691045/image",
+                        "x": 0,
+                        "y": 0,
+                        "w": 74.5375,
+                        "h": 76.6671,
+                        "type": "IMAGE",
+                        "opacity": 1,
+                        "imageKey": "c03e9fd1b11673f0eaff",
+                        "spritePath": "Assets/SmashFest/Development/Art/Leaderboard/LB_clock.png",
+                        "spriteGuid": "cc5c6eb90f414ea5f95340c02586bde4",
+                        "spriteFileID": 21300000
+                      }
+                    ],
+                    "clip": false
+                  },
+                  {
+                    "name": "TimeText",
+                    "key": "8102013320710392530",
+                    "path": "/BattlePassModal/MainPanel/TopPanel/Time/TimeText",
+                    "sourcePrefab": "BattlePassModal.prefab",
+                    "fileID": "8102013320710392530",
+                    "x": 82.44999999999999,
+                    "y": 5.687649999999998,
+                    "w": 186.14,
+                    "h": 54.0,
+                    "children": [
+                      {
+                        "name": "TimeText / Text",
+                        "key": "8102013320710392530/text",
+                        "type": "TEXT",
+                        "x": 0,
+                        "y": 0,
+                        "w": 186.14,
+                        "h": 54.0,
+                        "text": "6d 23h 59m",
+                        "fontSize": 30.55,
+                        "color": {
+                          "r": 0.5450981,
+                          "g": 0.2705882,
+                          "b": 0.07450981,
+                          "a": 1
+                        },
+                        "align": "CENTER",
+                        "vertical": "CENTER",
+                        "uppercase": false,
+                        "outline": 0,
+                        "materialGuid": "85ec61161ff9d814bb47d31f47480fb6"
+                      }
+                    ],
+                    "clip": false
+                  }
+                ],
+                "clip": false
+              },
+              {
+                "name": "ProgressContainer",
+                "key": "1679385661815432087",
+                "path": "/BattlePassModal/MainPanel/TopPanel/ProgressContainer",
+                "sourcePrefab": "BattlePassModal.prefab",
+                "fileID": "1679385661815432087",
+                "x": 0.0,
+                "y": 732.0,
+                "w": 1080,
+                "h": 150.0,
+                "children": [
+                  {
+                    "name": "ExpPanel",
+                    "key": "5763965042943798089",
+                    "path": "/BattlePassModal/MainPanel/TopPanel/ProgressContainer/ExpPanel",
+                    "sourcePrefab": "BattlePassModal.prefab",
+                    "fileID": "5763965042943798089",
+                    "x": 101.61500000000001,
+                    "y": 12.780000000000001,
+                    "w": 415.64,
+                    "h": 124.44,
+                    "children": [
+                      {
+                        "name": "ProgressHolder",
+                        "key": "3009049760976607682",
+                        "path": "/BattlePassModal/MainPanel/TopPanel/ProgressContainer/ExpPanel/ProgressHolder",
+                        "sourcePrefab": "BattlePassModal.prefab",
+                        "fileID": "3009049760976607682",
+                        "x": 7.319999999999993,
+                        "y": 16.22,
+                        "w": 386.0,
+                        "h": 92.0,
+                        "children": [
+                          {
+                            "name": "ProgressHolder / Sprite",
+                            "key": "3009049760976607682/image",
+                            "x": 0,
+                            "y": 0,
+                            "w": 386.0,
+                            "h": 92.0,
+                            "type": "IMAGE",
+                            "opacity": 1,
+                            "imageKey": "5b1777f37739291b6984",
+                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_frame_ttt1.png",
+                            "spriteGuid": "293eeb51d5ada6246b3b40cf33913650",
+                            "spriteFileID": 21300000
+                          }
+                        ],
+                        "clip": false
+                      },
+                      {
+                        "name": "ProgressText (TMP)",
+                        "key": "1224290954001799390",
+                        "path": "/BattlePassModal/MainPanel/TopPanel/ProgressContainer/ExpPanel/ProgressText (TMP)",
+                        "sourcePrefab": "BattlePassModal.prefab",
+                        "fileID": "1224290954001799390",
+                        "x": 88.32,
+                        "y": 30.22,
+                        "w": 200.0,
+                        "h": 50.0,
+                        "children": [
+                          {
+                            "name": "ProgressText (TMP) / Text",
+                            "key": "1224290954001799390/text",
+                            "type": "TEXT",
+                            "x": 0,
+                            "y": 0,
+                            "w": 200.0,
+                            "h": 50.0,
+                            "text": "0/1",
+                            "fontSize": 36.0,
+                            "color": {
+                              "r": 1,
+                              "g": 1,
+                              "b": 1,
+                              "a": 1
+                            },
+                            "align": "CENTER",
+                            "vertical": "CENTER",
+                            "uppercase": false,
+                            "outline": 0.9216000000000001,
+                            "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                          }
+                        ],
+                        "clip": false
+                      },
+                      {
+                        "name": "BattlePassLevel",
+                        "key": "8004660328088792367",
+                        "path": "/BattlePassModal/MainPanel/TopPanel/ProgressContainer/ExpPanel/BattlePassLevel",
+                        "sourcePrefab": "BattlePassModal.prefab",
+                        "fileID": "8004660328088792367",
+                        "x": 296.11994999999996,
+                        "y": -2.4849999999999994,
+                        "w": 125.4133,
+                        "h": 125.41,
+                        "children": [
+                          {
+                            "name": "BattlePassLevel / Sprite",
+                            "key": "8004660328088792367/image",
+                            "x": 0,
+                            "y": 0,
+                            "w": 125.4133,
+                            "h": 125.41,
+                            "type": "IMAGE",
+                            "opacity": 1,
+                            "imageKey": "db51af233e22cb896e7e",
+                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_button_level.png",
+                            "spriteGuid": "9683dc112045e8f4d9f8e0059a2e5e2d",
+                            "spriteFileID": 21300000
+                          },
+                          {
+                            "name": "LevelText (TMP)",
+                            "key": "7844218014005226800",
+                            "path": "/BattlePassModal/MainPanel/TopPanel/ProgressContainer/ExpPanel/BattlePassLevel/LevelText (TMP)",
+                            "sourcePrefab": "BattlePassModal.prefab",
+                            "fileID": "7844218014005226800",
+                            "x": 2.2066500000000033,
+                            "y": -1.2950000000000017,
+                            "w": 121.0,
+                            "h": 128.0,
+                            "children": [
+                              {
+                                "name": "LevelText (TMP) / Text",
+                                "key": "7844218014005226800/text",
+                                "type": "TEXT",
+                                "x": 0,
+                                "y": 0,
+                                "w": 121.0,
+                                "h": 128.0,
+                                "text": "1",
+                                "fontSize": 60.0,
+                                "color": {
+                                  "r": 1,
+                                  "g": 1,
+                                  "b": 1,
+                                  "a": 1
+                                },
+                                "align": "CENTER",
+                                "vertical": "CENTER",
+                                "uppercase": false,
+                                "outline": 1.536,
+                                "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                              }
+                            ],
+                            "clip": false
+                          }
+                        ],
+                        "clip": false
+                      },
+                      {
+                        "name": "ProgressImage",
+                        "key": "3399045921908066558",
+                        "path": "/BattlePassModal/MainPanel/TopPanel/ProgressContainer/ExpPanel/ProgressImage",
+                        "sourcePrefab": "BattlePassModal.prefab",
+                        "fileID": "3399045921908066558",
+                        "x": -20.180000000000007,
+                        "y": 7.219999999999999,
+                        "w": 106.0,
+                        "h": 106.0,
+                        "children": [
+                          {
+                            "name": "ProgressImage / Sprite",
+                            "key": "3399045921908066558/image",
+                            "x": 0,
+                            "y": 0,
+                            "w": 106.0,
+                            "h": 106.0,
+                            "type": "IMAGE",
+                            "opacity": 1,
+                            "imageKey": "bb7d45ff4cfbf817689e",
+                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_crown reward.png",
+                            "spriteGuid": "226dc8333677ff648a0819fa96e0c5b6",
+                            "spriteFileID": 21300000
+                          }
+                        ],
+                        "clip": false
+                      }
+                    ],
+                    "clip": false
+                  },
+                  {
+                    "name": "ActivateButton",
+                    "key": "6426166356744172539",
+                    "path": "/BattlePassModal/MainPanel/TopPanel/ProgressContainer/ActivateButton",
+                    "sourcePrefab": "BattlePassModal.prefab",
+                    "fileID": "6426166356744172539",
+                    "x": 675.385,
+                    "y": 8.5,
+                    "w": 303,
+                    "h": 133.0,
+                    "children": [
+                      {
+                        "name": "ActivateButton / Sprite",
+                        "key": "6426166356744172539/image",
+                        "x": 0,
+                        "y": 0,
+                        "w": 303,
+                        "h": 133.0,
+                        "type": "IMAGE",
+                        "opacity": 1,
+                        "imageKey": "b1b5ac6218e27015d18d",
+                        "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_button active.png",
+                        "spriteGuid": "834f0017fa47b4f48bf74f0121b4bffa",
+                        "spriteFileID": 21300000
+                      },
+                      {
+                        "name": "ActivateText (TMP)",
+                        "key": "770029925687616261",
+                        "path": "/BattlePassModal/MainPanel/TopPanel/ProgressContainer/ActivateButton/ActivateText (TMP)",
+                        "sourcePrefab": "BattlePassModal.prefab",
+                        "fileID": "770029925687616261",
+                        "x": 39.5168,
+                        "y": 38.0,
+                        "w": 213.9664,
+                        "h": 50.0,
+                        "children": [
+                          {
+                            "name": "ActivateText (TMP) / Text",
+                            "key": "770029925687616261/text",
+                            "type": "TEXT",
+                            "x": 0,
+                            "y": 0,
+                            "w": 213.9664,
+                            "h": 50.0,
+                            "text": "Activate",
+                            "fontSize": 40.0,
+                            "color": {
+                              "r": 1,
+                              "g": 1,
+                              "b": 1,
+                              "a": 1
+                            },
+                            "align": "CENTER",
+                            "vertical": "TOP",
+                            "uppercase": true,
+                            "outline": 1.024,
+                            "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                          }
+                        ],
+                        "clip": false
+                      }
+                    ],
+                    "clip": false
+                  }
+                ],
+                "clip": false
+              },
+              {
+                "name": "CloseButton",
+                "key": "3533673115006456431",
+                "path": "/BattlePassModal/MainPanel/TopPanel/CloseButton",
+                "sourcePrefab": "BattlePassModal.prefab",
+                "fileID": "3533673115006456431",
+                "x": 861.7,
+                "y": 59.69999999999999,
+                "w": 141,
+                "h": 148,
+                "children": [
+                  {
+                    "name": "CloseButton / Sprite",
+                    "key": "3533673115006456431/image",
+                    "x": 0,
+                    "y": 0,
+                    "w": 141,
+                    "h": 148,
+                    "type": "IMAGE",
+                    "opacity": 1,
+                    "imageKey": "e64ffacf073fce67e931",
+                    "spritePath": "Assets/SmashFest/Development/Art/Setting/btn_close.png",
+                    "spriteGuid": "0b189c96bc32ffa489b3d7ff18acfdb8",
+                    "spriteFileID": 21300000
+                  }
+                ],
+                "clip": false
+              },
+              {
+                "name": "IntroButton",
+                "key": "5785315219176649778",
+                "path": "/BattlePassModal/MainPanel/TopPanel/IntroButton",
+                "sourcePrefab": "BattlePassModal.prefab",
+                "fileID": "5785315219176649778",
+                "x": 90.0,
+                "y": 91.69999999999999,
+                "w": 84,
+                "h": 84,
+                "children": [
+                  {
+                    "name": "IntroButton / Sprite",
+                    "key": "5785315219176649778/image",
+                    "x": 0,
+                    "y": 0,
+                    "w": 84,
+                    "h": 84,
+                    "type": "IMAGE",
+                    "opacity": 1,
+                    "imageKey": "8b634bc2305d7d616b33",
+                    "spritePath": "Assets/SmashFest/Development/Art/Clown Digger/TU_in4.png",
+                    "spriteGuid": "cdeb34eb721ae2b43ba0507b97726c7b",
+                    "spriteFileID": 21300000
+                  }
+                ],
+                "clip": false
+              }
+            ],
+            "clip": false
+          },
+          {
+            "name": "MainBody",
+            "key": "2332198204924326078",
+            "path": "/BattlePassModal/MainPanel/MainBody",
+            "sourcePrefab": "BattlePassModal.prefab",
+            "fileID": "2332198204924326078",
+            "x": 0.0,
+            "y": 898.5673999999999,
+            "w": 1080,
+            "h": 1549.4326,
+            "children": [
+              {
+                "name": "PackPanel",
+                "key": "4142260953803508025",
+                "path": "/BattlePassModal/MainPanel/MainBody/PackPanel",
+                "sourcePrefab": "BattlePassModal.prefab",
+                "fileID": "4142260953803508025",
+                "x": 0.0,
+                "y": 0.0,
+                "w": 1080,
+                "h": 1549.4326,
+                "children": [
+                  {
+                    "name": "Scroll View",
+                    "key": "5882610278987266677",
+                    "path": "/BattlePassModal/MainPanel/MainBody/PackPanel/Scroll View",
+                    "sourcePrefab": "BattlePassModal.prefab",
+                    "fileID": "5882610278987266677",
+                    "x": 0.0,
+                    "y": 0.0,
+                    "w": 1080,
+                    "h": 1549.4326,
+                    "children": [
+                      {
+                        "name": "Viewport",
+                        "key": "7290058794936942389",
+                        "path": "/BattlePassModal/MainPanel/MainBody/PackPanel/Scroll View/Viewport",
+                        "sourcePrefab": "BattlePassModal.prefab",
+                        "fileID": "7290058794936942389",
+                        "x": 0.0,
+                        "y": 0.0,
+                        "w": 1080,
+                        "h": 1549.4326,
+                        "children": [
+                          {
+                            "name": "Content",
+                            "key": "6289864339202393570",
+                            "path": "/BattlePassModal/MainPanel/MainBody/PackPanel/Scroll View/Viewport/Content",
+                            "sourcePrefab": "BattlePassModal.prefab",
+                            "fileID": "6289864339202393570",
+                            "x": 0.0,
+                            "y": 0.0,
+                            "w": 1080,
+                            "h": 1549.4326,
+                            "children": [
+                              {
+                                "name": "Title",
+                                "key": "2216637831967791925",
+                                "path": "/BattlePassModal/MainPanel/MainBody/PackPanel/Scroll View/Viewport/Content/Title",
+                                "sourcePrefab": "BattlePassModal.prefab",
+                                "fileID": "2216637831967791925",
+                                "x": 0.0,
+                                "y": 0.0,
+                                "w": 1080,
+                                "h": 168.1843,
+                                "children": [
+                                  {
+                                    "name": "Process",
+                                    "key": "5400731478510601761",
+                                    "path": "/BattlePassModal/MainPanel/MainBody/PackPanel/Scroll View/Viewport/Content/Title/Process",
+                                    "sourcePrefab": "BattlePassModal.prefab",
+                                    "fileID": "5400731478510601761",
+                                    "x": 490.0,
+                                    "y": 6.49485,
+                                    "w": 100.0,
+                                    "h": 161.6894,
+                                    "children": [
+                                      {
+                                        "name": "ProgressHolder",
+                                        "key": "7458953410686500932",
+                                        "path": "/BattlePassModal/MainPanel/MainBody/PackPanel/Scroll View/Viewport/Content/Title/Process/ProgressHolder",
+                                        "sourcePrefab": "BattlePassModal.prefab",
+                                        "fileID": "7458953410686500932",
+                                        "x": 7.5,
+                                        "y": 0.0,
+                                        "w": 85.0,
+                                        "h": 161.6894,
+                                        "children": [
+                                          {
+                                            "name": "ProgressHolder / Sprite",
+                                            "key": "7458953410686500932/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 85.0,
+                                            "h": 161.6894,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "a283f38175070c72554d",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_frame_ttt2.png",
+                                            "spriteGuid": "d940f61682081264e86f1af1bf784f8f",
+                                            "spriteFileID": 21300000
+                                          },
+                                          {
+                                            "name": "ProgressFiller",
+                                            "key": "4305367881169740995",
+                                            "path": "/BattlePassModal/MainPanel/MainBody/PackPanel/Scroll View/Viewport/Content/Title/Process/ProgressHolder/ProgressFiller",
+                                            "sourcePrefab": "BattlePassModal.prefab",
+                                            "fileID": "4305367881169740995",
+                                            "x": 22.5,
+                                            "y": 0.0,
+                                            "w": 40.0,
+                                            "h": 161.6894,
+                                            "children": [
+                                              {
+                                                "name": "ProgressFiller / Sprite",
+                                                "key": "4305367881169740995/image",
+                                                "x": 0,
+                                                "y": 0,
+                                                "w": 40.0,
+                                                "h": 161.6894,
+                                                "type": "IMAGE",
+                                                "opacity": 1,
+                                                "imageKey": "d4749bd524a5cff7898c",
+                                                "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_9path_ttt2.png",
+                                                "spriteGuid": "7a5f3b888940c9a4a8befe67a25719e6",
+                                                "spriteFileID": 21300000
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "PassTextContainer",
+                                    "key": "3800273192732098510",
+                                    "path": "/BattlePassModal/MainPanel/MainBody/PackPanel/Scroll View/Viewport/Content/Title/PassTextContainer",
+                                    "sourcePrefab": "BattlePassModal.prefab",
+                                    "fileID": "3800273192732098510",
+                                    "x": 0.0,
+                                    "y": -0.9278499999999923,
+                                    "w": 1080,
+                                    "h": 170.04,
+                                    "children": [
+                                      {
+                                        "name": "FreeTitle",
+                                        "key": "3915113029527359135",
+                                        "path": "/BattlePassModal/MainPanel/MainBody/PackPanel/Scroll View/Viewport/Content/Title/PassTextContainer/FreeTitle",
+                                        "sourcePrefab": "BattlePassModal.prefab",
+                                        "fileID": "3915113029527359135",
+                                        "x": 14.689999999999998,
+                                        "y": 35.019999999999996,
+                                        "w": 550,
+                                        "h": 100.0,
+                                        "children": [
+                                          {
+                                            "name": "FreePass",
+                                            "key": "7988827957193953624",
+                                            "path": "/BattlePassModal/MainPanel/MainBody/PackPanel/Scroll View/Viewport/Content/Title/PassTextContainer/FreeTitle/FreePass",
+                                            "sourcePrefab": "BattlePassModal.prefab",
+                                            "fileID": "7988827957193953624",
+                                            "x": 53.0,
+                                            "y": -17.5,
+                                            "w": 372.0,
+                                            "h": 135.0,
+                                            "children": [
+                                              {
+                                                "name": "FreePass / Sprite",
+                                                "key": "7988827957193953624/image",
+                                                "x": 0,
+                                                "y": 0,
+                                                "w": 372.0,
+                                                "h": 135.0,
+                                                "type": "IMAGE",
+                                                "opacity": 1,
+                                                "imageKey": "dd18c973a93f14a9a1fc",
+                                                "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_flag free pass.png",
+                                                "spriteGuid": "a09d2299d63cca440ae1d3422d29614a",
+                                                "spriteFileID": 21300000
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "PremiumTitle",
+                                        "key": "6145338771011236267",
+                                        "path": "/BattlePassModal/MainPanel/MainBody/PackPanel/Scroll View/Viewport/Content/Title/PassTextContainer/PremiumTitle",
+                                        "sourcePrefab": "BattlePassModal.prefab",
+                                        "fileID": "6145338771011236267",
+                                        "x": 515.31,
+                                        "y": 35.019999999999996,
+                                        "w": 550,
+                                        "h": 100.0,
+                                        "children": [
+                                          {
+                                            "name": "PremiumPass",
+                                            "key": "1253413704554478435",
+                                            "path": "/BattlePassModal/MainPanel/MainBody/PackPanel/Scroll View/Viewport/Content/Title/PassTextContainer/PremiumTitle/PremiumPass",
+                                            "sourcePrefab": "BattlePassModal.prefab",
+                                            "fileID": "1253413704554478435",
+                                            "x": 125.0,
+                                            "y": -17.5,
+                                            "w": 372.0,
+                                            "h": 135.0,
+                                            "children": [
+                                              {
+                                                "name": "PremiumPass / Sprite",
+                                                "key": "1253413704554478435/image",
+                                                "x": 0,
+                                                "y": 0,
+                                                "w": 372.0,
+                                                "h": 135.0,
+                                                "type": "IMAGE",
+                                                "opacity": 1,
+                                                "imageKey": "6df85d01ef236e2c5b3c",
+                                                "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_flag crown pass.png",
+                                                "spriteGuid": "400657b854c7c0c45a754f20bd2ef60d",
+                                                "spriteFileID": 21300000
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  }
+                                ],
+                                "clip": false
+                              },
+                              {
+                                "name": "Level 4 / BattlePassItem",
+                                "key": "Level 4 / 3259672740112688800",
+                                "path": "/BattlePassItem",
+                                "sourcePrefab": "BattlePassItem.prefab",
+                                "fileID": "3259672740112688800",
+                                "x": 0.0,
+                                "y": 1278.1843,
+                                "w": 1080,
+                                "h": 370,
+                                "children": [
+                                  {
+                                    "name": "Level 4 / NotSelected",
+                                    "key": "Level 4 / 4085742868315712400",
+                                    "path": "/BattlePassItem/NotSelected",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "4085742868315712400",
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "w": 1080,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 4 / UnderTopLine",
+                                        "key": "Level 4 / 6712269309969543872",
+                                        "path": "/BattlePassItem/NotSelected/UnderTopLine",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "6712269309969543872",
+                                        "x": 0.0,
+                                        "y": -7.3,
+                                        "w": 1080,
+                                        "h": 8,
+                                        "children": [
+                                          {
+                                            "name": "UnderTopLine / Sprite",
+                                            "key": "Level 4 / 6712269309969543872/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 1080,
+                                            "h": 8,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "35a0b133568abbd2e780",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_purpleline.png",
+                                            "spriteGuid": "571736ce63193a745ba6507d4d6e962e",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "Level 4 / UnderBottomLine",
+                                        "key": "Level 4 / 7285390248832066118",
+                                        "path": "/BattlePassItem/NotSelected/UnderBottomLine",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "7285390248832066118",
+                                        "x": 0.0,
+                                        "y": 365,
+                                        "w": 1080,
+                                        "h": 10,
+                                        "children": [
+                                          {
+                                            "name": "UnderBottomLine / Sprite",
+                                            "key": "Level 4 / 7285390248832066118/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 1080,
+                                            "h": 10,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "43dc1c400b320f241de0",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_purpleline.png",
+                                            "spriteGuid": "571736ce63193a745ba6507d4d6e962e",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 4 / Process",
+                                    "key": "Level 4 / 1111944627653162632",
+                                    "path": "/BattlePassItem/Process",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "1111944627653162632",
+                                    "x": 490.0,
+                                    "y": 0.0,
+                                    "w": 100.0,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 4 / ProgressHolder",
+                                        "key": "Level 4 / 5829626744655191722",
+                                        "path": "/BattlePassItem/Process/ProgressHolder",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "5829626744655191722",
+                                        "x": 7.5,
+                                        "y": -7.300330000000002,
+                                        "w": 85.0,
+                                        "h": 382.295,
+                                        "children": [
+                                          {
+                                            "name": "ProgressHolder / Sprite",
+                                            "key": "Level 4 / 5829626744655191722/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 85.0,
+                                            "h": 382.295,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "4af510ed09f5e2c26aec",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_frame_ttt2.png",
+                                            "spriteGuid": "d940f61682081264e86f1af1bf784f8f",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "Level 4 / LevelFrame",
+                                        "key": "Level 4 / 3798739822117514829",
+                                        "path": "/BattlePassItem/Process/LevelFrame",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "3798739822117514829",
+                                        "x": -19.0,
+                                        "y": 118.5,
+                                        "w": 138.0,
+                                        "h": 138.0,
+                                        "children": [
+                                          {
+                                            "name": "LevelFrame / Sprite",
+                                            "key": "Level 4 / 3798739822117514829/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 138.0,
+                                            "h": 138.0,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "1aa319838426beb5e207",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_button_level.png",
+                                            "spriteGuid": "9683dc112045e8f4d9f8e0059a2e5e2d",
+                                            "spriteFileID": 21300000
+                                          },
+                                          {
+                                            "name": "Level 4 / Text (TMP)",
+                                            "key": "Level 4 / 2168864832243500215",
+                                            "path": "/BattlePassItem/Process/LevelFrame/Text (TMP)",
+                                            "sourcePrefab": "BattlePassItem.prefab",
+                                            "fileID": "2168864832243500215",
+                                            "x": 5.700000000000003,
+                                            "y": -1.2999999999999972,
+                                            "w": 121.0,
+                                            "h": 128.0,
+                                            "children": [
+                                              {
+                                                "name": "Text (TMP) / Text",
+                                                "key": "Level 4 / 2168864832243500215/text",
+                                                "type": "TEXT",
+                                                "x": 0,
+                                                "y": 0,
+                                                "w": 121.0,
+                                                "h": 128.0,
+                                                "text": "4",
+                                                "fontSize": 60,
+                                                "color": {
+                                                  "r": 1,
+                                                  "g": 1,
+                                                  "b": 1,
+                                                  "a": 1
+                                                },
+                                                "align": "CENTER",
+                                                "vertical": "CENTER",
+                                                "uppercase": false,
+                                                "outline": 1.536,
+                                                "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 4 / Selected",
+                                    "key": "Level 4 / 2198552331613217593",
+                                    "path": "/BattlePassItem/Selected",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "2198552331613217593",
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "w": 1080,
+                                    "h": 370,
+                                    "children": [],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 4 / ContentPanel",
+                                    "key": "Level 4 / 6229090113475745276",
+                                    "path": "/BattlePassItem/ContentPanel",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "6229090113475745276",
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "w": 1080,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 4 / FreePack",
+                                        "key": "Level 4 / 3051781533956169227",
+                                        "path": "/BattlePassItem/ContentPanel/FreePack",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "3051781533956169227",
+                                        "x": 1.1598000000000184,
+                                        "y": 0.0,
+                                        "w": 515.0204,
+                                        "h": 370,
+                                        "children": [
+                                          {
+                                            "name": "Level 4 / Free",
+                                            "key": "Level 4 / 783042752250464145",
+                                            "path": "/BattlePassItem/ContentPanel/FreePack/Free",
+                                            "sourcePrefab": "BattlePassItem.prefab",
+                                            "fileID": "783042752250464145",
+                                            "x": 256.5102,
+                                            "y": 185.0,
+                                            "w": 0.001,
+                                            "h": 0.001,
+                                            "children": [
+                                              {
+                                                "name": "Level 4 / MainContent",
+                                                "key": "Level 4 / 2691073558363784030",
+                                                "path": "/BattlePassItem/ContentPanel/FreePack/Free/MainContent",
+                                                "sourcePrefab": "BattlePassItem.prefab",
+                                                "fileID": "2691073558363784030",
+                                                "x": -160.0000076293945,
+                                                "y": -159.999994277954,
+                                                "w": 320.0,
+                                                "h": 320.0,
+                                                "children": [
+                                                  {
+                                                    "name": "MainContent / Sprite",
+                                                    "key": "Level 4 / 2691073558363784030/image",
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "w": 320.0,
+                                                    "h": 320.0,
+                                                    "type": "IMAGE",
+                                                    "opacity": 1,
+                                                    "imageKey": "6e7c8cf82ff59cf012e4",
+                                                    "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_pack free.png",
+                                                    "spriteGuid": "ba62be5db6fa8da459d4bcda52d31a87",
+                                                    "spriteFileID": 21300000
+                                                  },
+                                                  {
+                                                    "name": "Level 4 / Reward",
+                                                    "key": "Level 4 / 2407774059488073203",
+                                                    "path": "/BattlePassItem/ContentPanel/FreePack/Free/MainContent/Reward",
+                                                    "sourcePrefab": "BattlePassItem.prefab",
+                                                    "fileID": "2407774059488073203",
+                                                    "x": 66.895,
+                                                    "y": 66.515,
+                                                    "w": 166.21,
+                                                    "h": 166.97,
+                                                    "children": [
+                                                      {
+                                                        "name": "Reward / Sprite",
+                                                        "key": "Level 4 / 2407774059488073203/image",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "w": 166.21,
+                                                        "h": 166.97,
+                                                        "type": "IMAGE",
+                                                        "opacity": 1,
+                                                        "imageKey": "31801eaae2020958168e",
+                                                        "spritePath": "Assets/SmashFest/Development/Art/shop/shop_coin 1.png",
+                                                        "spriteGuid": "7c7062d5895d6aa409d597cd05c2bcd3",
+                                                        "spriteFileID": 21300000
+                                                      },
+                                                      {
+                                                        "name": "Level 4 / Amount",
+                                                        "key": "Level 4 / 1385316232505744552",
+                                                        "path": "/BattlePassItem/ContentPanel/FreePack/Free/MainContent/Reward/Amount",
+                                                        "sourcePrefab": "BattlePassItem.prefab",
+                                                        "fileID": "1385316232505744552",
+                                                        "x": 17.03,
+                                                        "y": 108.185,
+                                                        "w": 130.15,
+                                                        "h": 61.0,
+                                                        "children": [
+                                                          {
+                                                            "name": "Amount / Text",
+                                                            "key": "Level 4 / 1385316232505744552/text",
+                                                            "type": "TEXT",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "w": 130.15,
+                                                            "h": 61.0,
+                                                            "text": "x20",
+                                                            "fontSize": 49.4,
+                                                            "color": {
+                                                              "r": 1,
+                                                              "g": 1,
+                                                              "b": 1,
+                                                              "a": 1
+                                                            },
+                                                            "align": "RIGHT",
+                                                            "vertical": "CENTER",
+                                                            "uppercase": false,
+                                                            "outline": 1.26464,
+                                                            "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                                                          }
+                                                        ],
+                                                        "clip": false
+                                                      }
+                                                    ],
+                                                    "clip": false
+                                                  }
+                                                ],
+                                                "clip": false
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "Level 4 / PassPack",
+                                        "key": "Level 4 / 2460203482456538086",
+                                        "path": "/BattlePassItem/ContentPanel/PassPack",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "2460203482456538086",
+                                        "x": 563.8198000000001,
+                                        "y": 0.0,
+                                        "w": 515.0204,
+                                        "h": 370,
+                                        "children": [
+                                          {
+                                            "name": "Level 4 / Pay",
+                                            "key": "Level 4 / 7864766627696016107",
+                                            "path": "/BattlePassItem/ContentPanel/PassPack/Pay",
+                                            "sourcePrefab": "BattlePassItem.prefab",
+                                            "fileID": "7864766627696016107",
+                                            "x": 257.5102,
+                                            "y": 185.0,
+                                            "w": 0.001,
+                                            "h": 0.001,
+                                            "children": [
+                                              {
+                                                "name": "Level 4 / MainContent",
+                                                "key": "Level 4 / 5193282213746902937",
+                                                "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent",
+                                                "sourcePrefab": "BattlePassItem.prefab",
+                                                "fileID": "5193282213746902937",
+                                                "x": -164.1,
+                                                "y": -163.0,
+                                                "w": 320.0,
+                                                "h": 320.0,
+                                                "children": [
+                                                  {
+                                                    "name": "MainContent / Sprite",
+                                                    "key": "Level 4 / 5193282213746902937/image",
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "w": 320.0,
+                                                    "h": 320.0,
+                                                    "type": "IMAGE",
+                                                    "opacity": 1,
+                                                    "imageKey": "b8edf4d15c88b885eeaf",
+                                                    "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_pack pass.png",
+                                                    "spriteGuid": "75f25fb9062516b49a615113f1770138",
+                                                    "spriteFileID": 21300000
+                                                  },
+                                                  {
+                                                    "name": "Level 4 / Reward",
+                                                    "key": "Level 4 / 8596855625453261787",
+                                                    "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent/Reward",
+                                                    "sourcePrefab": "BattlePassItem.prefab",
+                                                    "fileID": "8596855625453261787",
+                                                    "x": 86.895,
+                                                    "y": 66.515,
+                                                    "w": 166.21,
+                                                    "h": 166.97,
+                                                    "children": [
+                                                      {
+                                                        "name": "Reward / Sprite",
+                                                        "key": "Level 4 / 8596855625453261787/image",
+                                                        "x": 0.0,
+                                                        "y": 0.37999999999999545,
+                                                        "w": 166.21,
+                                                        "h": 166.21,
+                                                        "type": "IMAGE",
+                                                        "opacity": 1,
+                                                        "imageKey": "b62b640b7e01b59d3f1f",
+                                                        "spritePath": "Assets/SmashFest/Development/Art/booster/three ball 4.png",
+                                                        "spriteGuid": "e4180ae0534ff98459d59e1b6c700aed",
+                                                        "spriteFileID": 21300000
+                                                      },
+                                                      {
+                                                        "name": "Level 4 / Amount",
+                                                        "key": "Level 4 / 6270104508698450513",
+                                                        "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent/Reward/Amount",
+                                                        "sourcePrefab": "BattlePassItem.prefab",
+                                                        "fileID": "6270104508698450513",
+                                                        "x": 21.03,
+                                                        "y": 110.285,
+                                                        "w": 130.15,
+                                                        "h": 61.0,
+                                                        "children": [
+                                                          {
+                                                            "name": "Amount / Text",
+                                                            "key": "Level 4 / 6270104508698450513/text",
+                                                            "type": "TEXT",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "w": 130.15,
+                                                            "h": 61.0,
+                                                            "text": "x2",
+                                                            "fontSize": 49.4,
+                                                            "color": {
+                                                              "r": 1,
+                                                              "g": 1,
+                                                              "b": 1,
+                                                              "a": 1
+                                                            },
+                                                            "align": "RIGHT",
+                                                            "vertical": "CENTER",
+                                                            "uppercase": false,
+                                                            "outline": 1.26464,
+                                                            "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                                                          }
+                                                        ],
+                                                        "clip": false
+                                                      }
+                                                    ],
+                                                    "clip": false
+                                                  },
+                                                  {
+                                                    "name": "Level 4 / Lock",
+                                                    "key": "Level 4 / 6674623162303273547",
+                                                    "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent/Lock",
+                                                    "sourcePrefab": "BattlePassItem.prefab",
+                                                    "fileID": "6674623162303273547",
+                                                    "x": 242.43200000000002,
+                                                    "y": 12.686999999999998,
+                                                    "w": 85.136,
+                                                    "h": 90.626,
+                                                    "children": [
+                                                      {
+                                                        "name": "Lock / Sprite",
+                                                        "key": "Level 4 / 6674623162303273547/image",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "w": 85.136,
+                                                        "h": 90.626,
+                                                        "type": "IMAGE",
+                                                        "opacity": 1,
+                                                        "imageKey": "664144612dd89ae20dc5",
+                                                        "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_ic lock.png",
+                                                        "spriteGuid": "2b46b02a02b3ee148a009aada19a1294",
+                                                        "spriteFileID": 21300000
+                                                      }
+                                                    ],
+                                                    "clip": false
+                                                  }
+                                                ],
+                                                "clip": false
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  }
+                                ],
+                                "clip": false
+                              },
+                              {
+                                "name": "Level 3 / BattlePassItem",
+                                "key": "Level 3 / 3259672740112688800",
+                                "path": "/BattlePassItem",
+                                "sourcePrefab": "BattlePassItem.prefab",
+                                "fileID": "3259672740112688800",
+                                "x": 0.0,
+                                "y": 908.1843,
+                                "w": 1080,
+                                "h": 370,
+                                "children": [
+                                  {
+                                    "name": "Level 3 / NotSelected",
+                                    "key": "Level 3 / 4085742868315712400",
+                                    "path": "/BattlePassItem/NotSelected",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "4085742868315712400",
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "w": 1080,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 3 / UnderTopLine",
+                                        "key": "Level 3 / 6712269309969543872",
+                                        "path": "/BattlePassItem/NotSelected/UnderTopLine",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "6712269309969543872",
+                                        "x": 0.0,
+                                        "y": -7.3,
+                                        "w": 1080,
+                                        "h": 8,
+                                        "children": [
+                                          {
+                                            "name": "UnderTopLine / Sprite",
+                                            "key": "Level 3 / 6712269309969543872/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 1080,
+                                            "h": 8,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "35a0b133568abbd2e780",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_purpleline.png",
+                                            "spriteGuid": "571736ce63193a745ba6507d4d6e962e",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "Level 3 / UnderBottomLine",
+                                        "key": "Level 3 / 7285390248832066118",
+                                        "path": "/BattlePassItem/NotSelected/UnderBottomLine",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "7285390248832066118",
+                                        "x": 0.0,
+                                        "y": 365,
+                                        "w": 1080,
+                                        "h": 10,
+                                        "children": [
+                                          {
+                                            "name": "UnderBottomLine / Sprite",
+                                            "key": "Level 3 / 7285390248832066118/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 1080,
+                                            "h": 10,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "43dc1c400b320f241de0",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_purpleline.png",
+                                            "spriteGuid": "571736ce63193a745ba6507d4d6e962e",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 3 / Process",
+                                    "key": "Level 3 / 1111944627653162632",
+                                    "path": "/BattlePassItem/Process",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "1111944627653162632",
+                                    "x": 490.0,
+                                    "y": 0.0,
+                                    "w": 100.0,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 3 / ProgressHolder",
+                                        "key": "Level 3 / 5829626744655191722",
+                                        "path": "/BattlePassItem/Process/ProgressHolder",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "5829626744655191722",
+                                        "x": 7.5,
+                                        "y": -7.300330000000002,
+                                        "w": 85.0,
+                                        "h": 382.295,
+                                        "children": [
+                                          {
+                                            "name": "ProgressHolder / Sprite",
+                                            "key": "Level 3 / 5829626744655191722/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 85.0,
+                                            "h": 382.295,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "4af510ed09f5e2c26aec",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_frame_ttt2.png",
+                                            "spriteGuid": "d940f61682081264e86f1af1bf784f8f",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "Level 3 / LevelFrame",
+                                        "key": "Level 3 / 3798739822117514829",
+                                        "path": "/BattlePassItem/Process/LevelFrame",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "3798739822117514829",
+                                        "x": -19.0,
+                                        "y": 118.5,
+                                        "w": 138.0,
+                                        "h": 138.0,
+                                        "children": [
+                                          {
+                                            "name": "LevelFrame / Sprite",
+                                            "key": "Level 3 / 3798739822117514829/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 138.0,
+                                            "h": 138.0,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "1aa319838426beb5e207",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_button_level.png",
+                                            "spriteGuid": "9683dc112045e8f4d9f8e0059a2e5e2d",
+                                            "spriteFileID": 21300000
+                                          },
+                                          {
+                                            "name": "Level 3 / Text (TMP)",
+                                            "key": "Level 3 / 2168864832243500215",
+                                            "path": "/BattlePassItem/Process/LevelFrame/Text (TMP)",
+                                            "sourcePrefab": "BattlePassItem.prefab",
+                                            "fileID": "2168864832243500215",
+                                            "x": 5.700000000000003,
+                                            "y": -1.2999999999999972,
+                                            "w": 121.0,
+                                            "h": 128.0,
+                                            "children": [
+                                              {
+                                                "name": "Text (TMP) / Text",
+                                                "key": "Level 3 / 2168864832243500215/text",
+                                                "type": "TEXT",
+                                                "x": 0,
+                                                "y": 0,
+                                                "w": 121.0,
+                                                "h": 128.0,
+                                                "text": "3",
+                                                "fontSize": 60,
+                                                "color": {
+                                                  "r": 1,
+                                                  "g": 1,
+                                                  "b": 1,
+                                                  "a": 1
+                                                },
+                                                "align": "CENTER",
+                                                "vertical": "CENTER",
+                                                "uppercase": false,
+                                                "outline": 1.536,
+                                                "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 3 / Selected",
+                                    "key": "Level 3 / 2198552331613217593",
+                                    "path": "/BattlePassItem/Selected",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "2198552331613217593",
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "w": 1080,
+                                    "h": 370,
+                                    "children": [],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 3 / ContentPanel",
+                                    "key": "Level 3 / 6229090113475745276",
+                                    "path": "/BattlePassItem/ContentPanel",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "6229090113475745276",
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "w": 1080,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 3 / FreePack",
+                                        "key": "Level 3 / 3051781533956169227",
+                                        "path": "/BattlePassItem/ContentPanel/FreePack",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "3051781533956169227",
+                                        "x": 1.1598000000000184,
+                                        "y": 0.0,
+                                        "w": 515.0204,
+                                        "h": 370,
+                                        "children": [
+                                          {
+                                            "name": "Level 3 / Free",
+                                            "key": "Level 3 / 783042752250464145",
+                                            "path": "/BattlePassItem/ContentPanel/FreePack/Free",
+                                            "sourcePrefab": "BattlePassItem.prefab",
+                                            "fileID": "783042752250464145",
+                                            "x": 256.5102,
+                                            "y": 185.0,
+                                            "w": 0.001,
+                                            "h": 0.001,
+                                            "children": [
+                                              {
+                                                "name": "Level 3 / MainContent",
+                                                "key": "Level 3 / 2691073558363784030",
+                                                "path": "/BattlePassItem/ContentPanel/FreePack/Free/MainContent",
+                                                "sourcePrefab": "BattlePassItem.prefab",
+                                                "fileID": "2691073558363784030",
+                                                "x": -160.0000076293945,
+                                                "y": -159.999994277954,
+                                                "w": 320.0,
+                                                "h": 320.0,
+                                                "children": [
+                                                  {
+                                                    "name": "MainContent / Sprite",
+                                                    "key": "Level 3 / 2691073558363784030/image",
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "w": 320.0,
+                                                    "h": 320.0,
+                                                    "type": "IMAGE",
+                                                    "opacity": 1,
+                                                    "imageKey": "6e7c8cf82ff59cf012e4",
+                                                    "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_pack free.png",
+                                                    "spriteGuid": "ba62be5db6fa8da459d4bcda52d31a87",
+                                                    "spriteFileID": 21300000
+                                                  },
+                                                  {
+                                                    "name": "Level 3 / Reward",
+                                                    "key": "Level 3 / 2407774059488073203",
+                                                    "path": "/BattlePassItem/ContentPanel/FreePack/Free/MainContent/Reward",
+                                                    "sourcePrefab": "BattlePassItem.prefab",
+                                                    "fileID": "2407774059488073203",
+                                                    "x": 66.895,
+                                                    "y": 66.515,
+                                                    "w": 166.21,
+                                                    "h": 166.97,
+                                                    "children": [
+                                                      {
+                                                        "name": "Reward / Sprite",
+                                                        "key": "Level 3 / 2407774059488073203/image",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "w": 166.21,
+                                                        "h": 166.97,
+                                                        "type": "IMAGE",
+                                                        "opacity": 1,
+                                                        "imageKey": "31801eaae2020958168e",
+                                                        "spritePath": "Assets/SmashFest/Development/Art/shop/shop_coin 1.png",
+                                                        "spriteGuid": "7c7062d5895d6aa409d597cd05c2bcd3",
+                                                        "spriteFileID": 21300000
+                                                      },
+                                                      {
+                                                        "name": "Level 3 / Amount",
+                                                        "key": "Level 3 / 1385316232505744552",
+                                                        "path": "/BattlePassItem/ContentPanel/FreePack/Free/MainContent/Reward/Amount",
+                                                        "sourcePrefab": "BattlePassItem.prefab",
+                                                        "fileID": "1385316232505744552",
+                                                        "x": 17.03,
+                                                        "y": 108.185,
+                                                        "w": 130.15,
+                                                        "h": 61.0,
+                                                        "children": [
+                                                          {
+                                                            "name": "Amount / Text",
+                                                            "key": "Level 3 / 1385316232505744552/text",
+                                                            "type": "TEXT",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "w": 130.15,
+                                                            "h": 61.0,
+                                                            "text": "x20",
+                                                            "fontSize": 49.4,
+                                                            "color": {
+                                                              "r": 1,
+                                                              "g": 1,
+                                                              "b": 1,
+                                                              "a": 1
+                                                            },
+                                                            "align": "RIGHT",
+                                                            "vertical": "CENTER",
+                                                            "uppercase": false,
+                                                            "outline": 1.26464,
+                                                            "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                                                          }
+                                                        ],
+                                                        "clip": false
+                                                      }
+                                                    ],
+                                                    "clip": false
+                                                  }
+                                                ],
+                                                "clip": false
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "Level 3 / PassPack",
+                                        "key": "Level 3 / 2460203482456538086",
+                                        "path": "/BattlePassItem/ContentPanel/PassPack",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "2460203482456538086",
+                                        "x": 563.8198000000001,
+                                        "y": 0.0,
+                                        "w": 515.0204,
+                                        "h": 370,
+                                        "children": [
+                                          {
+                                            "name": "Level 3 / Pay",
+                                            "key": "Level 3 / 7864766627696016107",
+                                            "path": "/BattlePassItem/ContentPanel/PassPack/Pay",
+                                            "sourcePrefab": "BattlePassItem.prefab",
+                                            "fileID": "7864766627696016107",
+                                            "x": 257.5102,
+                                            "y": 185.0,
+                                            "w": 0.001,
+                                            "h": 0.001,
+                                            "children": [
+                                              {
+                                                "name": "Level 3 / MainContent",
+                                                "key": "Level 3 / 5193282213746902937",
+                                                "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent",
+                                                "sourcePrefab": "BattlePassItem.prefab",
+                                                "fileID": "5193282213746902937",
+                                                "x": -164.1,
+                                                "y": -163.0,
+                                                "w": 320.0,
+                                                "h": 320.0,
+                                                "children": [
+                                                  {
+                                                    "name": "MainContent / Sprite",
+                                                    "key": "Level 3 / 5193282213746902937/image",
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "w": 320.0,
+                                                    "h": 320.0,
+                                                    "type": "IMAGE",
+                                                    "opacity": 1,
+                                                    "imageKey": "b8edf4d15c88b885eeaf",
+                                                    "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_pack pass.png",
+                                                    "spriteGuid": "75f25fb9062516b49a615113f1770138",
+                                                    "spriteFileID": 21300000
+                                                  },
+                                                  {
+                                                    "name": "Level 3 / Reward",
+                                                    "key": "Level 3 / 8596855625453261787",
+                                                    "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent/Reward",
+                                                    "sourcePrefab": "BattlePassItem.prefab",
+                                                    "fileID": "8596855625453261787",
+                                                    "x": 86.895,
+                                                    "y": 66.515,
+                                                    "w": 166.21,
+                                                    "h": 166.97,
+                                                    "children": [
+                                                      {
+                                                        "name": "Reward / Sprite",
+                                                        "key": "Level 3 / 8596855625453261787/image",
+                                                        "x": 0.0,
+                                                        "y": 0.37999999999999545,
+                                                        "w": 166.21,
+                                                        "h": 166.21,
+                                                        "type": "IMAGE",
+                                                        "opacity": 1,
+                                                        "imageKey": "277fe90c8644ffa15d56",
+                                                        "spritePath": "Assets/SmashFest/Development/Art/shop/shop_coin 1.png",
+                                                        "spriteGuid": "7c7062d5895d6aa409d597cd05c2bcd3",
+                                                        "spriteFileID": 21300000
+                                                      },
+                                                      {
+                                                        "name": "Level 3 / Amount",
+                                                        "key": "Level 3 / 6270104508698450513",
+                                                        "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent/Reward/Amount",
+                                                        "sourcePrefab": "BattlePassItem.prefab",
+                                                        "fileID": "6270104508698450513",
+                                                        "x": 21.03,
+                                                        "y": 110.285,
+                                                        "w": 130.15,
+                                                        "h": 61.0,
+                                                        "children": [
+                                                          {
+                                                            "name": "Amount / Text",
+                                                            "key": "Level 3 / 6270104508698450513/text",
+                                                            "type": "TEXT",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "w": 130.15,
+                                                            "h": 61.0,
+                                                            "text": "x200",
+                                                            "fontSize": 49.4,
+                                                            "color": {
+                                                              "r": 1,
+                                                              "g": 1,
+                                                              "b": 1,
+                                                              "a": 1
+                                                            },
+                                                            "align": "RIGHT",
+                                                            "vertical": "CENTER",
+                                                            "uppercase": false,
+                                                            "outline": 1.26464,
+                                                            "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                                                          }
+                                                        ],
+                                                        "clip": false
+                                                      }
+                                                    ],
+                                                    "clip": false
+                                                  },
+                                                  {
+                                                    "name": "Level 3 / Lock",
+                                                    "key": "Level 3 / 6674623162303273547",
+                                                    "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent/Lock",
+                                                    "sourcePrefab": "BattlePassItem.prefab",
+                                                    "fileID": "6674623162303273547",
+                                                    "x": 242.43200000000002,
+                                                    "y": 12.686999999999998,
+                                                    "w": 85.136,
+                                                    "h": 90.626,
+                                                    "children": [
+                                                      {
+                                                        "name": "Lock / Sprite",
+                                                        "key": "Level 3 / 6674623162303273547/image",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "w": 85.136,
+                                                        "h": 90.626,
+                                                        "type": "IMAGE",
+                                                        "opacity": 1,
+                                                        "imageKey": "664144612dd89ae20dc5",
+                                                        "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_ic lock.png",
+                                                        "spriteGuid": "2b46b02a02b3ee148a009aada19a1294",
+                                                        "spriteFileID": 21300000
+                                                      }
+                                                    ],
+                                                    "clip": false
+                                                  }
+                                                ],
+                                                "clip": false
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  }
+                                ],
+                                "clip": false
+                              },
+                              {
+                                "name": "Level 2 / BattlePassItem",
+                                "key": "Level 2 / 3259672740112688800",
+                                "path": "/BattlePassItem",
+                                "sourcePrefab": "BattlePassItem.prefab",
+                                "fileID": "3259672740112688800",
+                                "x": 0.0,
+                                "y": 538.1843,
+                                "w": 1080,
+                                "h": 370,
+                                "children": [
+                                  {
+                                    "name": "Level 2 / NotSelected",
+                                    "key": "Level 2 / 4085742868315712400",
+                                    "path": "/BattlePassItem/NotSelected",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "4085742868315712400",
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "w": 1080,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 2 / UnderTopLine",
+                                        "key": "Level 2 / 6712269309969543872",
+                                        "path": "/BattlePassItem/NotSelected/UnderTopLine",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "6712269309969543872",
+                                        "x": 0.0,
+                                        "y": -7.3,
+                                        "w": 1080,
+                                        "h": 8,
+                                        "children": [
+                                          {
+                                            "name": "UnderTopLine / Sprite",
+                                            "key": "Level 2 / 6712269309969543872/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 1080,
+                                            "h": 8,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "35a0b133568abbd2e780",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_purpleline.png",
+                                            "spriteGuid": "571736ce63193a745ba6507d4d6e962e",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "Level 2 / UnderBottomLine",
+                                        "key": "Level 2 / 7285390248832066118",
+                                        "path": "/BattlePassItem/NotSelected/UnderBottomLine",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "7285390248832066118",
+                                        "x": 0.0,
+                                        "y": 365,
+                                        "w": 1080,
+                                        "h": 10,
+                                        "children": [
+                                          {
+                                            "name": "UnderBottomLine / Sprite",
+                                            "key": "Level 2 / 7285390248832066118/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 1080,
+                                            "h": 10,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "43dc1c400b320f241de0",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_purpleline.png",
+                                            "spriteGuid": "571736ce63193a745ba6507d4d6e962e",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 2 / Process",
+                                    "key": "Level 2 / 1111944627653162632",
+                                    "path": "/BattlePassItem/Process",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "1111944627653162632",
+                                    "x": 490.0,
+                                    "y": 0.0,
+                                    "w": 100.0,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 2 / ProgressHolder",
+                                        "key": "Level 2 / 5829626744655191722",
+                                        "path": "/BattlePassItem/Process/ProgressHolder",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "5829626744655191722",
+                                        "x": 7.5,
+                                        "y": -7.300330000000002,
+                                        "w": 85.0,
+                                        "h": 382.295,
+                                        "children": [
+                                          {
+                                            "name": "ProgressHolder / Sprite",
+                                            "key": "Level 2 / 5829626744655191722/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 85.0,
+                                            "h": 382.295,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "4af510ed09f5e2c26aec",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_frame_ttt2.png",
+                                            "spriteGuid": "d940f61682081264e86f1af1bf784f8f",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "Level 2 / LevelFrame",
+                                        "key": "Level 2 / 3798739822117514829",
+                                        "path": "/BattlePassItem/Process/LevelFrame",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "3798739822117514829",
+                                        "x": -19.0,
+                                        "y": 118.5,
+                                        "w": 138.0,
+                                        "h": 138.0,
+                                        "children": [
+                                          {
+                                            "name": "LevelFrame / Sprite",
+                                            "key": "Level 2 / 3798739822117514829/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 138.0,
+                                            "h": 138.0,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "1aa319838426beb5e207",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_button_level.png",
+                                            "spriteGuid": "9683dc112045e8f4d9f8e0059a2e5e2d",
+                                            "spriteFileID": 21300000
+                                          },
+                                          {
+                                            "name": "Level 2 / Text (TMP)",
+                                            "key": "Level 2 / 2168864832243500215",
+                                            "path": "/BattlePassItem/Process/LevelFrame/Text (TMP)",
+                                            "sourcePrefab": "BattlePassItem.prefab",
+                                            "fileID": "2168864832243500215",
+                                            "x": 5.700000000000003,
+                                            "y": -1.2999999999999972,
+                                            "w": 121.0,
+                                            "h": 128.0,
+                                            "children": [
+                                              {
+                                                "name": "Text (TMP) / Text",
+                                                "key": "Level 2 / 2168864832243500215/text",
+                                                "type": "TEXT",
+                                                "x": 0,
+                                                "y": 0,
+                                                "w": 121.0,
+                                                "h": 128.0,
+                                                "text": "2",
+                                                "fontSize": 60,
+                                                "color": {
+                                                  "r": 1,
+                                                  "g": 1,
+                                                  "b": 1,
+                                                  "a": 1
+                                                },
+                                                "align": "CENTER",
+                                                "vertical": "CENTER",
+                                                "uppercase": false,
+                                                "outline": 1.536,
+                                                "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 2 / Selected",
+                                    "key": "Level 2 / 2198552331613217593",
+                                    "path": "/BattlePassItem/Selected",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "2198552331613217593",
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "w": 1080,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 2 / TopLine",
+                                        "key": "Level 2 / 3008037615342070819",
+                                        "path": "/BattlePassItem/Selected/TopLine",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "3008037615342070819",
+                                        "x": -10.0,
+                                        "y": -8.2,
+                                        "w": 1100,
+                                        "h": 24,
+                                        "children": [
+                                          {
+                                            "name": "TopLine / Sprite",
+                                            "key": "Level 2 / 3008037615342070819/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 1100,
+                                            "h": 24,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "847400962ce99aaca9d8",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_line_roundhead.png",
+                                            "spriteGuid": "a7e3974635d815e48b15893666b6cd17",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 2 / ContentPanel",
+                                    "key": "Level 2 / 6229090113475745276",
+                                    "path": "/BattlePassItem/ContentPanel",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "6229090113475745276",
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "w": 1080,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 2 / FreePack",
+                                        "key": "Level 2 / 3051781533956169227",
+                                        "path": "/BattlePassItem/ContentPanel/FreePack",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "3051781533956169227",
+                                        "x": 1.1598000000000184,
+                                        "y": 0.0,
+                                        "w": 515.0204,
+                                        "h": 370,
+                                        "children": [
+                                          {
+                                            "name": "Level 2 / Free",
+                                            "key": "Level 2 / 783042752250464145",
+                                            "path": "/BattlePassItem/ContentPanel/FreePack/Free",
+                                            "sourcePrefab": "BattlePassItem.prefab",
+                                            "fileID": "783042752250464145",
+                                            "x": 256.5102,
+                                            "y": 185.0,
+                                            "w": 0.001,
+                                            "h": 0.001,
+                                            "children": [
+                                              {
+                                                "name": "Level 2 / MainContent",
+                                                "key": "Level 2 / 2691073558363784030",
+                                                "path": "/BattlePassItem/ContentPanel/FreePack/Free/MainContent",
+                                                "sourcePrefab": "BattlePassItem.prefab",
+                                                "fileID": "2691073558363784030",
+                                                "x": -160.0000076293945,
+                                                "y": -159.999994277954,
+                                                "w": 320.0,
+                                                "h": 320.0,
+                                                "children": [
+                                                  {
+                                                    "name": "MainContent / Sprite",
+                                                    "key": "Level 2 / 2691073558363784030/image",
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "w": 320.0,
+                                                    "h": 320.0,
+                                                    "type": "IMAGE",
+                                                    "opacity": 1,
+                                                    "imageKey": "6e7c8cf82ff59cf012e4",
+                                                    "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_pack free.png",
+                                                    "spriteGuid": "ba62be5db6fa8da459d4bcda52d31a87",
+                                                    "spriteFileID": 21300000
+                                                  },
+                                                  {
+                                                    "name": "Level 2 / Reward",
+                                                    "key": "Level 2 / 2407774059488073203",
+                                                    "path": "/BattlePassItem/ContentPanel/FreePack/Free/MainContent/Reward",
+                                                    "sourcePrefab": "BattlePassItem.prefab",
+                                                    "fileID": "2407774059488073203",
+                                                    "x": 66.895,
+                                                    "y": 66.515,
+                                                    "w": 166.21,
+                                                    "h": 166.97,
+                                                    "children": [
+                                                      {
+                                                        "name": "Reward / Sprite",
+                                                        "key": "Level 2 / 2407774059488073203/image",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "w": 166.21,
+                                                        "h": 166.97,
+                                                        "type": "IMAGE",
+                                                        "opacity": 1,
+                                                        "imageKey": "aff3250063f55c3afe3b",
+                                                        "spritePath": "Assets/SmashFest/Development/Art/booster/electric ball 1.png",
+                                                        "spriteGuid": "5de8b18873b2b0c418001dcc1b8f6bc0",
+                                                        "spriteFileID": 21300000
+                                                      },
+                                                      {
+                                                        "name": "Level 2 / Amount",
+                                                        "key": "Level 2 / 1385316232505744552",
+                                                        "path": "/BattlePassItem/ContentPanel/FreePack/Free/MainContent/Reward/Amount",
+                                                        "sourcePrefab": "BattlePassItem.prefab",
+                                                        "fileID": "1385316232505744552",
+                                                        "x": 17.03,
+                                                        "y": 108.185,
+                                                        "w": 130.15,
+                                                        "h": 61.0,
+                                                        "children": [
+                                                          {
+                                                            "name": "Amount / Text",
+                                                            "key": "Level 2 / 1385316232505744552/text",
+                                                            "type": "TEXT",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "w": 130.15,
+                                                            "h": 61.0,
+                                                            "text": "",
+                                                            "fontSize": 49.4,
+                                                            "color": {
+                                                              "r": 1,
+                                                              "g": 1,
+                                                              "b": 1,
+                                                              "a": 1
+                                                            },
+                                                            "align": "RIGHT",
+                                                            "vertical": "CENTER",
+                                                            "uppercase": false,
+                                                            "outline": 1.26464,
+                                                            "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                                                          }
+                                                        ],
+                                                        "clip": false
+                                                      }
+                                                    ],
+                                                    "clip": false
+                                                  }
+                                                ],
+                                                "clip": false
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "Level 2 / PassPack",
+                                        "key": "Level 2 / 2460203482456538086",
+                                        "path": "/BattlePassItem/ContentPanel/PassPack",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "2460203482456538086",
+                                        "x": 563.8198000000001,
+                                        "y": 0.0,
+                                        "w": 515.0204,
+                                        "h": 370,
+                                        "children": [
+                                          {
+                                            "name": "Level 2 / Pay",
+                                            "key": "Level 2 / 7864766627696016107",
+                                            "path": "/BattlePassItem/ContentPanel/PassPack/Pay",
+                                            "sourcePrefab": "BattlePassItem.prefab",
+                                            "fileID": "7864766627696016107",
+                                            "x": 257.5102,
+                                            "y": 185.0,
+                                            "w": 0.001,
+                                            "h": 0.001,
+                                            "children": [
+                                              {
+                                                "name": "Level 2 / MainContent",
+                                                "key": "Level 2 / 5193282213746902937",
+                                                "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent",
+                                                "sourcePrefab": "BattlePassItem.prefab",
+                                                "fileID": "5193282213746902937",
+                                                "x": -164.1,
+                                                "y": -163.0,
+                                                "w": 320.0,
+                                                "h": 320.0,
+                                                "children": [
+                                                  {
+                                                    "name": "MainContent / Sprite",
+                                                    "key": "Level 2 / 5193282213746902937/image",
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "w": 320.0,
+                                                    "h": 320.0,
+                                                    "type": "IMAGE",
+                                                    "opacity": 1,
+                                                    "imageKey": "b8edf4d15c88b885eeaf",
+                                                    "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_pack pass.png",
+                                                    "spriteGuid": "75f25fb9062516b49a615113f1770138",
+                                                    "spriteFileID": 21300000
+                                                  },
+                                                  {
+                                                    "name": "Level 2 / Reward",
+                                                    "key": "Level 2 / 8596855625453261787",
+                                                    "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent/Reward",
+                                                    "sourcePrefab": "BattlePassItem.prefab",
+                                                    "fileID": "8596855625453261787",
+                                                    "x": 86.895,
+                                                    "y": 66.515,
+                                                    "w": 166.21,
+                                                    "h": 166.97,
+                                                    "children": [
+                                                      {
+                                                        "name": "Reward / Sprite",
+                                                        "key": "Level 2 / 8596855625453261787/image",
+                                                        "x": 0.0,
+                                                        "y": 0.37999999999999545,
+                                                        "w": 166.21,
+                                                        "h": 166.21,
+                                                        "type": "IMAGE",
+                                                        "opacity": 1,
+                                                        "imageKey": "598eddde50b20f54c62e",
+                                                        "spritePath": "Assets/SmashFest/Development/Art/booster/electric ball 1.png",
+                                                        "spriteGuid": "5de8b18873b2b0c418001dcc1b8f6bc0",
+                                                        "spriteFileID": 21300000
+                                                      },
+                                                      {
+                                                        "name": "Level 2 / Amount",
+                                                        "key": "Level 2 / 6270104508698450513",
+                                                        "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent/Reward/Amount",
+                                                        "sourcePrefab": "BattlePassItem.prefab",
+                                                        "fileID": "6270104508698450513",
+                                                        "x": 21.03,
+                                                        "y": 110.285,
+                                                        "w": 130.15,
+                                                        "h": 61.0,
+                                                        "children": [
+                                                          {
+                                                            "name": "Amount / Text",
+                                                            "key": "Level 2 / 6270104508698450513/text",
+                                                            "type": "TEXT",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "w": 130.15,
+                                                            "h": 61.0,
+                                                            "text": "x2",
+                                                            "fontSize": 49.4,
+                                                            "color": {
+                                                              "r": 1,
+                                                              "g": 1,
+                                                              "b": 1,
+                                                              "a": 1
+                                                            },
+                                                            "align": "RIGHT",
+                                                            "vertical": "CENTER",
+                                                            "uppercase": false,
+                                                            "outline": 1.26464,
+                                                            "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                                                          }
+                                                        ],
+                                                        "clip": false
+                                                      }
+                                                    ],
+                                                    "clip": false
+                                                  },
+                                                  {
+                                                    "name": "Level 2 / Lock",
+                                                    "key": "Level 2 / 6674623162303273547",
+                                                    "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent/Lock",
+                                                    "sourcePrefab": "BattlePassItem.prefab",
+                                                    "fileID": "6674623162303273547",
+                                                    "x": 242.43200000000002,
+                                                    "y": 12.686999999999998,
+                                                    "w": 85.136,
+                                                    "h": 90.626,
+                                                    "children": [
+                                                      {
+                                                        "name": "Lock / Sprite",
+                                                        "key": "Level 2 / 6674623162303273547/image",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "w": 85.136,
+                                                        "h": 90.626,
+                                                        "type": "IMAGE",
+                                                        "opacity": 1,
+                                                        "imageKey": "664144612dd89ae20dc5",
+                                                        "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_ic lock.png",
+                                                        "spriteGuid": "2b46b02a02b3ee148a009aada19a1294",
+                                                        "spriteFileID": 21300000
+                                                      }
+                                                    ],
+                                                    "clip": false
+                                                  }
+                                                ],
+                                                "clip": false
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 2 / Spine lock (setup pose)",
+                                    "key": "spine-lock",
+                                    "x": 539.5,
+                                    "y": 43,
+                                    "w": 1,
+                                    "h": 1,
+                                    "children": [
+                                      {
+                                        "name": "Spine / o khoa",
+                                        "key": "spine/o khoa",
+                                        "type": "IMAGE",
+                                        "x": -38.000000120588005,
+                                        "y": -86.15094778050505,
+                                        "w": 76.2,
+                                        "h": 89.80000000000001,
+                                        "rotation": -0.0,
+                                        "imageKey": "7db02385f336c04358d9",
+                                        "spritePath": "Assets/SmashFest/Development/Animation/Battle Pass/Lock Battle Pass/ổ khóa.png",
+                                        "spriteGuid": "adbf42e03fc03d44d8a4fb0ac33365c1",
+                                        "spriteFileID": 21300000
+                                      },
+                                      {
+                                        "name": "Spine / dau khoa",
+                                        "key": "spine/dau khoa",
+                                        "type": "IMAGE",
+                                        "x": -30.192922038507966,
+                                        "y": -86.1380482649343,
+                                        "w": 64.4,
+                                        "h": 34.2,
+                                        "rotation": 8.999999991488039e-06,
+                                        "imageKey": "e8fa6715526dd86cdbd9",
+                                        "spritePath": "Assets/SmashFest/Development/Animation/Battle Pass/Lock Battle Pass/ổ khóa.png",
+                                        "spriteGuid": "adbf42e03fc03d44d8a4fb0ac33365c1",
+                                        "spriteFileID": 21300000
+                                      },
+                                      {
+                                        "name": "Spine / o",
+                                        "key": "spine/o",
+                                        "type": "IMAGE",
+                                        "x": -37.99999492489391,
+                                        "y": -67.15097106294714,
+                                        "w": 76.2,
+                                        "h": 70.8,
+                                        "rotation": -0.0,
+                                        "imageKey": "938559941a85746378a6",
+                                        "spritePath": "Assets/SmashFest/Development/Animation/Battle Pass/Lock Battle Pass/ổ khóa.png",
+                                        "spriteGuid": "adbf42e03fc03d44d8a4fb0ac33365c1",
+                                        "spriteFileID": 21300000
+                                      }
+                                    ],
+                                    "spineSource": "Assets/SmashFest/Development/Animation/Battle Pass/Lock Battle Pass/ổ khóa.json"
+                                  }
+                                ],
+                                "clip": false
+                              },
+                              {
+                                "name": "Level 1 / BattlePassItem",
+                                "key": "Level 1 / 3259672740112688800",
+                                "path": "/BattlePassItem",
+                                "sourcePrefab": "BattlePassItem.prefab",
+                                "fileID": "3259672740112688800",
+                                "x": 0.0,
+                                "y": 168.1843,
+                                "w": 1080,
+                                "h": 370,
+                                "children": [
+                                  {
+                                    "name": "Level 1 / BackgroundImage",
+                                    "key": "Level 1 / 3507613529617838422",
+                                    "path": "/BattlePassItem/BackgroundImage",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "3507613529617838422",
+                                    "x": -684.9114,
+                                    "y": 0.0,
+                                    "w": 2449.8228,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "BackgroundImage / Sprite",
+                                        "key": "Level 1 / 3507613529617838422/image",
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 2449.8228,
+                                        "h": 370,
+                                        "type": "IMAGE",
+                                        "opacity": 1,
+                                        "imageKey": "eb690ddfd647e15ccd27",
+                                        "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_bg_present pack1.png",
+                                        "spriteGuid": "e524ff88b6c92594987380c5f57b9951",
+                                        "spriteFileID": 21300000
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 1 / NotSelected",
+                                    "key": "Level 1 / 4085742868315712400",
+                                    "path": "/BattlePassItem/NotSelected",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "4085742868315712400",
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "w": 1080,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 1 / UnderTopLine",
+                                        "key": "Level 1 / 6712269309969543872",
+                                        "path": "/BattlePassItem/NotSelected/UnderTopLine",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "6712269309969543872",
+                                        "x": 0.0,
+                                        "y": -7.3,
+                                        "w": 1080,
+                                        "h": 8,
+                                        "children": [
+                                          {
+                                            "name": "UnderTopLine / Sprite",
+                                            "key": "Level 1 / 6712269309969543872/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 1080,
+                                            "h": 8,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "35a0b133568abbd2e780",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_purpleline.png",
+                                            "spriteGuid": "571736ce63193a745ba6507d4d6e962e",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "Level 1 / UnderBottomLine",
+                                        "key": "Level 1 / 7285390248832066118",
+                                        "path": "/BattlePassItem/NotSelected/UnderBottomLine",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "7285390248832066118",
+                                        "x": 0.0,
+                                        "y": 365,
+                                        "w": 1080,
+                                        "h": 10,
+                                        "children": [
+                                          {
+                                            "name": "UnderBottomLine / Sprite",
+                                            "key": "Level 1 / 7285390248832066118/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 1080,
+                                            "h": 10,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "43dc1c400b320f241de0",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_purpleline.png",
+                                            "spriteGuid": "571736ce63193a745ba6507d4d6e962e",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 1 / Process",
+                                    "key": "Level 1 / 1111944627653162632",
+                                    "path": "/BattlePassItem/Process",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "1111944627653162632",
+                                    "x": 490.0,
+                                    "y": 0.0,
+                                    "w": 100.0,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 1 / ProgressHolder",
+                                        "key": "Level 1 / 5829626744655191722",
+                                        "path": "/BattlePassItem/Process/ProgressHolder",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "5829626744655191722",
+                                        "x": 7.5,
+                                        "y": -7.300330000000002,
+                                        "w": 85.0,
+                                        "h": 382.295,
+                                        "children": [
+                                          {
+                                            "name": "ProgressHolder / Sprite",
+                                            "key": "Level 1 / 5829626744655191722/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 85.0,
+                                            "h": 382.295,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "4af510ed09f5e2c26aec",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_frame_ttt2.png",
+                                            "spriteGuid": "d940f61682081264e86f1af1bf784f8f",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "Level 1 / LevelFrame",
+                                        "key": "Level 1 / 3798739822117514829",
+                                        "path": "/BattlePassItem/Process/LevelFrame",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "3798739822117514829",
+                                        "x": -19.0,
+                                        "y": 118.5,
+                                        "w": 138.0,
+                                        "h": 138.0,
+                                        "children": [
+                                          {
+                                            "name": "LevelFrame / Sprite",
+                                            "key": "Level 1 / 3798739822117514829/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 138.0,
+                                            "h": 138.0,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "1aa319838426beb5e207",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_button_level.png",
+                                            "spriteGuid": "9683dc112045e8f4d9f8e0059a2e5e2d",
+                                            "spriteFileID": 21300000
+                                          },
+                                          {
+                                            "name": "Level 1 / Text (TMP)",
+                                            "key": "Level 1 / 2168864832243500215",
+                                            "path": "/BattlePassItem/Process/LevelFrame/Text (TMP)",
+                                            "sourcePrefab": "BattlePassItem.prefab",
+                                            "fileID": "2168864832243500215",
+                                            "x": 5.700000000000003,
+                                            "y": -1.2999999999999972,
+                                            "w": 121.0,
+                                            "h": 128.0,
+                                            "children": [
+                                              {
+                                                "name": "Text (TMP) / Text",
+                                                "key": "Level 1 / 2168864832243500215/text",
+                                                "type": "TEXT",
+                                                "x": 0,
+                                                "y": 0,
+                                                "w": 121.0,
+                                                "h": 128.0,
+                                                "text": "1",
+                                                "fontSize": 60,
+                                                "color": {
+                                                  "r": 1,
+                                                  "g": 1,
+                                                  "b": 1,
+                                                  "a": 1
+                                                },
+                                                "align": "CENTER",
+                                                "vertical": "CENTER",
+                                                "uppercase": false,
+                                                "outline": 1.536,
+                                                "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 1 / Selected",
+                                    "key": "Level 1 / 2198552331613217593",
+                                    "path": "/BattlePassItem/Selected",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "2198552331613217593",
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "w": 1080,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 1 / TopLine",
+                                        "key": "Level 1 / 3008037615342070819",
+                                        "path": "/BattlePassItem/Selected/TopLine",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "3008037615342070819",
+                                        "x": -10.0,
+                                        "y": -8.2,
+                                        "w": 1100,
+                                        "h": 24,
+                                        "children": [
+                                          {
+                                            "name": "TopLine / Sprite",
+                                            "key": "Level 1 / 3008037615342070819/image",
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 1100,
+                                            "h": 24,
+                                            "type": "IMAGE",
+                                            "opacity": 1,
+                                            "imageKey": "847400962ce99aaca9d8",
+                                            "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_line_roundhead.png",
+                                            "spriteGuid": "a7e3974635d815e48b15893666b6cd17",
+                                            "spriteFileID": 21300000
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  },
+                                  {
+                                    "name": "Level 1 / ContentPanel",
+                                    "key": "Level 1 / 6229090113475745276",
+                                    "path": "/BattlePassItem/ContentPanel",
+                                    "sourcePrefab": "BattlePassItem.prefab",
+                                    "fileID": "6229090113475745276",
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "w": 1080,
+                                    "h": 370,
+                                    "children": [
+                                      {
+                                        "name": "Level 1 / FreePack",
+                                        "key": "Level 1 / 3051781533956169227",
+                                        "path": "/BattlePassItem/ContentPanel/FreePack",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "3051781533956169227",
+                                        "x": 1.1598000000000184,
+                                        "y": 0.0,
+                                        "w": 515.0204,
+                                        "h": 370,
+                                        "children": [
+                                          {
+                                            "name": "Level 1 / Free",
+                                            "key": "Level 1 / 783042752250464145",
+                                            "path": "/BattlePassItem/ContentPanel/FreePack/Free",
+                                            "sourcePrefab": "BattlePassItem.prefab",
+                                            "fileID": "783042752250464145",
+                                            "x": 256.5102,
+                                            "y": 185.0,
+                                            "w": 0.001,
+                                            "h": 0.001,
+                                            "children": [
+                                              {
+                                                "name": "Level 1 / MainContent",
+                                                "key": "Level 1 / 2691073558363784030",
+                                                "path": "/BattlePassItem/ContentPanel/FreePack/Free/MainContent",
+                                                "sourcePrefab": "BattlePassItem.prefab",
+                                                "fileID": "2691073558363784030",
+                                                "x": -160.0000076293945,
+                                                "y": -159.999994277954,
+                                                "w": 320.0,
+                                                "h": 320.0,
+                                                "children": [
+                                                  {
+                                                    "name": "MainContent / Sprite",
+                                                    "key": "Level 1 / 2691073558363784030/image",
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "w": 320.0,
+                                                    "h": 320.0,
+                                                    "type": "IMAGE",
+                                                    "opacity": 1,
+                                                    "imageKey": "6e7c8cf82ff59cf012e4",
+                                                    "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_pack free.png",
+                                                    "spriteGuid": "ba62be5db6fa8da459d4bcda52d31a87",
+                                                    "spriteFileID": 21300000
+                                                  },
+                                                  {
+                                                    "name": "Level 1 / Reward",
+                                                    "key": "Level 1 / 2407774059488073203",
+                                                    "path": "/BattlePassItem/ContentPanel/FreePack/Free/MainContent/Reward",
+                                                    "sourcePrefab": "BattlePassItem.prefab",
+                                                    "fileID": "2407774059488073203",
+                                                    "x": 66.895,
+                                                    "y": 66.515,
+                                                    "w": 166.21,
+                                                    "h": 166.97,
+                                                    "children": [
+                                                      {
+                                                        "name": "Reward / Sprite",
+                                                        "key": "Level 1 / 2407774059488073203/image",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "w": 166.21,
+                                                        "h": 166.97,
+                                                        "type": "IMAGE",
+                                                        "opacity": 1,
+                                                        "imageKey": "31801eaae2020958168e",
+                                                        "spritePath": "Assets/SmashFest/Development/Art/shop/shop_coin 1.png",
+                                                        "spriteGuid": "7c7062d5895d6aa409d597cd05c2bcd3",
+                                                        "spriteFileID": 21300000
+                                                      },
+                                                      {
+                                                        "name": "Level 1 / Amount",
+                                                        "key": "Level 1 / 1385316232505744552",
+                                                        "path": "/BattlePassItem/ContentPanel/FreePack/Free/MainContent/Reward/Amount",
+                                                        "sourcePrefab": "BattlePassItem.prefab",
+                                                        "fileID": "1385316232505744552",
+                                                        "x": 17.03,
+                                                        "y": 108.185,
+                                                        "w": 130.15,
+                                                        "h": 61.0,
+                                                        "children": [
+                                                          {
+                                                            "name": "Amount / Text",
+                                                            "key": "Level 1 / 1385316232505744552/text",
+                                                            "type": "TEXT",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "w": 130.15,
+                                                            "h": 61.0,
+                                                            "text": "x10",
+                                                            "fontSize": 49.4,
+                                                            "color": {
+                                                              "r": 1,
+                                                              "g": 1,
+                                                              "b": 1,
+                                                              "a": 1
+                                                            },
+                                                            "align": "RIGHT",
+                                                            "vertical": "CENTER",
+                                                            "uppercase": false,
+                                                            "outline": 1.26464,
+                                                            "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                                                          }
+                                                        ],
+                                                        "clip": false
+                                                      }
+                                                    ],
+                                                    "clip": false
+                                                  }
+                                                ],
+                                                "clip": false
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      },
+                                      {
+                                        "name": "Level 1 / PassPack",
+                                        "key": "Level 1 / 2460203482456538086",
+                                        "path": "/BattlePassItem/ContentPanel/PassPack",
+                                        "sourcePrefab": "BattlePassItem.prefab",
+                                        "fileID": "2460203482456538086",
+                                        "x": 563.8198000000001,
+                                        "y": 0.0,
+                                        "w": 515.0204,
+                                        "h": 370,
+                                        "children": [
+                                          {
+                                            "name": "Level 1 / Pay",
+                                            "key": "Level 1 / 7864766627696016107",
+                                            "path": "/BattlePassItem/ContentPanel/PassPack/Pay",
+                                            "sourcePrefab": "BattlePassItem.prefab",
+                                            "fileID": "7864766627696016107",
+                                            "x": 257.5102,
+                                            "y": 185.0,
+                                            "w": 0.001,
+                                            "h": 0.001,
+                                            "children": [
+                                              {
+                                                "name": "Level 1 / MainContent",
+                                                "key": "Level 1 / 5193282213746902937",
+                                                "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent",
+                                                "sourcePrefab": "BattlePassItem.prefab",
+                                                "fileID": "5193282213746902937",
+                                                "x": -164.1,
+                                                "y": -163.0,
+                                                "w": 320.0,
+                                                "h": 320.0,
+                                                "children": [
+                                                  {
+                                                    "name": "MainContent / Sprite",
+                                                    "key": "Level 1 / 5193282213746902937/image",
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "w": 320.0,
+                                                    "h": 320.0,
+                                                    "type": "IMAGE",
+                                                    "opacity": 1,
+                                                    "imageKey": "b8edf4d15c88b885eeaf",
+                                                    "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_pack pass.png",
+                                                    "spriteGuid": "75f25fb9062516b49a615113f1770138",
+                                                    "spriteFileID": 21300000
+                                                  },
+                                                  {
+                                                    "name": "Level 1 / Reward",
+                                                    "key": "Level 1 / 8596855625453261787",
+                                                    "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent/Reward",
+                                                    "sourcePrefab": "BattlePassItem.prefab",
+                                                    "fileID": "8596855625453261787",
+                                                    "x": 86.895,
+                                                    "y": 66.515,
+                                                    "w": 166.21,
+                                                    "h": 166.97,
+                                                    "children": [
+                                                      {
+                                                        "name": "Reward / Sprite",
+                                                        "key": "Level 1 / 8596855625453261787/image",
+                                                        "x": 0.0,
+                                                        "y": 0.37999999999999545,
+                                                        "w": 166.21,
+                                                        "h": 166.21,
+                                                        "type": "IMAGE",
+                                                        "opacity": 1,
+                                                        "imageKey": "277fe90c8644ffa15d56",
+                                                        "spritePath": "Assets/SmashFest/Development/Art/shop/shop_coin 1.png",
+                                                        "spriteGuid": "7c7062d5895d6aa409d597cd05c2bcd3",
+                                                        "spriteFileID": 21300000
+                                                      },
+                                                      {
+                                                        "name": "Level 1 / Amount",
+                                                        "key": "Level 1 / 6270104508698450513",
+                                                        "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent/Reward/Amount",
+                                                        "sourcePrefab": "BattlePassItem.prefab",
+                                                        "fileID": "6270104508698450513",
+                                                        "x": 21.03,
+                                                        "y": 110.285,
+                                                        "w": 130.15,
+                                                        "h": 61.0,
+                                                        "children": [
+                                                          {
+                                                            "name": "Amount / Text",
+                                                            "key": "Level 1 / 6270104508698450513/text",
+                                                            "type": "TEXT",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "w": 130.15,
+                                                            "h": 61.0,
+                                                            "text": "x100",
+                                                            "fontSize": 49.4,
+                                                            "color": {
+                                                              "r": 1,
+                                                              "g": 1,
+                                                              "b": 1,
+                                                              "a": 1
+                                                            },
+                                                            "align": "RIGHT",
+                                                            "vertical": "CENTER",
+                                                            "uppercase": false,
+                                                            "outline": 1.26464,
+                                                            "materialGuid": "c6f9c1aede7239348a52de72b11a1e9b"
+                                                          }
+                                                        ],
+                                                        "clip": false
+                                                      }
+                                                    ],
+                                                    "clip": false
+                                                  },
+                                                  {
+                                                    "name": "Level 1 / Lock",
+                                                    "key": "Level 1 / 6674623162303273547",
+                                                    "path": "/BattlePassItem/ContentPanel/PassPack/Pay/MainContent/Lock",
+                                                    "sourcePrefab": "BattlePassItem.prefab",
+                                                    "fileID": "6674623162303273547",
+                                                    "x": 242.43200000000002,
+                                                    "y": 12.686999999999998,
+                                                    "w": 85.136,
+                                                    "h": 90.626,
+                                                    "children": [
+                                                      {
+                                                        "name": "Lock / Sprite",
+                                                        "key": "Level 1 / 6674623162303273547/image",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "w": 85.136,
+                                                        "h": 90.626,
+                                                        "type": "IMAGE",
+                                                        "opacity": 1,
+                                                        "imageKey": "664144612dd89ae20dc5",
+                                                        "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_ic lock.png",
+                                                        "spriteGuid": "2b46b02a02b3ee148a009aada19a1294",
+                                                        "spriteFileID": 21300000
+                                                      }
+                                                    ],
+                                                    "clip": false
+                                                  }
+                                                ],
+                                                "clip": false
+                                              }
+                                            ],
+                                            "clip": false
+                                          }
+                                        ],
+                                        "clip": false
+                                      }
+                                    ],
+                                    "clip": false
+                                  }
+                                ],
+                                "clip": false
+                              }
+                            ],
+                            "clip": false
+                          }
+                        ],
+                        "clip": true
+                      }
+                    ],
+                    "clip": false
+                  }
+                ],
+                "clip": false
+              }
+            ],
+            "clip": false
+          }
+        ],
+        "clip": false
+      }
+    ],
+    "clip": false
+  },
+  "sourceHashes": {
+    "Assets/GameCore/Presentation/Prefabs/BattlePass/BattlePassModal.prefab": "2061d288dfa1249420c5d18c46d9454a4d3c38c8d185d431f67733b772b63ae0",
+    "Assets/GameCore/Presentation/Prefabs/BattlePass/BattlePassItem.prefab": "bebfa462cca15f3af9612e42d1700a5d68cfd6879246c9f0e0ea67034b00210a",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_bg1.png": "8000ad8f23c97bf43f9c391a6f8862746d7f4304e242aefcbed430dc62724d53",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_bg1.png.meta": "7bd2ef4d96315787043ba94f3091aaa03a481a76a274a3572e011a048353e8b6",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_bg2.png": "c56028e0eac726a34af187fe6dd6301791fc71c0c495392e3701a13ab8cf1280",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_bg2.png.meta": "b5088d77c7311838fadd15dd834ec973b6695c7f863fab60314cd12d670e84de",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_panel w line.png": "a885d89c5f0f0ba153139078f15ccec5bba56909ddd3997657e99f9872209120",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_panel w line.png.meta": "9ad654869073a4ae6ebb080471d1c9dd4125a8ef74a1a65b9c31d822a84a9c8a",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_back of tittle.png": "b00c698f4e350a491297974b9b63df2cbcc7809e1d1d0aab11be3d8d001e527d",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_back of tittle.png.meta": "051166ad2162f7dae1ea3f210aaaa952531b9103ac3edb08f8caef24f12db45a",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_tittle frame.png": "02a71b3812bc178992305a81d02db32194fd814a96dce1ba467fb378828a6c49",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_tittle frame.png.meta": "2087ad27839e56bc530f80025b4d2db3af1846377fdfda6293b77d6e275ad3d2",
+    "Assets/SmashFest/Development/Art/Leaderboard/LB_khung time.png": "7b63400a49f2e87437a86a93eecc21227c36530d1e8fd4e544197e14590de87b",
+    "Assets/SmashFest/Development/Art/Leaderboard/LB_khung time.png.meta": "415c947143c5f64e9dfe7b25f46783f59af1b58bf0e16c30f2b48e1ad7027d78",
+    "Assets/SmashFest/Development/Art/Leaderboard/LB_clock.png": "a319ab5348955b3732b6c148fbc1059fc6d9577f7ddc5fbe543ae9c4d0e022c1",
+    "Assets/SmashFest/Development/Art/Leaderboard/LB_clock.png.meta": "f0d1b00d75323eb348d4a5b5234d5aca34bbacaa0179e01f39b869d0b895753e",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_frame_ttt1.png": "d44ca47369955dfd0be6916302ee9d1686712b73a84beb492789d2db1ed56199",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_frame_ttt1.png.meta": "a56a4f4d233003336023e4b58203f30aaeb4b7364f6a7a2c8fb193464ff6bc40",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_button_level.png": "b96c5978644a2458bd5ab13b791168a6c81e009a60d1410be080bc025a470828",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_button_level.png.meta": "916a8550ac2ecd76d08294a9ee4aebcab9eeb95e5dfc420e0cc9d82a8328dce4",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_crown reward.png": "500024327c583f0f84b20400e89a4c5f0d63511ee2983a453fe72c40263a96bb",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_crown reward.png.meta": "a2230f2ad19dfdebcf5f80452ca3bf2d9a80c02bacaf9bfad2f3d0c0bf99cb81",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_button active.png": "9086698be7cfc6593442b72abb8e8d1fefce99b7df14dda44e4021299706b28c",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_button active.png.meta": "57fd5c9016999c72d3e5c6428135bcf76cfe5abd15bf0b1ad275220753ce7a5f",
+    "Assets/SmashFest/Development/Art/Setting/btn_close.png": "95cefbfa83fe4abdeb4cbd9c5d804233ad544d46abf11e2cafedf0b43537f09a",
+    "Assets/SmashFest/Development/Art/Setting/btn_close.png.meta": "2fcdaf1ed9e440f0ee3570819f06b85b54e89b253dd7e38e9b5f1823842b94c9",
+    "Assets/SmashFest/Development/Art/Clown Digger/TU_in4.png": "07d76eb1a943248cb9297a7b360405fcc630357a1e99fbd45756d99925d26ff9",
+    "Assets/SmashFest/Development/Art/Clown Digger/TU_in4.png.meta": "111e254868250385308f2892d0329b4c0f602d17d357381282c41b0dab2d077b",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_frame_ttt2.png": "249a7d4065ce794f4a626f5209cb01654d2c43d2c48ba9368a3f91577263612c",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_frame_ttt2.png.meta": "5f87d54b742746a6861cc285ebeba8df758ea184e73c23b5431dd13a920ced63",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_9path_ttt2.png": "ceccb75058ecced5ba5a6177fe29a28c185cf94dcba5778b3ab07af144356e79",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_9path_ttt2.png.meta": "a4da65ea2ca086dc9af74e9b43f744ae3318c7ee98f33482c899df4bd9faa7e5",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_flag free pass.png": "c4a8b82531a04d8589778475a8b9353c986417522f977b9884fc042af66dac9a",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_flag free pass.png.meta": "5dcc84f71f9319e017b6886498c3b8b30b199dbfb06a9756af93a853edd64512",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_flag crown pass.png": "4cd334b7733314c3715dd84a3b0ec218eb9d116b9b89686e417c40055a28777c",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_flag crown pass.png.meta": "e4351644e863a95e952337bb9c0589611c20f2ff134b879e0129f9cd8177f7ef",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_purpleline.png": "a772fc4537d50cbc921f4fea543f57dabd47b80080cfbe04f498ab4a935c9295",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_purpleline.png.meta": "b1b4373582c16977ac77ff4a406476b33fb82c5923e50bbf14c846834b586fe5",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_pack free.png": "9b96b2326e9e7f0a14e95f4f918ed61087be214ce5076cd3a9df6084fea2c599",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_pack free.png.meta": "b0956b83ab60d568a693bd538ef91c8c5d459d7f40d123247c64f23ac852fe2e",
+    "Assets/SmashFest/Development/Art/shop/shop_coin 1.png": "58d533222a7171b24c9461ccfdc5a76bb6237f497624445bae079715af997ca7",
+    "Assets/SmashFest/Development/Art/shop/shop_coin 1.png.meta": "e091be78b2c4b6a3b5b901ca7736fd1c7d9220cda02fe9ec820928c5757132a5",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_pack pass.png": "87ce33f6de7e2016f39c8649b453344f91f69ae7856b1ab37f8ed005da4866bf",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_pack pass.png.meta": "669092552478341afbd7f97b4fb4a4910349333f95f471da41d2687d38092cbc",
+    "Assets/SmashFest/Development/Art/booster/three ball 4.png": "37c79e03964a3b1d21e6b5830cd2a41ee54fe810646c9ea048ec9f40d463bbc0",
+    "Assets/SmashFest/Development/Art/booster/three ball 4.png.meta": "260dba54fdbefcf5c534b4e7ba76b3302eba42caa33ab070c3c4b70eb059c82b",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_ic lock.png": "0176f068088375dd1cbab7f20a446fa7f747b70bb6014fb83e17e3453ce5c6bf",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_ic lock.png.meta": "8f34b3effb4de8a9ca11a27004ac8f784d9af8749d31822de41815cc1bb4e693",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_line_roundhead.png": "f55024e94ae0831cf169445bb545700683ffbae5343493012db4f1a935b069f4",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_line_roundhead.png.meta": "a769930556170fc861f27351401b648f0279fc120f00aa699ee5eadebc563405",
+    "Assets/SmashFest/Development/Art/booster/electric ball 1.png": "f9b6f9bc734d1bf94d521cf755331e0ed6cbcd1895b4cbc8e3f0657408fc3f9f",
+    "Assets/SmashFest/Development/Art/booster/electric ball 1.png.meta": "238b6cdbabb866bdb6d863f114bda581bd863fd4cd84cf58103f5249d91cd864",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_bg_present pack1.png": "ea7806d4e3e952414bf27e396be8a8c88960b8352dee5e58f788d09b175f53c4",
+    "Assets/SmashFest/Development/Art/Battle Pass/BP_bg_present pack1.png.meta": "f0a227e548ec8e52ba69fbdabd5966849519ac2d8642106e09aa56a1c9fadd84",
+    "Assets/SmashFest/Development/Animation/Battle Pass/Lock Battle Pass/ổ khóa.json": "2d8a89d350d3756474fa1d5a45359617e09b5d4da46d80dfeb452ae09299dd9b",
+    "Assets/SmashFest/Development/Animation/Battle Pass/Lock Battle Pass/ổ khóa.atlas.txt": "599ebe1a66bdc8473af047bb779969b5a99d4b6474a6a8aa6a80d2afbeebf461",
+    "Assets/SmashFest/Development/Animation/Battle Pass/Lock Battle Pass/ổ khóa_SkeletonData.asset": "afb5b6fed3b7203b95bf1f6014460d36fcde945e7a7bfa6f919462915f6d75b8",
+    "Assets/SmashFest/Development/Animation/Battle Pass/Lock Battle Pass/ổ khóa.png.meta": "ae6528932efa1c695ffccb1b74ba79502e2b77e56d837ae9753f58deabe7f8cb",
+    "Assets/SmashFest/Development/Animation/Battle Pass/Lock Battle Pass/ổ khóa.png": "d52132d8e66facc48c3df0b1d41b2edf1f84a60d1a8aa3bf0a095e05d6374d28",
+    "Assets/GameCore/Repository/LiveOp/BattlePass/BattlePassDatabase.asset": "eeceae3d5eda9b2e99acd6eb9d046435fcaa801ee821e4872fc05679b14647f2",
+    "Assets/Pixel/Development/Prefabs/UI/Shop/ShopItemIconDatabase.asset": "f03519215814e517b28503548191427b1585c68eb0d05078774fed1f15d244e7",
+    "Assets/GameCore/DI/PrefabInstallers/CanvasNavigator.prefab": "3df07466a8bcf5204099230e5dbc24c79bc742c3f4f8cb083510a55f88c52a2e",
+    "Assets/GameCore/Presentation/BattlePass/BattlePass/BattlePassModal.cs": "75f72a5604558c80af50ab6cbb219988adbd9bb7ecc7faa29745ee5e8b8d1676",
+    "Assets/GameCore/Presentation/BattlePass/BattlePass/BattlePassScrollView.cs": "c4087e70a44ca6d32fda558313d372d6099354cb96d4fdd264e5ada2fceaabf7",
+    "Assets/GameCore/Presentation/BattlePass/BattlePass/Item/BattlePassItemCellView.cs": "db526ebd0b599ad67d514551a6c4062c911d1aa954eff3edfa830f669f23e4db",
+    "Assets/Pixel/Development/Fonts/LilitaOne-Regular SDF Material - Blue.mat": "74050073fd2be1003449e61a9e6f1c787e83c9d52f89924a701cb7c6459d2d1d",
+    "Assets/Pixel/Development/Fonts/LilitaOne-Regular.ttf": "4444c23631884f411aa7f2fee35061b1756a9927940c62d2a5572acf470b3ffa"
+  },
+  "warnings": [
+    "Countdown is a fixed valid sample, not live server time.",
+    "TextMeshPro SDF dilation/outline is approximated with a Figma text stroke; requires visual check after import.",
+    "Spine lock uses setup pose, not a running animation.",
+    "Only reward rows 1–4 in the initial viewport are included; row 4 is naturally clipped."
+  ]
+}

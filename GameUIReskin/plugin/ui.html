@@ -1,0 +1,645 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><style>
+:root{font:13px/1.45 system-ui,sans-serif;color:#282335;background:#f7f6fa}*{box-sizing:border-box}body{margin:0}header{background:#262033;color:white;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}h1{font-size:18px;margin:0}h2{font-size:14px;margin:0 0 8px}p{margin:6px 0}.muted{color:#777080;font-size:12px}.card{background:white;border:1px solid #e5e0ed;border-radius:9px;padding:12px;margin:12px 16px}input[type=text],input[type=password],select{width:100%;padding:8px;border:1px solid #d8d1e2;border-radius:5px;background:white;color:#282335}input:focus{outline:2px solid #bda0f3}button,.download{border:1px solid #d9d2e3;border-radius:6px;background:white;color:#382b4a;padding:8px 12px;cursor:pointer;text-decoration:none;display:inline-block;font:inherit}button:hover{background:#f2edf9}button.primary{background:#7041bd;color:white;border-color:#7041bd}button:disabled{opacity:.45;cursor:default}.row{display:flex;gap:8px;align-items:center}.row>input{flex:1;min-width:0}.row>button{white-space:nowrap}.grid{display:grid;grid-template-columns:260px 1fr;gap:12px;margin:0 16px 12px}.pane{background:white;border:1px solid #e5e0ed;border-radius:9px;overflow:hidden}.panehead{padding:10px;border-bottom:1px solid #eee9f3}.list{height:255px;overflow:auto}.screen{display:flex;align-items:center;gap:6px;padding:9px 10px;cursor:pointer;border-bottom:1px solid #f3f0f7}.screen:hover,.screen.active{background:#f2ecfb}.screen small{display:block;font-size:11px;color:#817888}.detail{padding:12px;height:332px;overflow:auto}.badge{display:inline-block;font-size:11px;border-radius:20px;padding:2px 8px;background:#ebe3f7;color:#6a419b}.warning{background:#fff6dc;color:#725619;padding:8px;border-radius:5px;font-size:12px}.tabs{display:flex;gap:8px;padding:12px 16px 0}.tabs button.selected{background:#e7ddf7;border-color:#a98bd7}.footer{padding:12px 16px;background:white;border-top:1px solid #ded7e6;position:sticky;bottom:0;display:flex;justify-content:space-between;gap:8px;align-items:center}#error{color:#a42237;background:#fff0f3;white-space:pre-wrap;margin:8px 16px;padding:10px;border-radius:6px}#status{padding:0 16px;color:#65428b;min-height:22px;white-space:pre-wrap}.asset-list{max-height:245px;overflow:auto;margin:8px 0}.asset{display:flex;gap:8px;padding:6px;border-bottom:1px solid #eee;font-size:12px;word-break:break-word}.asset small{color:#867a93}label.option{display:block;margin:8px 0}details{margin-top:8px}summary{cursor:pointer}[hidden]{display:none!important}#downloads{padding:8px 16px}code{font-size:11px}
+
+textarea{width:100%;min-height:110px;resize:vertical;padding:10px;border:1px solid #d8d1e2;border-radius:6px;font:inherit}
+textarea:focus,select:focus{outline:2px solid #bda0f3}.ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ai-grid label{display:block;margin-bottom:5px}.ai-source{display:flex;gap:16px;align-items:center}
+.ai-image{width:145px;height:120px;object-fit:contain;border:1px solid #ddd;border-radius:6px;background:repeating-conic-gradient(#eee 0% 25%,white 0% 50%) 0/16px 16px}
+.ai-thumbs,.ai-results{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.ai-thumbs img{width:72px;height:72px;object-fit:contain}
+.ai-result{width:170px;padding:8px;border:2px solid #ddd;border-radius:8px}.ai-result.selected{border-color:#7041bd}
+.ai-result img{width:150px;height:130px;object-fit:contain}.ai-checks{display:flex;gap:12px;flex-wrap:wrap;margin:10px 0}
+.ai-path{word-break:break-word}.ai-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+
+.list-thumb{width:54px;height:54px;object-fit:contain;flex:0 0 54px;border:1px solid #e5e0ed;border-radius:5px;background:repeating-conic-gradient(#eee 0% 25%,white 0% 50%) 0/12px 12px}
+.asset{align-items:center}.asset-name{font-weight:600;display:block}.asset-path{display:block;font-size:10px;color:#817888;word-break:break-word}
+.detail-thumb{width:100%;height:190px;object-fit:contain;margin:8px 0}.screen>div{min-width:0;overflow-wrap:anywhere}
+#asset-search{margin:8px 0}.asset-toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}
+</style></head><body>
+<header><div><h1>Game UI Reskin</h1><div style="color:#b9afc7;font-size:11px">Unity → Figma → Reskin · Cập nhật PNG có sao lưu</div></div><span id="connected" class="badge">Chưa kết nối</span></header>
+<section class="card" id="connection"><h2>Kết nối nguồn Unity</h2><div class="row"><input id="token" type="password" placeholder="Mã kết nối từ ứng dụng local" aria-label="Mã kết nối"><button id="connect">Kết nối</button><button id="refresh" title="Đọc lại Addressables, prefab và cache từ Unity; giữ nguyên thiết kế Figma">Refresh nguồn Unity</button></div><p class="muted">Mở ứng dụng local, bấm “Copy mã kết nối” rồi dán vào đây. Địa chỉ: localhost:43127.</p><details id="source-options"><summary>Project và folder xuất</summary><label>Project Unity</label><div class="row"><input id="project" type="text" placeholder="C:\…\hole-blast"><button id="browse-project">Chọn</button></div><p class="muted">Nguồn: tự tìm UI trong Addressables và lần theo prefab UI phụ thuộc.</p><label>Folder xuất reskin ngoài project</label><div class="row"><input id="output" type="text"><button id="browse-output">Chọn</button></div><p><button id="save-source">Lưu nguồn</button></p></details><p id="source-summary" class="muted"></p><p class="muted">Refresh đọc lại nguồn và giữ nguyên frame đang reskin. Khi có bản sửa code local, bấm “Khởi động lại local” trong ứng dụng hỗ trợ; khi đổi code plugin, chạy lại plugin Figma.</p></section>
+<nav class="tabs"><button id="tab-import" class="selected">Nhập UI</button><button id="tab-export">Reskin & xuất folder</button><button id="tab-ai">AI Reskin</button><button id="tab-magic">Magic Reskin</button></nav>
+<div id="import-panel"><section class="card"><label>Link Figma tham chiếu <span class="muted">— không bắt buộc</span></label><input id="reference" type="text" placeholder="https://www.figma.com/design/…"><p id="reference-status" class="muted">Chỉ lưu link để tham chiếu; không tự đọc layer của file khác.</p></section><div class="grid"><div class="pane"><div class="panehead"><input id="search" type="text" placeholder="Tìm màn…"><label class="option"><input id="show-components" type="checkbox"> Hiện UI phụ thuộc</label><p class="muted">Ảnh nhỏ dựng từ prefab để nhận diện; bố cục và font chỉ là tham khảo, có thể thiếu dữ liệu runtime.</p></div><div id="screens" class="list"></div></div><div class="pane"><div id="detail" class="detail"><h2>Chọn màn để nhập</h2><p class="muted">Có thể chọn nhiều màn. Dữ liệu runtime chưa xác minh sẽ được ghi rõ, không tự điền thưởng hoặc trạng thái.</p></div></div></div><section class="card"><label class="option"><input id="allow-prefab" type="checkbox"> Cho phép nhập cấu trúc prefab của màn chưa xác minh runtime</label><div class="row"><label for="mode">Khi màn đã có:</label><select id="mode"><option value="create">Tạo bản mới — giữ các chỉnh sửa cũ</option><option value="replace">Thay frame màn đã nhập — thay cả chỉnh sửa trên màn</option></select></div></section></div>
+<div id="export-panel" hidden><section class="card"><h2>1. Reskin tại Assets gốc</h2><p>Mỗi ảnh nguồn là một component ở kích thước gốc. Thay ảnh hoặc dựng thiết kế bên trong component, giữ nguyên kích thước và nền trong suốt.</p><p><button id="focus-assets">Đi tới Assets gốc</button> <button id="sync-preview">Cập nhật sprite đặc biệt</button></p><p class="muted">Các frame Assets theo tên modal chứa component nguồn, xếp theo lưới. Sửa nguồn sẽ cập nhật instance trong modal. Sprite có tint màu hoặc crop xoay cần bấm Cập nhật sprite đặc biệt. Asset dùng chung có nhãn dùng chung; dùng Go to main component để sửa nguồn. Giữ kích thước gốc khi reskin.</p></section><section class="card"><h2>2. Chọn asset để xuất</h2><div class="asset-toolbar"><button id="select-canvas-assets">Chọn asset từ selection</button><button id="refresh-asset-previews">Làm mới preview</button></div><p class="muted">Chọn sprite, nhiều element hoặc cả modal trên canvas rồi bấm chọn theo selection. Chỉ lấy asset có mapping Unity, loại trùng; các asset đang tick là phạm vi xuất.</p><input id="asset-search" type="text" placeholder="Tìm asset theo tên hoặc đường dẫn…"><label><input id="select-assets" type="checkbox" checked> Chọn tất cả</label><div id="assets" class="asset-list"><p class="muted">Chưa có phiên nhập trên trang này.</p></div><label class="option"><input id="changed-only" type="checkbox" checked> Chỉ xuất asset đã thay đổi so với lúc nhập</label><p class="muted" id="export-destination"></p><p class="muted">Giữ đường dẫn Assets/…, không tạo .meta. Text và bố cục màn không được ghi vào prefab Unity.</p></section><section class="card"><h2>3. Cập nhật PNG vào Unity</h2>
+<p>Xuất reskin ra folder trước, rồi duyệt danh sách ảnh sẽ thay trong project. Giữ nguyên .meta, prefab và code.</p>
+<button id="unity-prepare" disabled>Cập nhật vào Unity — xem danh sách</button>
+<div id="unity-review" hidden><p id="unity-project" class="ai-path"></p><p id="unity-backup" class="muted ai-path"></p>
+<div id="unity-files" class="asset-list"></div><p id="unity-review-note" class="warning"></p>
+<button id="unity-apply" class="primary" disabled>Xác nhận thay PNG trong Unity</button>
+<button id="unity-dismiss">Hủy danh sách</button></div>
+<p id="unity-result" class="muted"></p><button id="unity-restore" hidden>Khôi phục PNG trước lần cập nhật này</button>
+<p class="muted">Chỉ ghi PNG khi bấm xác nhận. Nếu nguồn hoặc .meta đổi sau khi duyệt, tool sẽ dừng. Không chạy build, Play hay reimport toàn project.</p></section><section class="card"><h2>Kiểm tra</h2><button id="export-screen">Xuất PNG màn đang chọn</button> <button id="export-mapping">Tải mapping</button></section></div>
+<div id="ai-panel" hidden>
+<section class="card"><div class="row"><h2 style="flex:1">1. Asset cần reskin</h2><button id="ai-select">Lấy từ selection</button></div>
+<p class="muted">Chọn một component nguồn, ảnh bên trong component, hoặc sprite trong modal.</p>
+<div id="ai-empty" class="warning">Chưa chọn asset. Kết quả AI là PNG, không phải các layer vector.</div>
+<div id="ai-source-card" class="ai-source" hidden><img id="ai-source-image" class="ai-image" alt="Asset nguồn">
+<div><strong id="ai-source-name"></strong><p id="ai-source-path" class="muted ai-path"></p><p id="ai-source-size"></p><p id="ai-source-uses" class="muted"></p></div></div></section>
+<section class="card"><h2>2. Mô tả thay đổi</h2><label for="ai-prompt">Prompt</label>
+<textarea id="ai-prompt" maxlength="6000" placeholder="Ví dụ: chuyển nút sang phong cách băng tuyết, viền bạc, nền xanh lam. Giữ hình dáng và không thêm chữ."></textarea>
+<div class="ai-grid"><div><label for="ai-mode">Mức thay đổi</label><select id="ai-mode"><option value="recolor">Đổi màu</option><option value="material">Đổi chất liệu</option><option value="redesign">Thiết kế lại</option></select></div>
+<div><label for="ai-count">Số phương án</label><select id="ai-count"><option value="1">1 phương án</option><option value="2">2 phương án</option><option value="3">3 phương án</option><option value="4">4 phương án</option></select></div></div>
+<p>Chi tiết cần giữ</p><div class="ai-checks"><label><input id="ai-keep-shape" type="checkbox" checked> Hình dáng</label><label><input id="ai-keep-border" type="checkbox" checked> Viền</label><label><input id="ai-keep-symbol" type="checkbox"> Biểu tượng</label><label><input id="ai-keep-text" type="checkbox"> Chữ có sẵn</label></div>
+<label for="ai-colors">Bảng màu — không bắt buộc, tối đa 5 màu HEX</label><div class="row"><input id="ai-colors" type="text" placeholder="#75C900, #FFD64A"><input id="ai-color-picker" type="color" value="#75c900" aria-label="Chọn màu"><button id="ai-add-color">Thêm màu</button></div>
+<p class="muted">Giữ chi tiết là yêu cầu gửi AI; cần kiểm tra kết quả. Kích thước xuất, mapping, alpha và dữ liệu nine-slice lấy từ asset Unity.</p></section>
+<section class="card"><h2>3. Ảnh tham chiếu — không bắt buộc</h2><input id="ai-references" type="file" accept="image/png,image/jpeg,image/webp" multiple><button id="ai-clear-references">Xóa tham chiếu</button><p class="muted">Tối đa 3 ảnh, mỗi ảnh 8MB. Dùng ảnh về phong cách, màu sắc hoặc chất liệu; link Figma không tự chuyển thành ảnh tham chiếu.</p><div id="ai-reference-thumbs" class="ai-thumbs"></div></section>
+<section class="card"><div class="row"><h2 style="flex:1">Codex trên máy</h2><button id="ai-check">Kiểm tra kết nối AI</button></div><p id="ai-provider-status" class="muted">Dùng Codex CLI và tài khoản đang đăng nhập trên máy, không nhập API key trong plugin.</p><p class="muted">Khi bấm Tạo phương án, ảnh nguồn, ảnh tham chiếu và prompt được gửi cho Codex để xử lý qua dịch vụ AI; dùng hạn mức tài khoản hiện có.</p><button id="ai-cancel" hidden>Hủy yêu cầu AI</button></section>
+<section class="card"><h2>4. Kết quả và so sánh</h2><p id="ai-result-status" class="muted">Chưa tạo phương án. Ảnh cũ ở mục 1; chọn ảnh mới bên dưới để xem thử trong modal.</p><div id="ai-results" class="ai-results"></div>
+<p id="ai-preview-note" class="warning" hidden></p><div class="ai-actions"><button id="ai-preview" disabled>Xem thử trong modal</button><button id="ai-apply" class="primary" disabled>Áp dụng vào nguồn</button><button id="ai-revert" disabled>Hủy xem thử</button><button id="ai-undo" disabled>Hoàn tác lần áp dụng cuối</button></div>
+<p class="muted">Xem thử thay tạm artwork của component nguồn và ảnh hưởng các instance dùng chung. Áp dụng mới giữ thay đổi. Khi đóng plugin, bản đang xem thử sẽ được khôi phục. Sprite đặc biệt được đồng bộ qua local.</p></section></div>
+<div id="magic-panel" hidden>
+<section class="card"><h2>Magic Reskin — tự động theo concept</h2><p>Codex tự phân tích artwork và phân loại vai trò để reskin bộ asset đang tick.</p>
+<label for="magic-concept"><strong>Concept / prompt mong muốn</strong> <span class="muted">— không bắt buộc</span></label>
+<textarea id="magic-concept" maxlength="2000" placeholder="Ví dụ: băng tuyết, nền xanh đậm, viền bạc, nút chính xanh sáng; giữ phong cách casual và các màu cảnh báo."></textarea>
+<p class="muted">Để trống: AI tự chọn. Có mô tả: AI dựa vào concept để đề xuất phong cách. Sửa ô này chỉ có hiệu lực khi tạo mẫu mới hoặc thử phong cách khác.</p>
+<p id="magic-scope" class="badge">Chưa có asset</p><div class="asset-toolbar"><button id="magic-select">Lấy theo selection</button><button id="magic-all">Chọn toàn bộ asset của phiên</button><button id="magic-latest">Lấy kết quả lần gần nhất</button></div>
+<p class="muted">Phạm vi là asset của các UI đã nhập trong phiên hiện tại, không tự quét và thay toàn bộ game. Asset dùng chung chỉ tạo một lần.</p>
+<p class="warning">Lượt đầu tự chọn phong cách và tạo tối đa 4 asset mẫu để xem trên modal. Chỉ chạy các asset còn lại sau khi bạn duyệt phong cách. Mỗi asset có thể cần vài phút và sử dụng hạn mức Codex.</p></section>
+<section class="card"><h2>Phong cách đề xuất</h2><h3 id="magic-style-name">Chưa có phong cách</h3><p id="magic-used-concept" class="muted"></p><p id="magic-summary" class="muted"></p><div id="magic-palette" class="asset-toolbar"></div><ul id="magic-rules"></ul>
+<p id="magic-progress" role="status">Nhập concept nếu muốn định hướng, rồi bấm Magic Reskin để bắt đầu.</p><progress id="magic-meter" max="1" value="0" style="width:100%"></progress>
+<div class="ai-actions"><button id="magic-approve" class="primary" disabled>Áp dụng phong cách cho cả bộ</button><button id="magic-reroll" disabled>Thử phong cách khác</button><button id="magic-cancel" hidden>Hủy tác vụ đang chạy</button></div>
+<p class="muted">Alpha được giữ theo ảnh nguồn. Giữ chữ, biểu tượng, bố cục và vùng nine-slice là yêu cầu gửi AI; cần kiểm tra kết quả. Vai trò và màu chức năng do AI suy luận.</p></section>
+<section class="card"><h2>Trước / sau theo từng asset</h2><div id="magic-results" class="asset-list" style="max-height:340px"></div>
+<p id="magic-preview-note" class="warning" hidden></p><div class="ai-actions"><button id="magic-preview" disabled>Xem thử các ảnh đã tạo trên modal</button><button id="magic-apply" class="primary" disabled>Giữ bộ reskin trong Figma</button><button id="magic-revert" disabled>Hủy xem thử</button><button id="magic-undo" disabled>Hoàn tác bộ vừa áp dụng</button></div>
+<p class="muted">Xem thử tác động các instance dùng chung; đóng plugin sẽ hủy bản xem thử chưa giữ. Giữ trong Figma chưa cập nhật Unity. Khi hài lòng, xuất và duyệt cập nhật PNG ở tab Reskin & xuất folder.</p></section></div>
+<div id="error" role="alert" hidden></div><div id="status" role="status"></div><div id="downloads"></div><footer class="footer"><span id="selection-count" class="muted">0 màn đã chọn</span><button id="primary" class="primary">Nhập vào Figma</button></footer>
+<script>
+const $ = id => document.getElementById(id);
+const BRIDGE = 'http://localhost:43127';
+let catalog = [], selected = new Set(), focused = null, active = null, tab = 'import', busy = false;
+let assetsSelected = new Set(), lastStatus = null;
+function send(type, values = {}) { parent.postMessage({ pluginMessage: Object.assign({ type }, values) }, '*'); }
+function setBusy(value, text) {
+    busy = value;
+    for (const id of ['primary','connect','refresh','save-source','focus-assets','sync-preview','export-screen','export-mapping','browse-project','browse-output','unity-prepare','unity-apply','unity-dismiss','unity-restore','select-canvas-assets','refresh-asset-previews']) { $(id).disabled = value; }
+    if (typeof updateUnityControls === 'function') { updateUnityControls(); }
+    if (typeof updateMagicControls === 'function') { updateMagicControls(); }
+    if (typeof updateAiControls === 'function') { updateAiControls(); }
+    if (text !== undefined) { $('status').textContent = text; }
+}
+function clearError() { $('error').textContent = ''; $('error').hidden = true; }
+function error(value) { $('error').textContent = String(value.message || value); $('error').hidden = false; setBusy(false, ''); }
+async function api(route, data, timeout = 180000) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeout);
+    try {
+        const response = await fetch(BRIDGE + route, { method: data === undefined ? 'GET' : 'POST',
+            headers: { 'Content-Type': 'application/json', 'X-Reskin-Token': $('token').value.trim() },
+            body: data === undefined ? undefined : JSON.stringify(data), signal: controller.signal });
+        const result = await response.json();
+        if (!response.ok) {
+            if (response.status === 404 && (route === '/api/refresh' || route.startsWith('/api/ai/') || route.startsWith('/api/unity/') || route.startsWith('/api/magic/'))) {
+                throw new Error('Local đang chạy bản cũ chưa có chức năng này. '
+                    + 'Bấm Khởi động lại local trong ứng dụng hỗ trợ rồi thử lại.');
+            }
+            throw new Error(result.error || 'Local trả lỗi HTTP ' + response.status);
+        }
+        return result;
+    } catch (failure) {
+        if (failure.name === 'AbortError') { throw new Error('Công cụ local chưa phản hồi. Kiểm tra ứng dụng local hoặc thử ít màn hơn.'); }
+        if (failure instanceof TypeError) { throw new Error('Không kết nối được ứng dụng local. Mở ứng dụng, kiểm tra mã kết nối và cho phép truy cập mạng local nếu Figma hỏi.'); }
+        throw failure;
+    } finally { clearTimeout(timer); }
+}
+function showSource(status) {
+    if (!lastStatus || lastStatus.projectId !== status.projectId) { clearScreenPreviews(); }
+    lastStatus = status;
+    $('project').value = status.project;
+    $('output').value = status.output;
+    $('source-summary').textContent = status.project || 'Chưa chọn project';
+    $('export-destination').textContent = 'Folder xuất: ' + status.output;
+    $('connected').textContent = 'Đã kết nối local';
+}
+async function connect() {
+    clearError(); setBusy(true, 'Đang kết nối…');
+    try {
+        showSource(await api('/api/status'));
+        send('save-settings', { settings: { token: $('token').value.trim(), reference: $('reference').value } });
+        await refresh();
+        setBusy(false, 'Đã kết nối. Chỉ cập nhật PNG Unity khi duyệt và xác nhận trong tab Reskin.');
+    } catch (failure) { error(failure); }
+}
+function applyCatalog(rows) {
+    catalog = rows;
+    selected = new Set([...selected].filter(id => catalog.some(row => row.id === id)));
+    const roots = catalog.filter(row => row.isAddressable).length;
+    $('source-summary').textContent = (lastStatus ? lastStatus.project : '') + ' · '
+        + roots + ' UI Addressable · ' + (catalog.length - roots) + ' UI phụ thuộc';
+    renderCatalog();
+    if (focused) {
+        const row = catalog.find(row => row.id === focused);
+        if (row) { renderDetail(row); }
+        else { focused = null; $('detail').textContent = 'Màn trước đó không còn trong nguồn Unity.'; }
+    }
+}
+async function refreshSource() {
+    if (busy) { return; }
+    clearError();
+    setBusy(true, 'Đang đọc lại Addressables, prefab UI và cache nguồn…');
+    try {
+        const result = await api('/api/refresh', {});
+        showSource(result.status);
+        clearScreenPreviews(); applyCatalog(result.catalog);
+        setBusy(false, 'Đã refresh nguồn Unity. Thiết kế đang reskin được giữ nguyên. '
+            + 'Muốn dựng lại màn theo nguồn mới, chọn màn rồi bấm Nhập vào Figma.');
+    } catch (failure) { error(failure); }
+}
+async function refresh() { applyCatalog(await api('/api/catalog')); }
+
+function renderCatalog() {
+    const query = $('search').value.toLowerCase();
+    if (screenObserver) { screenObserver.disconnect(); }
+    $('screens').replaceChildren();
+    for (const row of catalog.filter(row => (row.isScreen || $('show-components').checked) && row.name.toLowerCase().includes(query))) {
+        const line = document.createElement('div'); line.className = 'screen' + (focused === row.id ? ' active' : '');
+        const checkbox = document.createElement('input'); checkbox.type = 'checkbox'; checkbox.checked = selected.has(row.id);
+        checkbox.onclick = event => event.stopPropagation();
+        checkbox.onchange = () => { if (checkbox.checked) selected.add(row.id); else selected.delete(row.id); updateCount(); };
+        const label = document.createElement('div'); label.textContent = row.name;
+        const note = document.createElement('small'); note.textContent = (row.isAddressable ? 'Addressable' : 'UI phụ thuộc') + (row.runtimeReady ? ' · Có cấu hình runtime' : ' · Chưa xác minh runtime'); label.appendChild(note);
+        const thumbnail = screenThumbnail(row.id);
+        line.append(checkbox,thumbnail,label); line.onclick = () => { focused = row.id; renderDetail(row); renderCatalog(); };
+        $('screens').appendChild(line);
+        if (screenObserver) { screenObserver.observe(thumbnail); }
+    }
+    updateCount();
+}
+function renderDetail(row) {
+    const title = document.createElement('h2'); title.textContent = row.name;
+    const state = document.createElement('p'); state.textContent = 'Trạng thái: ' + row.states[0].name;
+    const size = document.createElement('p'); size.className = 'muted'; size.textContent = 'Canvas: 1080 × 2448';
+    const note = document.createElement('p'); note.className = row.runtimeReady ? 'muted' : 'warning';
+    note.textContent = row.runtimeReady ? 'Battle Pass đầu mùa: dựng cả hàng thưởng từ dữ liệu đã truy vết. Viền TMP và Spine tĩnh cần đối chiếu trong Figma.' : 'Có thể nhập cấu trúc và prefab con. Dữ liệu tạo lúc chạy chưa được xác minh; cần cho phép chế độ prefab cơ sở để nhập.';
+    const path = document.createElement('p'); path.className = 'muted'; path.textContent = row.id;
+    const source = document.createElement('p'); source.className = 'muted';
+    source.textContent = row.isAddressable
+        ? 'Addressables: ' + row.addresses.map(value => value.group + ' / ' + value.address).join(', ')
+        : 'UI được tham chiếu từ: ' + (row.referencedBy || []).map(value => value.split('/').pop()).join(', ');
+    const dependencies = document.createElement('div');
+    const dependencyTitle = document.createElement('h2'); dependencyTitle.textContent = 'Prefab UI liên quan (' + (row.dependencies || []).length + ')';
+    dependencies.appendChild(dependencyTitle);
+    for (const id of row.dependencies || []) {
+        const line = document.createElement('p'); line.className = 'muted'; line.textContent = id;
+        dependencies.appendChild(line);
+    }
+    const thumbnail = screenThumbnail(row.id); thumbnail.className = 'detail-thumb';
+    $('detail').replaceChildren(title,thumbnail,state,size,note,path,source,dependencies);
+    queueScreenPreview(row.id);
+}
+function updateCount() { updateMagicControls(); $('selection-count').textContent = tab === 'magic' ? assetsSelected.size+' asset trong phạm vi Magic' : tab === 'ai' ? (aiTarget ? '1 asset AI đã chọn' : 'Chưa chọn asset AI') : tab === 'import' ? selected.size + ' màn đã chọn' : assetsSelected.size + ' asset đã chọn'; }
+function changeTab(value) {
+    tab = value;
+    $('magic-panel').hidden = value !== 'magic'; $('tab-magic').classList.toggle('selected',value === 'magic');
+    $('ai-panel').hidden = value !== 'ai';
+    $('tab-ai').classList.toggle('selected',value === 'ai');
+    $('import-panel').hidden = value !== 'import'; $('export-panel').hidden = value !== 'export';
+    $('tab-import').classList.toggle('selected',value === 'import'); $('tab-export').classList.toggle('selected',value === 'export');
+    $('primary').textContent = value === 'magic' ? 'Magic Reskin — tạo mẫu' : value === 'ai' ? 'Tạo phương án bằng Codex' : value === 'import' ? 'Nhập vào Figma' : 'Xuất reskin ra folder';
+    $('primary').disabled = busy; updateCount(); updateAiControls(); updateMagicControls();
+}
+let assetThumbnailRequest = 0;
+const assetPreviewCache = new Map();
+function updateAssetChecks() {
+    $('select-assets').checked = !!active && assetsSelected.size === active.assets.length;
+    $('select-assets').indeterminate = assetsSelected.size > 0 && !!active && assetsSelected.size < active.assets.length;
+    updateCount();
+}
+function renderAssetList() {
+    $('assets').replaceChildren();
+    if (!active) { return; }
+    const query = $('asset-search').value.trim().toLowerCase();
+    for (const asset of active.assets.filter(item => item.path.toLowerCase().includes(query))) {
+        const line = document.createElement('label'); line.className = 'asset';
+        const checkbox = document.createElement('input'); checkbox.type = 'checkbox';
+        checkbox.checked = assetsSelected.has(asset.id); checkbox.dataset.assetId = asset.id;
+        checkbox.onchange = () => {
+            if (checkbox.checked) { assetsSelected.add(asset.id); } else { assetsSelected.delete(asset.id); }
+            lastUnityExport = null; unityPlan = null; updateUnityControls(); updateAssetChecks();
+        };
+        const thumbnail = document.createElement('img'); thumbnail.className = 'list-thumb';
+        thumbnail.alt = 'Preview'; thumbnail.dataset.assetPreview = asset.id;
+        thumbnail.src = assetPreviewCache.get(active.sessionId + '/' + asset.id) || EMPTY_THUMBNAIL;
+        thumbnail.title = 'Preview từ component nguồn trong Figma. Bấm Làm mới preview sau khi chỉnh.';
+        const label = document.createElement('span');
+        const name = document.createElement('span'); name.className = 'asset-name';
+        name.textContent = asset.path.split('/').pop();
+        const dimensions = document.createElement('small'); dimensions.textContent = asset.width + ' × ' + asset.height + ' px';
+        const path = document.createElement('span'); path.className = 'asset-path'; path.textContent = asset.path;
+        label.append(name,dimensions,path); line.append(checkbox,thumbnail,label); $('assets').appendChild(line);
+    }
+    updateAssetChecks();
+}
+function requestAssetPreviews(assetIds) {
+    if (!active) { return; }
+    send('asset-thumbnails', {sessionId:active.sessionId,requestId:++assetThumbnailRequest,assetIds});
+}
+function setManifest(manifest, assetIds) {
+    active = manifest;
+    lastUnityExport = null; unityPlan = null; updateUnityControls();
+    assetsSelected = new Set(assetIds || manifest.assets.map(asset => asset.id));
+    renderAssetList(); requestAssetPreviews();
+}
+function download(blob, name, text) {
+    const link = document.createElement('a'); link.className = 'download'; link.textContent = text;
+    link.href = URL.createObjectURL(blob); link.download = name; $('downloads').appendChild(link);
+}
+async function importSelected() {
+    if (!selected.size) { throw new Error('Chọn ít nhất một màn.'); }
+    setBusy(true, 'Đang đọc prefab, prefab con và asset…');
+    const payload = await api('/api/extract', { screenIds: [...selected], allowPrefabOnly: $('allow-prefab').checked, reference: $('reference').value.trim() });
+    send('save-settings', { settings: { token: $('token').value.trim(), reference: $('reference').value.trim() } });
+    send('import-scenes', { payload, mode: $('mode').value });
+}
+function requestAssets(type) {
+    if (!active || !assetsSelected.size) { throw new Error('Chọn ít nhất một asset trong phiên đã nhập.'); }
+    setBusy(true, 'Đang xuất asset ở kích thước gốc…'); send(type, { assetIds: [...assetsSelected], sessionId: active.sessionId });
+}
+$('connect').onclick = connect;
+$('refresh').onclick = refreshSource;
+$('save-source').onclick = async () => { clearError();setBusy(true,'Đang đọc nguồn…');try {showSource(await api('/api/config',{project:$('project').value.trim(),output:$('output').value.trim()}));await refresh();setBusy(false,'Đã lưu nguồn.');}catch(e){error(e);} };
+for (const kind of ['project','output']) { $('browse-'+kind).onclick = async () => {clearError();try { const result=await api('/api/browse',{kind},600000);if(result.path)$(kind).value=result.path;}catch(e){error(e);} }; }
+$('search').oninput = renderCatalog; $('show-components').onchange = renderCatalog;
+$('tab-magic').onclick = () => changeTab('magic');
+$('tab-ai').onclick = () => changeTab('ai');
+$('tab-import').onclick = () => changeTab('import'); $('tab-export').onclick = () => changeTab('export');
+$('primary').onclick = async () => { if(busy)return;clearError();try { if(tab==='import')await importSelected();else if(tab==='ai')await startAi();else if(tab==='magic')startMagic();else requestAssets('export-reskin'); }catch(e){error(e);} };
+$('sync-preview').onclick = () => {clearError();try {requestAssets('sync-preview');}catch(e){error(e);} };
+for (const type of ['focus-assets','export-screen','export-mapping']) { $(type).onclick = () => {clearError();setBusy(true,'Đang xử lý…');send(type);} }
+$('select-assets').onchange = () => { if(!active)return;assetsSelected=new Set($('select-assets').checked?active.assets.map(asset=>asset.id):[]);lastUnityExport=null;unityPlan=null;updateUnityControls();renderAssetList(); };
+
+
+
+const EMPTY_THUMBNAIL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP4z8DwHwAFgAI/ScLbtAAAAABJRU5ErkJggg==';
+let screenPreviewGeneration = 0, screenPreviewWorking = false;
+const screenPreviewCache = new Map(), screenPreviewPending = new Set(), screenPreviewQueue = [];
+const screenObserver = typeof IntersectionObserver === 'undefined' ? null : new IntersectionObserver(entries => {
+    for (const entry of entries) { if (entry.isIntersecting) { queueScreenPreview(entry.target.dataset.screenPreview); } }
+}, {root:$('screens'),rootMargin:'80px'});
+function clearScreenPreviews() {
+    screenPreviewGeneration++;screenPreviewCache.clear();screenPreviewPending.clear();screenPreviewQueue.length=0;
+}
+function screenThumbnail(id) {
+    const image=document.createElement('img');image.className='list-thumb';image.dataset.screenPreview=id;
+    image.alt='UI';image.src=screenPreviewCache.get(id)||EMPTY_THUMBNAIL;
+    image.title='Preview dựng từ prefab để nhận diện; chưa phải ảnh chụp runtime.';
+    return image;
+}
+function queueScreenPreview(id) {
+    if(screenPreviewCache.has(id)||screenPreviewPending.has(id)||!$('token').value.trim())return;
+    screenPreviewPending.add(id);screenPreviewQueue.push({id,generation:screenPreviewGeneration});drainScreenPreviews();
+}
+async function drainScreenPreviews() {
+    if(screenPreviewWorking)return;screenPreviewWorking=true;
+    try {
+        while(screenPreviewQueue.length){
+            const task=screenPreviewQueue.shift();if(task.generation!==screenPreviewGeneration)continue;
+            try {
+                const response=await api('/api/catalog-preview',{screenId:task.id});
+                if(task.generation!==screenPreviewGeneration)continue;
+                const url='data:image/png;base64,'+response.bytes;screenPreviewCache.set(task.id,url);
+                for(const image of document.querySelectorAll('[data-screen-preview]')){
+                    if(image.dataset.screenPreview===task.id){image.src=url;}
+                }
+            }catch(failure){
+                if(task.generation===screenPreviewGeneration){
+                    for(const image of document.querySelectorAll('[data-screen-preview]')){
+                        if(image.dataset.screenPreview===task.id){image.title='Chưa tải được preview: '+failure.message;}
+                    }
+                }
+            }finally{if(task.generation===screenPreviewGeneration)screenPreviewPending.delete(task.id);}
+        }
+    }finally{screenPreviewWorking=false;}
+}
+$('asset-search').oninput=renderAssetList;
+$('refresh-asset-previews').onclick=()=>{if(!busy)requestAssetPreviews();};
+$('select-canvas-assets').onclick=()=>{if(busy)return;clearError();setBusy(true,'Đang lấy asset từ selection…');send('select-assets-from-canvas');};
+
+let lastUnityExport = null, unityPlan = null, unityApplied = null;
+function updateUnityControls() {
+    $('unity-prepare').disabled = busy || !lastUnityExport || !lastUnityExport.exported.length;
+    $('unity-apply').disabled = busy || !unityPlan || unityPlan.state !== 'prepared' || !unityPlan.files.length;
+    $('unity-restore').disabled = busy || !unityApplied;
+    $('unity-review').hidden = !unityPlan;
+    $('unity-restore').hidden = !unityApplied;
+}
+$('unity-prepare').onclick = async () => {
+    if(busy || !lastUnityExport)return;clearError();setBusy(true,'Đang kiểm tra PNG và tạo bản sao lưu…');
+    try {
+        unityPlan = await api('/api/unity/prepare',{exportId:lastUnityExport.exportId});
+        $('unity-project').textContent = 'Project sẽ cập nhật: ' + unityPlan.project;
+        $('unity-backup').textContent = 'Bản sao lưu: ' + unityPlan.backupFolder;
+        $('unity-files').replaceChildren();
+        for(const file of unityPlan.files){const line=document.createElement('div');line.className='asset';
+            line.textContent=file.path+' · '+file.width+'×'+file.height;$('unity-files').appendChild(line);}
+        $('unity-review-note').textContent = unityPlan.files.length
+            ? 'Sẽ thay '+unityPlan.files.length+' PNG bằng bản xuất gần nhất. .meta giữ nguyên. Bấm xác nhận để ghi vào project.'
+            : 'Không có PNG khác nội dung hiện tại trong Unity; không cần cập nhật.';
+        $('unity-apply').textContent = 'Xác nhận thay '+unityPlan.files.length+' PNG trong Unity';
+        setBusy(false,'Đã chuẩn bị danh sách. Chưa ghi vào Unity.');
+    }catch(failure){unityPlan=null;error(failure);}
+};
+$('unity-dismiss').onclick=()=>{unityPlan=null;updateUnityControls();};
+$('unity-apply').onclick=async()=>{
+    if(busy||!unityPlan||!unityPlan.files.length)return;clearError();setBusy(true,'Đang thay PNG đã duyệt…');
+    try {const result=await api('/api/unity/apply',{planId:unityPlan.planId});unityApplied=result;unityPlan=null;clearScreenPreviews();renderCatalog();
+        $('unity-result').textContent='Đã cập nhật '+result.updated+' PNG vào Unity. Giữ nguyên .meta. Sao lưu: '+result.backupFolder;
+        setBusy(false,'Đã cập nhật PNG. Quay lại Unity để Editor nhận thay đổi.');
+    }catch(failure){unityPlan=null;error(failure);}
+};
+$('unity-restore').onclick=async()=>{
+    if(busy||!unityApplied)return;clearError();setBusy(true,'Đang khôi phục PNG từ bản sao lưu…');
+    try {const result=await api('/api/unity/restore',{planId:unityApplied.planId});unityApplied=null;unityPlan=null;clearScreenPreviews();renderCatalog();
+        $('unity-result').textContent='Đã khôi phục '+result.updated+' PNG trước lần cập nhật vừa rồi; .meta giữ nguyên.';
+        setBusy(false,'Đã khôi phục PNG.');
+    }catch(failure){error(failure);}
+};
+
+
+let magicJob=null, magicPreviewing=false, magicApplied=null, magicPollSerial=0, magicSelecting=false;
+let magicAvoidStyle='', magicConceptRequest='';
+function updateMagicControls(){
+    const activeScope=!!active&&assetsSelected.size>0;
+    const available=magicJob&&magicJob.items?magicJob.items.filter(item=>item.state==='completed').length:0;
+    $('magic-apply').textContent='Giữ '+available+' ảnh đã tạo trong Figma';
+    $('magic-scope').textContent=activeScope?assetsSelected.size+' asset đang tick trong phiên này':'Chưa chọn asset';
+    for(const id of ['magic-select','magic-all','magic-latest','magic-concept']){$(id).disabled=busy;}
+    $('magic-approve').disabled=busy||!magicJob||!['review','interrupted','cancelled'].includes(magicJob.state)||!magicJob.style;
+    $('magic-reroll').disabled=busy||!magicJob||magicPreviewing;
+    $('magic-preview').disabled=busy||!available;
+    $('magic-revert').disabled=busy||!magicPreviewing;
+    $('magic-apply').disabled=busy||!magicPreviewing||!magicJob||magicJob.state==='review';
+    $('magic-undo').disabled=busy||!magicApplied||magicPreviewing;
+    $('magic-cancel').hidden=!magicJob||magicJob.state!=='running';
+    if(tab==='magic'){$('primary').disabled=busy||!activeScope||magicPreviewing;}
+}
+function startMagic(){
+    if(!active||!assetsSelected.size)throw new Error('Nhập UI và chọn asset trong tab Reskin trước.');
+    if(magicPreviewing||aiPending)throw new Error('Hủy hoặc giữ bản xem thử hiện tại trước khi tạo bộ mới.');
+    if(assetsSelected.size>500)throw new Error('Tối đa 500 asset mỗi bộ. Chọn phạm vi nhỏ hơn.');
+    magicConceptRequest=$('magic-concept').value.trim();
+    if(magicConceptRequest.length>2000)throw new Error('Concept tối đa 2000 ký tự.');
+    setBusy(true,'Đang chụp artwork nguồn cho Magic Reskin…');
+    send('magic-source',{sessionId:active.sessionId,assetIds:[...assetsSelected]});
+}
+function renderMagic(){
+    if(!magicJob)return;
+    const style=magicJob.style;
+    $('magic-used-concept').textContent='Concept của bộ này: '+(magicJob.concept||'AI tự chọn');
+    $('magic-style-name').textContent=style?style.name:'Codex đang chọn phong cách…';
+    $('magic-summary').textContent=style?style.summary+' · '+style.material:'';
+    $('magic-palette').replaceChildren();$('magic-rules').replaceChildren();
+    if(style){
+        for(const color of style.palette){const swatch=document.createElement('span');swatch.className='badge';
+            swatch.textContent=color;swatch.style.border='5px solid '+color;$('magic-palette').appendChild(swatch);}
+        for(const rule of style.rules){const row=document.createElement('li');row.textContent=rule;$('magic-rules').appendChild(row);}
+    }
+    const errors=magicJob.items.filter(item=>item.state==='failed').length;
+    const skipped=magicJob.items.filter(item=>item.state==='skipped').length;
+    $('magic-progress').textContent=magicJob.message+' · '+magicJob.completed+'/'+magicJob.total+' ảnh đã tạo; '+errors+' lỗi; '+skipped+' giữ nguyên.';
+    $('magic-meter').max=magicJob.total||1;$('magic-meter').value=magicJob.completed+skipped;
+    $('magic-results').replaceChildren();
+    const labels={pending:'Chờ xử lý',running:'Đang tạo',completed:'Đã tạo',failed:'Lỗi',skipped:'Giữ nguyên',cancelled:'Đã hủy'};
+    const roles={background:'Nền',panel:'Khung',primary_button:'Nút chính',secondary_button:'Nút phụ',icon:'Biểu tượng',reward:'Phần thưởng',progress:'Tiến độ',semantic_status:'Trạng thái',decoration:'Trang trí',keep_original:'Giữ nguyên'};
+    for(const item of magicJob.items){
+        const row=document.createElement('div');row.className='asset';
+        for(const key of ['sourcePreview','resultPreview']){const image=document.createElement('img');image.className='list-thumb';
+            image.src=item[key]?'data:image/png;base64,'+item[key]:EMPTY_THUMBNAIL;image.alt=key==='sourcePreview'?'Trước':'Sau';row.appendChild(image);}
+        const label=document.createElement('span');label.textContent=item.path.split('/').pop();
+        const note=document.createElement('small');note.textContent=' · '+labels[item.state]+(item.role?' · '+(roles[item.role]||item.role):'')+(item.error?' · '+item.error:'');
+        label.appendChild(note);row.appendChild(label);$('magic-results').appendChild(row);
+    }
+    updateMagicControls();
+}
+async function pollMagic(){
+    const serial=++magicPollSerial;
+    try{
+        const result=await api('/api/magic/job',{jobId:magicJob.id,sessionId:magicJob.sessionId});
+        if(serial!==magicPollSerial)return;
+        magicJob=result;renderMagic();
+        if(result.state==='running'){setTimeout(()=>{if(serial===magicPollSerial)pollMagic();},3500);return;}
+        setBusy(false,result.message);
+        if(result.state==='failed')error(result.message);
+    }catch(failure){error(failure);}
+}
+async function previewMagic(){
+    if(!magicJob)return;
+    const entries=[];const ready=magicJob.items.filter(item=>item.state==='completed');
+    setBusy(true,'Đang đọc ảnh Magic để xem thử…');
+    try{
+        for(const item of ready){entries.push(await api('/api/magic/result',
+            {jobId:magicJob.id,sessionId:magicJob.sessionId,assetId:item.assetId}));
+            $('status').textContent='Đang chuẩn bị '+entries.length+'/'+ready.length+' ảnh…';}
+        send('magic-preview',{jobId:magicJob.id,sessionId:magicJob.sessionId,entries});
+    }catch(failure){error(failure);}
+}
+$('magic-select').onclick=()=>{if(busy)return;magicSelecting=true;clearError();setBusy(true,'Đang lấy scope từ selection…');send('select-assets-from-canvas');};
+$('magic-all').onclick=()=>{if(!active)return;assetsSelected=new Set(active.assets.map(item=>item.id));lastUnityExport=null;unityPlan=null;updateUnityControls();renderAssetList();};
+$('magic-reroll').onclick=()=>{clearError();magicAvoidStyle=magicJob&&magicJob.style?magicJob.style.name:'';
+    try{startMagic();}catch(failure){error(failure);}};
+$('magic-approve').onclick=async()=>{clearError();setBusy(true,'Đang chạy bộ theo phong cách đã duyệt…');
+    try{magicJob=await api('/api/magic/approve',{jobId:magicJob.id,sessionId:magicJob.sessionId});renderMagic();await pollMagic();}
+    catch(failure){error(failure);}};
+$('magic-cancel').onclick=async()=>{clearError();try{magicPollSerial++;magicJob=await api('/api/magic/cancel',
+    {jobId:magicJob.id,sessionId:magicJob.sessionId});renderMagic();setBusy(false,magicJob.message);}catch(failure){error(failure);}};
+$('magic-preview').onclick=previewMagic;
+for(const operation of ['apply','revert','undo']){
+    $('magic-'+operation).onclick=()=>{if(busy)return;const job=operation==='undo'?magicApplied:magicJob;
+        if(!job)return;clearError();setBusy(true,'Đang cập nhật bộ artwork trong Figma…');
+        send('magic-'+operation,{jobId:job.id,sessionId:job.sessionId});};
+}
+$('magic-latest').onclick=async()=>{if(!active)return;clearError();setBusy(true,'Đang lấy bộ Magic gần nhất…');
+    try{magicJob=await api('/api/magic/latest',{sessionId:active.sessionId});$('magic-concept').value=magicJob.concept||'';renderMagic();
+        if(magicJob.state==='running')await pollMagic();else setBusy(false,magicJob.message);}
+    catch(failure){error(failure);}};
+
+let aiTarget = null, aiReferences = [], aiJob = null, aiResult = null, aiResults = [];
+let aiPending = false, aiCanUndo = false, aiPolling = 0;
+function updateAiControls() {
+    const running = !!aiJob && ['queued','running'].includes(aiJob.state);
+    for (const id of ['ai-select','ai-check','ai-prompt','ai-mode','ai-count','ai-colors','ai-color-picker',
+        'ai-add-color','ai-references','ai-clear-references','ai-keep-shape','ai-keep-border',
+        'ai-keep-symbol','ai-keep-text']) { $(id).disabled = busy; }
+    $('ai-cancel').hidden = !running;
+    $('ai-preview').disabled = busy || !aiResult || aiPending;
+    $('ai-apply').disabled = busy || !aiPending;
+    $('ai-revert').disabled = busy || !aiPending;
+    $('ai-undo').disabled = busy || !aiCanUndo || aiPending;
+    if (tab === 'ai') { $('primary').disabled = busy || !aiTarget || aiPending; }
+}
+function setAiTarget(target, canUndo) {
+    aiTarget = target;
+    aiCanUndo = canUndo;
+    $('ai-empty').hidden = true;
+    $('ai-source-card').hidden = false;
+    $('ai-source-image').src = 'data:image/png;base64,' + target.source;
+    $('ai-source-name').textContent = target.path.split('/').pop();
+    $('ai-source-path').textContent = target.path;
+    $('ai-source-size').textContent = target.width + ' × ' + target.height + ' px · PNG';
+    $('ai-source-uses').textContent = 'Component nguồn đang dùng tại ' + target.uses + ' sprite trên các màn của phiên này.';
+    updateCount();updateAiControls();
+}
+function aiFields() {
+    if (!aiTarget) { throw new Error('Lấy asset từ selection trước.'); }
+    const prompt = $('ai-prompt').value.trim();
+    if (!prompt) { throw new Error('Nhập mô tả thay đổi vào ô Prompt.'); }
+    const colors = $('ai-colors').value.split(/[\s,;]+/).filter(Boolean);
+    if (colors.length > 5 || colors.some(color => !/^#[0-9a-f]{6}$/i.test(color))) {
+        throw new Error('Bảng màu cần tối đa 5 mã HEX dạng #RRGGBB.');
+    }
+    return {sessionId:aiTarget.sessionId,assetId:aiTarget.assetId,source:aiTarget.source,prompt,
+        mode:$('ai-mode').value,count:Number($('ai-count').value),colors,
+        keep:['shape','border','symbol','text'].filter(key => $('ai-keep-'+key).checked),
+        references:aiReferences.map(reference => reference.bytes)};
+}
+async function startAi() {
+    const body = aiFields();
+    setBusy(true,'Đang gửi yêu cầu cho Codex trên máy…');
+    aiJob = await api('/api/ai/start',body);
+    aiResults = [];aiResult = null;$('ai-results').replaceChildren();
+    updateAiControls();await pollAi();
+}
+async function pollAi() {
+    const serial = ++aiPolling;
+    try {
+        const job = await api('/api/ai/job',{jobId:aiJob.id,sessionId:aiJob.sessionId});
+        if (serial !== aiPolling) { return; }
+        aiJob = job;$('ai-result-status').textContent = job.message;
+        if (job.state === 'completed') {
+            aiResults = job.results;renderAiResults();setBusy(false,'Đã tạo '+aiResults.length+' phương án.');return;
+        }
+        if (job.state === 'failed') { throw new Error(job.message); }
+        if (job.state === 'cancelled') { setBusy(false,job.message);return; }
+        $('status').textContent = job.message;updateAiControls();
+        setTimeout(() => { if(serial === aiPolling) { pollAi(); } },3000);
+    } catch (failure) {
+        if (aiJob && ['running','queued'].includes(aiJob.state)) {
+            $('ai-provider-status').textContent = 'Mất kết nối theo dõi. Yêu cầu có thể vẫn chạy; kiểm tra local hoặc bấm Hủy.';
+        }
+        error(failure);
+    }
+}
+function renderAiResults() {
+    $('ai-results').replaceChildren();
+    for (const result of aiResults) {
+        const card = document.createElement('button');card.type='button';card.className='ai-result';
+        const image = document.createElement('img');image.className='ai-image';image.alt='Phương án '+result.id;
+        image.src='data:image/png;base64,'+result.bytes;
+        const label=document.createElement('span');label.textContent='Phương án '+result.id;
+        card.append(image,label);
+        if(result.resized){const note=document.createElement('small');note.textContent=' · Đã đưa về kích thước nguồn';card.append(note);}
+        card.onclick=()=>{if(busy||aiPending)return;aiResult=result;
+            for(const button of $('ai-results').children){button.classList.toggle('selected',button===card);}updateAiControls();};
+        $('ai-results').appendChild(card);
+    }
+}
+async function readReference(file) {
+    if (!['image/png','image/jpeg','image/webp'].includes(file.type) || file.size > 8*1024*1024) {
+        throw new Error('Chọn ảnh PNG/JPG/WebP, tối đa 8MB mỗi ảnh.');
+    }
+    const data=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result);
+        reader.onerror=()=>reject(new Error('Không đọc được ảnh tham chiếu.'));reader.readAsDataURL(file);});
+    return {name:file.name,bytes:data.split(',')[1],url:data};
+}
+$('ai-select').onclick=()=>{if(busy)return;clearError();setBusy(true,'Đang lấy component nguồn…');send('ai-source');};
+$('ai-check').onclick=async()=>{clearError();setBusy(true,'Đang kiểm tra Codex local…');
+    try {const status=await api('/api/ai/status');$('ai-provider-status').textContent=status.message;
+        setBusy(false,status.available?'Đã tìm thấy Codex CLI.':'Chưa tìm thấy Codex CLI.');}catch(failure){error(failure);}};
+$('ai-add-color').onclick=()=>{const colors=$('ai-colors').value.split(/[\s,;]+/).filter(Boolean);
+    if(colors.length>=5){error('Tối đa 5 màu.');return;}colors.push($('ai-color-picker').value);$('ai-colors').value=colors.join(', ');};
+$('ai-references').onchange=async()=>{if(busy)return;clearError();setBusy(true,'Đang đọc ảnh tham chiếu…');const files=[...$('ai-references').files];
+    try {if(files.length>3)throw new Error('Tối đa 3 ảnh tham chiếu.');aiReferences=await Promise.all(files.map(readReference));
+        $('ai-reference-thumbs').replaceChildren();for(const reference of aiReferences){const img=document.createElement('img');
+            img.src=reference.url;img.alt=reference.name;img.title=reference.name;$('ai-reference-thumbs').appendChild(img);}setBusy(false,'Đã đọc ảnh tham chiếu.');}
+    catch(failure){aiReferences=[];$('ai-reference-thumbs').replaceChildren();$('ai-references').value='';error(failure);}};
+$('ai-clear-references').onclick=()=>{aiReferences=[];$('ai-references').value='';$('ai-reference-thumbs').replaceChildren();};
+$('ai-cancel').onclick=async()=>{clearError();try {const result=await api('/api/ai/cancel',
+    {jobId:aiJob.id,sessionId:aiJob.sessionId});aiPolling++;aiJob=result;setBusy(false,result.message);}catch(failure){error(failure);}};
+for(const operation of ['preview','apply','revert','undo']){
+    $('ai-'+operation).onclick=()=>{if(busy||!aiTarget)return;clearError();setBusy(true,'Đang cập nhật component nguồn…');
+        send('ai-'+operation,{masterId:aiTarget.masterId,sessionId:aiTarget.sessionId,
+            bytes:operation==='preview'&&aiResult?aiResult.bytes:undefined});};
+}
+
+window.onmessage = async event => {
+    const m = event.data && event.data.pluginMessage; if(!m)return;
+    try {
+        if(m.type==='settings'){$('token').value=m.settings.token||'';$('reference').value=m.settings.reference||'';if($('token').value)await connect();}
+        if(m.type==='assets-selected'){
+            setManifest(m.manifest,m.assetIds);changeTab(magicSelecting?'magic':'export');magicSelecting=false;
+            setBusy(false,'Đã chọn '+m.assetIds.length+' asset từ selection, đã loại trùng.'
+                +(m.unmatched?' Bỏ qua '+m.unmatched+' selection không có sprite mapping.':''));
+        }
+        if(m.type==='asset-thumbnail' && active && m.sessionId===active.sessionId
+            && m.requestId===assetThumbnailRequest){
+            if(m.bytes){assetPreviewCache.set(m.sessionId+'/'+m.assetId,'data:image/png;base64,'+m.bytes);}
+            for(const image of document.querySelectorAll('[data-asset-preview]')){
+                if(image.dataset.assetPreview===m.assetId){
+                    if(m.bytes){image.src='data:image/png;base64,'+m.bytes;}
+                    else{image.title='Preview lỗi: '+m.error;}
+                }
+            }
+        }
+        if(m.type==='magic-previewed'||m.type==='magic-finished'){
+            magicPreviewing=m.type==='magic-previewed';
+            const changed=(m.changedAssetIds||[]).length;
+            $('magic-preview-note').hidden=!magicPreviewing||!changed;
+            $('magic-preview-note').textContent=changed+' asset đã được chỉnh sau khi tạo ảnh AI. Đang xem thử ảnh từ nguồn cũ; artwork hiện tại được giữ lại để khôi phục khi hủy hoặc hoàn tác. Các chi tiết mới không tự ghép vào ảnh AI.';
+            if(m.operation==='magic-apply'){magicApplied={id:m.jobId,sessionId:m.sessionId};aiTarget=null;}
+            if(m.operation==='magic-undo'){magicApplied=null;}
+            lastUnityExport=null;unityPlan=null;updateUnityControls();requestAssetPreviews(m.assetIds);
+            setBusy(true,'Đang đồng bộ bộ Magic lên các modal…');
+            send('sync-preview',{sessionId:m.sessionId,assetIds:m.assetIds});
+        }
+        if(m.type==='ai-source'){
+            setManifest(m.manifest);aiPending=false;$('ai-preview-note').hidden=true;aiResult=null;aiResults=[];$('ai-results').replaceChildren();
+            setAiTarget(m.target,m.canUndo);setBusy(false,'Đã chọn asset nguồn cho AI.');
+        }
+        if(m.type==='ai-previewed'||m.type==='ai-finished'){
+            aiPending=m.type==='ai-previewed';
+            $('ai-preview-note').hidden=!aiPending||!m.sourceChanged;
+            $('ai-preview-note').textContent='Nguồn đã chỉnh sau khi tạo ảnh AI. Vẫn xem thử được; Hủy xem thử hoặc hoàn tác sẽ khôi phục artwork hiện tại, gồm element mới. Các chi tiết mới không tự ghép vào ảnh AI.';
+            if(m.type==='ai-finished'){setAiTarget(m.target,m.canUndo);requestAssetPreviews([m.target.assetId]);}
+            $('ai-result-status').textContent=aiPending?'Đang xem thử trên component nguồn. Bấm Áp dụng để giữ hoặc Hủy xem thử.'
+                :m.operation==='ai-apply'?'Đã áp dụng vào nguồn. Có thể hoàn tác lần áp dụng cuối.':'Đã khôi phục artwork trước đó.';
+            setBusy(true,'Đang đồng bộ sprite đặc biệt…');
+            send('sync-preview',{sessionId:m.target.sessionId,assetIds:[m.target.assetId]});
+        }
+        if(m.type==='restored'){setManifest(m.manifest);}
+        if(m.type==='progress'){$('status').textContent=m.text;}
+        if(m.type==='error'){error(m.text);}
+        if(m.type==='done'){setBusy(false,m.text);}
+        if(m.type==='imported'){
+            setManifest(m.manifest);
+            try {await api('/api/baselines',{sessionId:active.sessionId,entries:m.baselines});}
+            catch(failure){throw new Error('Đã nhập UI nhưng lưu baseline thất bại: '+failure.message+'. Có thể xuất tất cả bằng cách bỏ chọn “Chỉ xuất asset đã thay đổi”.');}
+            download(new Blob([JSON.stringify({manifest:active,mapping:m.mapping,roots:m.roots},null,2)],{type:'application/json'}),'unity-figma-mapping.json','Tải mapping lần nhập');
+            const warnings=m.roots.flatMap(root=>(root.warnings||[]).map(note=>root.name+': '+note));
+            setBusy(false,'Đã nhập '+m.roots.length+' màn và '+m.assetCount+' ảnh nguồn. '+m.linkedCount+' sprite liên kết trực tiếp; '+m.syncCount+' sprite cần cập nhật bằng nút. Chuyển sang “Reskin & xuất folder”.'
+                +(warnings.length?'\nLưu ý: '+warnings.slice(0,8).join('\n'):''));
+        }
+        if(m.type==='assets-rendered'){
+            if(m.operation==='magic-source'){
+                magicJob=await api('/api/magic/start',{sessionId:m.manifest.sessionId,entries:m.entries,avoidStyle:magicAvoidStyle,concept:magicConceptRequest});
+                magicAvoidStyle='';renderMagic();await pollMagic();
+            }else if(m.operation==='sync-preview'){
+                const response=await api('/api/preview',{sessionId:m.manifest.sessionId,entries:m.entries});
+                send('apply-preview',{images:response.images,sessionId:m.manifest.sessionId});
+            }else{
+                const response=await api('/api/export',{sessionId:m.manifest.sessionId,entries:m.entries,changedOnly:$('changed-only').checked});
+                lastUnityExport=response;unityPlan=null;updateUnityControls();
+                setBusy(false,'Đã xuất '+response.exported.length+' file; '+response.unchanged.length+' file không đổi.\n'+response.outputFolder);
+                download(new Blob([JSON.stringify(response,null,2)],{type:'application/json'}),'reskin-export-report.json','Tải báo cáo xuất');
+            }
+        }
+        if(m.type==='preview-applied'){setBusy(false,'Đã cập nhật '+m.count+' sprite cần đồng bộ. Các instance liên kết cập nhật trực tiếp từ component nguồn.');}
+        if(m.type==='screen-png'){
+            const bytes=Uint8Array.from(m.bytes||[]);const signature=[137,80,78,71,13,10,26,10];
+            if(bytes.length<=8||signature.some((v,i)=>bytes[i]!==v))throw new Error('Figma trả về PNG không hợp lệ.');
+            download(new Blob([bytes],{type:'image/png'}),'game-ui-preview.png','Tải ảnh Figma');setBusy(false,'Xuất PNG kiểm tra thành công.');
+        }
+        if(m.type==='mapping'){download(new Blob([JSON.stringify(m.report,null,2)],{type:'application/json'}),'unity-figma-mapping.json','Tải mapping');setBusy(false,'Đã xuất mapping.');}
+    }catch(failure){error(failure);}
+};
+window.addEventListener('error',event=>error('Lỗi giao diện: '+event.message));
+window.addEventListener('unhandledrejection',event=>error(event.reason||'Lỗi không xác định.'));
+send('ready');
+</script></body></html>

@@ -1,0 +1,160 @@
+{
+  "name": "Lam ngọc hoàng gia",
+  "summary": "Đổi các vùng tím chủ đạo sang xanh lam ngọc, giữ nguyên phong cách hoạt hình bóng nổi và toàn bộ định dạng sprite. Chỉ thay màu, bảo toàn cấu trúc gradient, ánh sáng, bóng đổ và các màu mang ý nghĩa chức năng.",
+  "material": "Giữ nguyên chất liệu raster hiện có: bề mặt trơn, nhựa bóng, viền kim loại vàng và vùng chuyển sắc. Không thêm texture, hiệu ứng hoặc chất liệu mới.",
+  "palette": ["#073F58", "#087F9C", "#50C8DF", "#FFD449", "#FFF3D6"],
+  "rules": [
+    "Chỉ đổi màu; giữ nguyên kích thước, bố cục, silhouette, độ trong suốt, vùng đệm và định dạng từng asset.",
+    "Vùng màu trơn tiếp tục là màu trơn. Vùng gradient giữ nguyên loại, hướng, điểm dừng, độ tương phản và phạm vi chuyển sắc.",
+    "Background có quầng sáng từ tâm phải giữ nguyên tâm, hình dạng và bán kính theo pixel hoặc tỷ lệ ảnh gốc; không mở rộng quầng sáng.",
+    "Ánh xạ tím đậm sang lam ngọc đậm, tím trung sang lam ngọc và tím sáng sang xanh ngọc sáng; giữ tương quan sáng tối gốc.",
+    "Giữ nguyên highlight, bevel, bóng đổ, độ bóng và độ dày viền; không thêm gradient hoặc chi tiết trang trí.",
+    "Giữ chính xác chữ có sẵn như Crown Pass, FREE PASS và CROWN PASS, cùng biểu tượng, vị trí và độ dễ đọc.",
+    "Giữ nguyên màu đỏ của nút đóng, xanh lá mang ý nghĩa trạng thái, vàng của tiền tệ và khóa, cùng phân biệt cấp thưởng.",
+    "Bảo toàn atlas cell, vị trí từng bộ phận animation, vùng lặp và đường biên nine-slice; không dịch chuyển hoặc vẽ tràn sang cell khác.",
+    "Các asset nhận diện phần thưởng, booster hoặc hình minh họa đặc trưng được giữ nguyên."
+  ],
+  "roles": [
+    {
+      "assetId": "fa0606bfc03a8170084ff9b8",
+      "role": "background",
+      "note": "Đổi nền tím sang lam ngọc đậm; giữ chính xác quầng gradient sáng ở tâm và độ lan gốc."
+    },
+    {
+      "assetId": "104f075c236c6e4c4d3d4847",
+      "role": "keep_original",
+      "note": "Giữ nguyên minh họa sân khấu và phần thưởng nhiều màu để bảo toàn nhận diện."
+    },
+    {
+      "assetId": "908ce480d64183f16a84540b",
+      "role": "panel",
+      "note": "Đổi phần tím sang lam ngọc với gradient gốc; giữ dải vàng và đường viền."
+    },
+    {
+      "assetId": "3cc811f71d6b62c0d427f007",
+      "role": "decoration",
+      "note": "Giữ sắc đỏ vàng của miếng trang trí sau tiêu đề và toàn bộ hình dạng mỏng hiện tại."
+    },
+    {
+      "assetId": "5f7ab2e02baa1b12a25909ac",
+      "role": "panel",
+      "note": "Đổi nền tím của khung tiêu đề sang lam ngọc; giữ viền vàng, chữ Crown Pass và hiệu ứng nổi."
+    },
+    {
+      "assetId": "4538df530ff259d39ecd2425",
+      "role": "panel",
+      "note": "Đưa phần nền sáng về sắc kem trong bảng màu; bảo toàn chuyển sắc rất nhẹ và bóng đổ gốc."
+    },
+    {
+      "assetId": "897fbdaa5431986a8acb7e58",
+      "role": "icon",
+      "note": "Giữ mặt đồng hồ sáng, kim tối và viền vàng để nhận biết thời gian rõ ràng."
+    },
+    {
+      "assetId": "a15ad3145e0a18a1675daca8",
+      "role": "panel",
+      "note": "Đổi lòng khung tím sang lam ngọc đậm; giữ nguyên viền vàng và gradient hiện có."
+    },
+    {
+      "assetId": "0fcfff3b6a4f0c9a306aa275",
+      "role": "secondary_button",
+      "note": "Giữ màu hồng đỏ và viền vàng để duy trì độ nổi bật của nút cấp độ; không đổi hiệu ứng bóng."
+    },
+    {
+      "assetId": "7e7208e46d771932f3dff20d",
+      "role": "reward",
+      "note": "Đổi nền huy hiệu tím sang lam ngọc; giữ nguyên vương miện vàng, viền vàng và độ bóng."
+    },
+    {
+      "assetId": "e184f0d94b3d5fb69cb7b4a5",
+      "role": "primary_button",
+      "note": "Chuyển phần xanh dương sang xanh lam ngọc sáng, giữ gradient và viền đỏ của trạng thái active."
+    },
+    {
+      "assetId": "faf197a4414d2732256f4c74",
+      "role": "semantic_status",
+      "note": "Giữ nút đóng màu đỏ và dấu X trắng cùng toàn bộ viền, highlight và bóng đổ."
+    },
+    {
+      "assetId": "ec04574f3578521bda7fef04",
+      "role": "icon",
+      "note": "Đổi nút tím sang lam ngọc; giữ biểu tượng i trắng và các lớp nổi hiện tại."
+    },
+    {
+      "assetId": "791835f31e3d9ceffb7aeaf2",
+      "role": "panel",
+      "note": "Đổi dải tím sang lam ngọc, giữ nguyên các dải sáng tối theo chiều ngang và biên ghép."
+    },
+    {
+      "assetId": "f9a4ac141436cfcc6cc64b47",
+      "role": "keep_original",
+      "note": "Giữ nguyên miếng xanh lá vì chưa xác định chắc chức năng; bảo toàn gradient và biên nine-slice."
+    },
+    {
+      "assetId": "2df05b2d625ceccfe2180557",
+      "role": "panel",
+      "note": "Giữ cờ FREE PASS xám bạc, chữ và thanh treo để duy trì phân biệt hạng miễn phí."
+    },
+    {
+      "assetId": "6b8df543005626b641faf60a",
+      "role": "panel",
+      "note": "Giữ cờ CROWN PASS vàng cam, chữ và thanh treo để duy trì nhận diện hạng cao cấp."
+    },
+    {
+      "assetId": "dfd5de56a73aa4eab38cde5b",
+      "role": "decoration",
+      "note": "Đổi đường tím sang lam ngọc tương ứng; giữ độ dày và cấu trúc màu từng dải."
+    },
+    {
+      "assetId": "a0bd81c9a2a4edebee540064",
+      "role": "panel",
+      "note": "Giữ ô thưởng miễn phí màu kem với viền cam nhạt, hình dạng và ánh sáng gốc."
+    },
+    {
+      "assetId": "8ccdade97a72fd61cb2a8668",
+      "role": "keep_original",
+      "note": "Giữ nguyên đồng xu vàng và biểu tượng ngôi sao để bảo toàn nhận diện tiền tệ."
+    },
+    {
+      "assetId": "09dd56a8e3091dac6769ebe1",
+      "role": "panel",
+      "note": "Giữ ô thưởng cao cấp vàng kem và độ sáng hiện tại để phân biệt với ô miễn phí."
+    },
+    {
+      "assetId": "6ad8a5defd518ffc2de9f966",
+      "role": "keep_original",
+      "note": "Giữ nguyên ba quả bóng và dấu hiệu nhận diện booster."
+    },
+    {
+      "assetId": "4aab00e0e3620e65cb680ba3",
+      "role": "semantic_status",
+      "note": "Giữ khóa vàng, lỗ khóa tối và highlight để nhận biết trạng thái khóa."
+    },
+    {
+      "assetId": "25e3ce82fa4d6474e947e829",
+      "role": "decoration",
+      "note": "Giữ đường vàng bo đầu cùng gradient và kích thước gốc; chưa đủ cơ sở xác định là thanh tiến trình."
+    },
+    {
+      "assetId": "13156babda9cc3d3599c0fce",
+      "role": "keep_original",
+      "note": "Giữ nguyên bóng điện, màu booster và viền điện sáng."
+    },
+    {
+      "assetId": "0bd54a62c3c407101ffd7b32",
+      "role": "semantic_status",
+      "note": "Giữ màu vàng của bộ phận khóa; bảo toàn chính xác từng atlas cell, vị trí chi tiết và khoảng trống."
+    },
+    {
+      "assetId": "90b0d1217993e8c6ab927325",
+      "role": "background",
+      "note": "Đổi các sắc tím của nền họa tiết sang lam ngọc; giữ nguyên họa tiết, độ tương phản và mọi gradient gốc."
+    }
+  ],
+  "pilotAssetIds": [
+    "fa0606bfc03a8170084ff9b8",
+    "908ce480d64183f16a84540b",
+    "e184f0d94b3d5fb69cb7b4a5",
+    "ec04574f3578521bda7fef04"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "prompt": "Reskin this source to match the APPROVED STYLE and style-reference images. Keep source composition, exact symbols/text and nine-slice borders; no new text. For atlas textures preserve all cells and their coordinates. Use the assigned role to maintain contrast; preserve functional status/rarity/currency colors. Do not replicate the reference object or invent extra elements. STYLE: {\"name\": \"Lam ngọc hoàng gia\", \"palette\": [\"#073F58\", \"#087F9C\", \"#50C8DF\", \"#FFD449\", \"#FFF3D6\"], \"material\": \"Giữ nguyên chất liệu raster hiện có: bề mặt trơn, nhựa bóng, viền kim loại vàng và vùng chuyển sắc. Không thêm texture, hiệu ứng hoặc chất liệu mới.\", \"rules\": [\"Chỉ đổi màu; giữ nguyên kích thước, bố cục, silhouette, độ trong suốt, vùng đệm và định dạng từng asset.\", \"Vùng màu trơn tiếp tục là màu trơn. Vùng gradient giữ nguyên loại, hướng, điểm dừng, độ tương phản và phạm vi chuyển sắc.\", \"Background có quầng sáng từ tâm phải giữ nguyên tâm, hình dạng và bán kính theo pixel hoặc tỷ lệ ảnh gốc; không mở rộng quầng sáng.\", \"Ánh xạ tím đậm sang lam ngọc đậm, tím trung sang lam ngọc và tím sáng sang xanh ngọc sáng; giữ tương quan sáng tối gốc.\", \"Giữ nguyên highlight, bevel, bóng đổ, độ bóng và độ dày viền; không thêm gradient hoặc chi tiết trang trí.\", \"Giữ chính xác chữ có sẵn như Crown Pass, FREE PASS và CROWN PASS, cùng biểu tượng, vị trí và độ dễ đọc.\", \"Giữ nguyên màu đỏ của nút đóng, xanh lá mang ý nghĩa trạng thái, vàng của tiền tệ và khóa, cùng phân biệt cấp thưởng.\", \"Bảo toàn atlas cell, vị trí từng bộ phận animation, vùng lặp và đường biên nine-slice; không dịch chuyển hoặc vẽ tràn sang cell khác.\", \"Các asset nhận diện phần thưởng, booster hoặc hình minh họa đặc trưng được giữ nguyên.\"]} ROLE: {\"assetId\": \"908ce480d64183f16a84540b\", \"role\": \"panel\", \"note\": \"Đổi phần tím sang lam ngọc với gradient gốc; giữ dải vàng và đường viền.\"} USER CONCEPT: \"đổi màu lại asset nhưng nhớ là giữ nguyên style và format. ví dụ bắt đang là ảnh trơn thì để trơn đừng thêm gradient, gradient thì đổi màu cũng phải là gradient, background có vùng gradient sáng từ tâm ra có bán kính khoảng 3 cm thì ảnh mới cũng phải thế, chỉ đổi màu thôi\"",
+  "mode": "redesign",
+  "colors": [
+    "#073F58",
+    "#087F9C",
+    "#50C8DF",
+    "#FFD449",
+    "#FFF3D6"
+  ],
+  "keep": [
+    "shape",
+    "border",
+    "symbol",
+    "text"
+  ],
+  "count": 1,
+  "width": 310,
+  "height": 354,
+  "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_panel w line.png",
+  "recipes": [
+    {
+      "assetId": "908ce480d64183f16a84540b",
+      "width": 1080,
+      "height": 340,
+      "crop": null,
+      "border": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 0
+      },
+      "tint": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      }
+    }
+  ],
+  "preserveAlpha": true,
+  "transparent": true
+}

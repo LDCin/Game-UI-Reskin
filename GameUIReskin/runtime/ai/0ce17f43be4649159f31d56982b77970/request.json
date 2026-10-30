@@ -1,0 +1,38 @@
+{
+  "prompt": "chuyển nút sang màu xanh nước biển (frame sang màu đỏ)",
+  "mode": "recolor",
+  "colors": [
+    "#54a8f8"
+  ],
+  "keep": [
+    "shape",
+    "border",
+    "symbol",
+    "text"
+  ],
+  "count": 2,
+  "width": 701,
+  "height": 347,
+  "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_button active.png",
+  "recipes": [
+    {
+      "assetId": "e184f0d94b3d5fb69cb7b4a5",
+      "width": 303,
+      "height": 133,
+      "crop": null,
+      "border": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 0
+      },
+      "tint": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      }
+    }
+  ],
+  "transparent": true
+}

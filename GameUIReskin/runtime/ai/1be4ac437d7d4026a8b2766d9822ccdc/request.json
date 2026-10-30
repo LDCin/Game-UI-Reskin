@@ -1,0 +1,43 @@
+{
+  "prompt": "Reskin this source to match the APPROVED STYLE and style-reference images. Keep source composition, exact symbols/text and nine-slice borders; no new text. For atlas textures preserve all cells and their coordinates. Use the assigned role to maintain contrast; preserve functional status/rarity/currency colors. Do not replicate the reference object or invent extra elements. STYLE: {\"name\": \"Hồng kẹo và vàng tươi\", \"palette\": [\"#FF58BE\", \"#D92AA0\", \"#FFCF24\", \"#FFF2D8\", \"#398BFF\"], \"material\": \"Giữ nguyên chất liệu raster gốc: mảng phẳng vẫn phẳng; gradient, độ bóng, viền nổi và bóng đổ giữ đúng hình dạng, phạm vi và cường độ hiện có.\", \"rules\": [\"Chỉ đổi màu trên các vùng có sẵn; giữ nguyên kích thước, bố cục, silhouette, độ trong suốt và đường biên.\", \"Không thêm gradient vào vùng màu phẳng. Đặc biệt, thân BP_panel w line.png phải giữ màu phẳng, không thêm chuyển sắc.\", \"Gradient gốc phải giữ nguyên loại, hướng, vị trí tâm, bán kính, điểm chuyển và phạm vi sáng; chỉ thay màu tại các điểm màu hiện có.\", \"Vùng sáng từ tâm trên nền số 1 phải giữ nguyên tâm và bán kính theo pixel ảnh gốc, không mở rộng hoặc thu hẹp.\", \"Giữ nguyên mọi highlight, bevel, bóng đổ và họa tiết; không thêm ánh sáng, texture, hạt sáng hoặc hiệu ứng.\", \"Giữ chính xác chữ Crown Pass, FREE PASS, CROWN PASS, ký hiệu i, dấu X và tất cả biểu tượng đã có.\", \"Giữ nguyên atlas cell, vị trí từng phần trong atlas, padding, vùng kéo giãn và biên nine-slice.\", \"Giữ màu đỏ của nút đóng, xanh lá của trạng thái tiến trình và vàng của tiền, vương miện, khóa cùng phân biệt cấp phần thưởng.\", \"Các sắc độ sáng tối được ánh xạ từ màu gốc sang màu mới; bảng màu là màu chủ đạo, không phải yêu cầu phủ màu đồng nhất.\", \"Không dùng các tông xanh xỉn #50C8DF, #087F9C hoặc #073F58.\"]} ROLE: {\"assetId\": \"fa0606bfc03a8170084ff9b8\", \"role\": \"background\", \"note\": \"Đổi tím sang hồng đậm; giữ chính xác vùng gradient sáng giữa nền và độ suy giảm ra mép.\"} USER CONCEPT: \"đổi màu lại asset nhưng nhớ là giữ nguyên style và format. ví dụ bắt đang là ảnh trơn thì để trơn đừng thêm gradient, gradient thì đổi màu cũng phải là gradient, background có vùng gradient sáng từ tâm ra có bán kính khoảng 3 cm thì ảnh mới cũng phải thế, chỉ đổi màu thôi (tôi thấy BP_panel w line.png ở phiên trước dù không có gradient mà bạn vẫn thêm gradient đấy). ngoài ra màu sắc cũng phải tươi sáng chút, đừng lấy mấy màu kiểu #50C8DF, 087F9C, 073F58\"",
+  "mode": "redesign",
+  "colors": [
+    "#FF58BE",
+    "#D92AA0",
+    "#FFCF24",
+    "#FFF2D8",
+    "#398BFF"
+  ],
+  "keep": [
+    "shape",
+    "border",
+    "symbol",
+    "text"
+  ],
+  "count": 1,
+  "width": 2448,
+  "height": 1774,
+  "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_bg1.png",
+  "recipes": [
+    {
+      "assetId": "fa0606bfc03a8170084ff9b8",
+      "width": 2436,
+      "height": 2661,
+      "crop": null,
+      "border": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 0
+      },
+      "tint": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      }
+    }
+  ],
+  "preserveAlpha": true,
+  "transparent": false
+}

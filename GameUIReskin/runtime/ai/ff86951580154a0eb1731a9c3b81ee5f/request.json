@@ -1,0 +1,43 @@
+{
+  "prompt": "Reskin this source to match the APPROVED STYLE and style-reference images. Keep source composition, exact symbols/text and nine-slice borders; no new text. For atlas textures preserve all cells and their coordinates. Use the assigned role to maintain contrast; preserve functional status/rarity/currency colors. Do not replicate the reference object or invent extra elements. STYLE: {\"name\": \"Dạ Hội Nhung Đỏ\", \"palette\": [\"#281529\", \"#721F3D\", \"#B83B55\", \"#E8BD68\", \"#FFF0D5\"], \"material\": \"Nhung mịn có chuyển sắc nhẹ, kim loại vàng champagne đánh bóng và men ngà; ánh sáng mềm, giữ độ nổi và bóng đổ hiện có.\", \"rules\": [\"Chỉ thay diện mạo raster; giữ nguyên kích thước, bố cục, silhouette, vùng trong suốt và vị trí chi tiết.\", \"Giữ nguyên chính xác chữ được vẽ sẵn, ký hiệu, số lượng ô atlas và thứ tự các khung hình.\", \"Bảo toàn biên nine-slice, vùng kéo giãn và tính liền mạch của mọi dải hoặc đường viền; không thêm họa tiết vào vùng kéo giãn.\", \"Dùng mận tối cho nền, nhung đỏ rượu cho bề mặt chính, vàng champagne cho viền và ngà cho bề mặt sáng.\", \"Giữ đỏ của nút đóng, xanh lá của trạng thái tích cực, vàng của tiền và khóa; giữ màu phân hạng khi có chức năng nhận diện.\", \"Giữ tương phản chữ và ký hiệu; phân biệt rõ phần miễn phí, phần cao cấp và trạng thái tương tác.\", \"Chỉ dùng vân nhung rất nhẹ trên diện tích lớn; không thêm chi tiết làm nhiễu các sprite nhỏ.\", \"Giữ nguyên tranh và vật phẩm mang tính nhận diện khi việc đổi màu có thể làm thay đổi ý nghĩa.\"]} ROLE: {\"assetId\": \"908ce480d64183f16a84540b\", \"role\": \"panel\", \"note\": \"Bề mặt nhung đỏ rượu, nẹp trên vàng champagne; giữ mép dưới và toàn bộ vùng kéo giãn.\"}",
+  "mode": "redesign",
+  "colors": [
+    "#281529",
+    "#721F3D",
+    "#B83B55",
+    "#E8BD68",
+    "#FFF0D5"
+  ],
+  "keep": [
+    "shape",
+    "border",
+    "symbol",
+    "text"
+  ],
+  "count": 1,
+  "width": 310,
+  "height": 354,
+  "spritePath": "Assets/SmashFest/Development/Art/Battle Pass/BP_panel w line.png",
+  "recipes": [
+    {
+      "assetId": "908ce480d64183f16a84540b",
+      "width": 1080,
+      "height": 340,
+      "crop": null,
+      "border": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 0
+      },
+      "tint": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      }
+    }
+  ],
+  "preserveAlpha": true,
+  "transparent": true
+}
